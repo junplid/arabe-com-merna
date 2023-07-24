@@ -24,8 +24,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-        <div>
-          <div className="relative z-20 bg-primary px-4">
+        <div className="z-20 relative">
+          <div className="bg-primary px-4">
             <div className="max-w-default m-auto h-9 items-center flex justify-end">
               <span className="text-light-gray font-normal">Parcerias</span>
             </div>
@@ -35,9 +35,10 @@ export default function RootLayout({
               background: "#fff",
               boxShadow: "0px 5px 15px 0px rgba(0, 0, 0, 0.13)",
             }}
+            className="px-4 z-10"
           >
             <header className="top-9 max-w-default m-auto py-2 flex flex-col">
-              <div className="px-4 flex justify-between items-center">
+              <div className="flex justify-between items-center">
                 <div className="flex gap-4 lg:gap-7 items-center">
                   <LogoComponent />
                   <nav className="hidden md:block">
@@ -62,16 +63,16 @@ export default function RootLayout({
                   <a className="hidden mobile:block hover:bg-primary-hover text-sm font-medium duration-200 bg-primary py-2 px-7 text-white cursor-pointer rounded-md">
                     Área do aluno
                   </a>
-                  <div className="mobile:hidden block">
-                    <MenuMobileComponent />
-                  </div>
                 </div>
               </div>
               <NavTabletComponent />
             </header>
           </div>
         </div>
-        <div className="-z-20 relative">{children}</div>
+        <div className="mobile:hidden block">
+          <MenuMobileComponent />
+        </div>
+        <div className="">{children}</div>
       </body>
     </html>
   );

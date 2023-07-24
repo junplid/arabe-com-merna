@@ -22,7 +22,8 @@ module.exports = {
       backgroundColor: {
         "primary": "#0C6746",
         "primary-hover": "#0c7850",
-        "secondary": "#89C030"
+        "secondary": "#89C030",
+        "section-1": "#E0FED6"
       }
     },
   },

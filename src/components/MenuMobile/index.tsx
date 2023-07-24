@@ -27,7 +27,10 @@ export const MenuMobileComponent = (): JSX.Element => {
 
   return (
     <div ref={ref}>
-      <button onClick={() => setOpen(!open)} className="border p-2">
+      <button
+        onClick={() => setOpen(!open)}
+        className="z-40 absolute -translate-y-14 right-0 -translate-x-4 border p-2"
+      >
         {open ? (
           <IoCloseSharp className="text-primary" size={30} />
         ) : (
@@ -36,7 +39,7 @@ export const MenuMobileComponent = (): JSX.Element => {
       </button>
       <div
         style={{ background: "#fff", top: open ? 100 : -280 }}
-        className={`-z-10 pb-2 pt-5 fixed w-full left-0 shadow-lg shadow-black/10 duration-500`}
+        className={`pb-2 pt-5 fixed w-full left-0 shadow-lg shadow-black/10 duration-500`}
       >
         <div className="flex gap-4 px-4">
           <div ref={refLanguage} className="relative w-2/3 h-14">
