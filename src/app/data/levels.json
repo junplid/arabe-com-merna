@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Alfabetização",
+    "text": "Neste nível, o aluno alcançará autonomia na leitura e escrita do árabe, dominando todas as letras, sons e pronúncia correta dos fonemas. Desenvolverá habilidades sólidas para iniciar sua jornada no idioma com confiança"
+  },
+  {
+    "id": 2,
+    "title": "Nivel básico",
+    "text": "Ao final desse nível, o aluno falará sobre vários temas do dia a dia e se comunicará de forma básica em situações comuns, garantindo uma experiência enriquecedora e autêntica."
+  },
+  {
+    "id": 3,
+    "title": "Pré-intermediário",
+    "text": "Você terá habilidades para conversas cotidianas em árabe, compreender letras de músicas e trechos de filmes. Além disso, terá domínio gramatical sólido e amplo vocabulário para entender contextos mais complexos."
+  },
+  {
+    "id": 4,
+    "title": "Intermediário",
+    "text": "Ao concluir este nível, você dominará conversas avançadas em árabe, terá amplo vocabulário técnico e conseguirá compreender e cantar músicas completas."
+  },
+  {
+    "id": 5,
+    "title": "Pós-intermediário",
+    "text": "Você falará fluentemente, sem esforço, e usará o árabe profissionalmente, escrevendo textos complexos. Essas habilidades garantirão uma comunicação eficaz, confiante e competente no idioma."
+  },
+  {
+    "id": 6,
+    "title": "Avançado",
+    "text": "você estará muito familiarizado com o idioma árabe e será capaz de utilizá-lo de maneira natural em várias situações e ocasiões. Sentirá confiança total e diversão ao se comunicar com fluência na língua."
+  }
+]
