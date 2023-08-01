@@ -44,9 +44,9 @@ const ArticleComponent: React.FC<PropsArticle_I> = (
       >
         <div>
           <p className="text-xl font-semibold leading-tight tracking-wide text-white">
-            <span className="text-2xl leading-none">"</span>
+            <span className="text-2xl leading-none">{'"'}</span>
             Ela está sempre pronta para te ajudar com tudo que você precisa
-            <span className="text-2xl leading-none">"</span>
+            <span className="text-2xl leading-none">{'"'}</span>
           </p>
         </div>
         <div className="relative">

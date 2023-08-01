@@ -24,10 +24,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-        <div className="z-20 relative">
-          <div className="bg-primary px-4">
-            <div className="max-w-default m-auto h-9 items-center flex justify-end">
-              <span className="text-light-gray font-normal">Parcerias</span>
+        <div className="relative z-20">
+          <div className="px-4 bg-primary">
+            <div className="flex items-center justify-end m-auto max-w-default h-9">
+              <span className="font-normal text-light-gray">Parcerias</span>
             </div>
           </div>
           <div
@@ -35,14 +35,14 @@ export default function RootLayout({
               background: "#fff",
               boxShadow: "0px 5px 15px 0px rgba(0, 0, 0, 0.13)",
             }}
-            className="px-4 z-10"
+            className="z-10 px-4"
           >
-            <header className="top-9 max-w-default m-auto py-2 flex flex-col">
-              <div className="flex justify-between items-center">
-                <div className="flex gap-4 lg:gap-7 items-center">
+            <header className="flex flex-col py-2 m-auto top-9 max-w-default">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 lg:gap-7">
                   <LogoComponent />
                   <nav className="hidden md:block">
-                    <ul className="text-sm lg:text-base text-primary font-medium flex gap-x-3 lg:gap-x-5 justify-between items-center">
+                    <ul className="flex items-center justify-between text-sm font-medium lg:text-base text-primary gap-x-3 lg:gap-x-5">
                       <li>
                         <a className="cursor-pointer">O curso</a>
                       </li>
@@ -60,7 +60,7 @@ export default function RootLayout({
                 </div>
                 <div className="flex items-center gap-4">
                   <LanguageComponent />
-                  <a className="hidden mobile:block hover:bg-primary-hover text-sm font-medium duration-200 bg-primary py-2 px-7 text-white cursor-pointer rounded-md">
+                  <a className="hidden py-2 text-sm font-medium text-white duration-200 rounded-md cursor-pointer mobile:block hover:bg-primary-hover bg-primary px-7">
                     Área do aluno
                   </a>
                 </div>
@@ -69,7 +69,7 @@ export default function RootLayout({
             </header>
           </div>
         </div>
-        <div className="mobile:hidden block">
+        <div className="block mobile:hidden">
           <MenuMobileComponent />
         </div>
         <div className="">{children}</div>
