@@ -9,6 +9,7 @@ import Section6PageHome from "./sections/6";
 import Section7PageHome from "./sections/7";
 import Section8PageHome from "./sections/8";
 import Section9PageHome from "./sections/9";
+import Section11PageHome from "./sections/11";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <Section10PageHome />
         </div>
       </ProviderContextExploreMap>
+      <Section11PageHome />
     </div>
   );
 }

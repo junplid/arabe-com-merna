@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "label": "O curso tem horário fixo?",
+    "text": "As aulas são online pelo Zoom e são gravadas, ficando disponíveis para os alunos, assim como todo o material que abordaremos. Caso o aluno não consiga assistir à aula ao vivo, ainda poderá acompanhá-la através da gravação."
+  },
+  {
+    "id": "2",
+    "label": "Quem garante que eu vou aprender o idioma?",
+    "text": "A nossa escola possui uma estrutura de qualidade e uma metodologia altamente capacita para garantir seu aprendizado. A nossa metodologia proporciona aprendizado rápido e fácil, o aluno fala desde a primeira aula. Seu método é inovador com foco nos resultados e nosso sistema é reconhecido como um dos mais eficientes em aprendizado."
+  },
+  {
+    "id": "3",
+    "label": "Qual é a metodologia usada no curso?",
+    "text": "Com a nossa metodologia, após do modulo da alfabetização, o aluno aprenderá a falar o idioma desde a primeira aula, com mais módulos focados em situações cotidianas. Nossa abordagem não segue métodos tradicionais; você será treinado para formar suas próprias frases e participar de conversas durante as aulas. Resultados garantidos em tempo recorde."
+  },
+  {
+    "id": "4",
+    "label": "Eu preciso ser alfabetizado em árabe para falar o idioma?",
+    "text": "Não, já alcançamos fluência com vários alunos sem que eles fossem alfabetizados, utilizando a transliteração fonética. No entanto, recomendamos fortemente a alfabetização no idioma árabe, pois isso permitirá que o aluno ganhe independência no idioma e aprimore seus conhecimentos."
+  },
+  {
+    "id": "5",
+    "label": "Para quem é o curso?",
+    "list": [
+      "Nunca teve contato com árabe na vida e está começando do zero.",
+      "Já estudou o idioma, mas esqueceu muitas coisas ou não se sente seguro(a) para falar.",
+      "Consegue se comunicar, mas quer ganhar mais vocabulário e melhorar o conhecimento.",
+      "Quer assistir a séries, filmes, ler livros e entender o que está sendo dito sem dificuldade.",
+      "Aumentar o leque de oportunidades no mercado de trabalho.",
+      "Quer viajar sem passar perrengue por não saber o idioma.",
+      "Quer fazer intercâmbio algum dia, é preciso ter uma base sólida no idioma.",
+      "Quer dominar o árabe de maneira simples e descomplicada."
+    ]
+  },
+  {
+    "id": "6",
+    "label": "Como faço se tiver alguma dúvida durante o curso?",
+    "text": "Durante toda a sua jornada de aprendizado do árabe, você terá acesso direto à professora e à nossa equipe. Fique à vontade para enviar suas dúvidas, atividades para correção e até áudios de pronúncia. Estaremos ao seu lado, acompanhando você, passo a passo e oferecendo suporte contínuo."
+  },
+  {
+    "id": "7",
+    "label": "O curso possui certificado?",
+    "text": "Sim, o aluno receberá um certificado que atesta a conclusão dos módulos, carga horária e todas as informações relevantes necessárias."
+  }
+]
