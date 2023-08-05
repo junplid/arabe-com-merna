@@ -1,4 +1,6 @@
+import { ProviderContextExploreMap } from "@/contexts/exploreMap.context";
 import Section1PageHome from "./sections/1";
+import Section10PageHome from "./sections/10";
 import Section2PageHome from "./sections/2";
 import Section3PageHome from "./sections/3";
 import Section4PageHome from "./sections/4";
@@ -20,6 +22,11 @@ export default function Home() {
       <Section7PageHome />
       <Section8PageHome />
       <Section9PageHome />
+      <ProviderContextExploreMap>
+        <div style={{ background: "#021B11" }}>
+          <Section10PageHome />
+        </div>
+      </ProviderContextExploreMap>
     </div>
   );
 }

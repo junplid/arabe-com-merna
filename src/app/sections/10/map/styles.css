@@ -1,0 +1,288 @@
+.country {
+  position: absolute;
+}
+
+.saara {
+  top: 86px;
+  left: 7px;
+}
+
+.icon-saara {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 30%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.marrocos {
+  top: 10px;
+  left: 59px;
+}
+
+.icon-marrocos {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 60%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.mauritania {
+  left: 3px;
+  top: 104px;
+}
+
+.icon-mauritania {
+  top: 60%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.argelia {
+  left: 99px;
+  top: 14px;
+}
+
+.icon-argelia {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.tunisia {
+  left: 259px;
+  top: 10px;
+}
+
+.icon-tunisia {
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 80%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.libia {
+  left: 272px;
+  top: 61px;
+}
+
+.icon-libia {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.chade {
+  left: 310px;
+  top: 171px;
+}
+
+.icon-chade {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.egito {
+  left: 424.1px;
+  top: 70px;
+}
+
+.icon-egito {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.sudao {
+  left: 402.1px;
+  top: 172px;
+}
+
+.icon-sudao {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.eritreia {
+  left: 557.1px;
+  top: 216px;
+}
+
+.icon-eritreia {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.somalia {
+  left: 614.1px;
+  top: 256px;
+}
+
+.icon-somalia {
+  top: 60%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.arabia-saudita {
+  left: 517.1px;
+  top: 55px;
+}
+
+.icon-arabia-saudita {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.iemen {
+  left: 619.1px;
+  top: 174px;
+}
+
+.icon-iemen {
+  top: 60%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.jordania {
+  left: 522.1px;
+  top: 44px;
+}
+
+.icon-jordania {
+  top: 60%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.palestina {
+  left: 505.1px;
+  top: 47px;
+}
+
+.icon-palestina {
+  top: -15%;
+  transform: translate(-50%, -50%);
+  left: -70%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.siria {
+  left: 521.1px;
+  top: -7px;
+}
+
+.icon-siria {
+  top: 20%;
+  transform: translate(-50%, -50%);
+  left: 45%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.libano {
+  left: 521.1px;
+  top: 27px;
+}
+
+.icon-libano {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.iraque {
+  left: 551.1px;
+  top: -9px;
+}
+
+.icon-iraque {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.kuwait {
+  left: 630.1px;
+  top: 62px;
+}
+
+.icon-kuwait {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.emirados-arabes-unidos {
+  left: 684.1px;
+  top: 96px;
+}
+
+.icon-emirados-arabes-unidos {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.oma {
+  left: 703.1px;
+  top: 105px;
+}
+
+.icon-oma {
+  top: 70%;
+  transform: translate(-50%, -50%);
+  left: 70%;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.catar {
+  left: 670.1px;
+  top: 84px;
+}
+
+.icon-catar {
+  top: -20px;
+  right: -30px;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.bahrein {
+  left: 659.1px;
+  top: 71px;
+}
+
+.icon-bahrein {
+  top: -30px;
+  right: -20px;
+  min-width: 28px;
+  min-height: 28px;
+}
