@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "label": "O curso",
+    "items": [
+      {
+        "id": "1",
+        "value": "Como funciona",
+        "link": "section3"
+      },
+      {
+        "id": "2",
+        "value": "Por que aprender?",
+        "link": "section4"
+      },
+      {
+        "id": "3",
+        "value": "Resultados",
+        "link": "section5"
+      },
+      {
+        "id": "4",
+        "value": "Depoimentos",
+        "link": "section6"
+      },
+      {
+        "id": "7",
+        "value": "Módulos",
+        "link": "section7"
+      },
+      {
+        "id": "8",
+        "value": "Bônus",
+        "link": "section8"
+      },
+      {
+        "id": "9",
+        "value": "A professora",
+        "link": "section9"
+      },
+      {
+        "id": "5",
+        "value": "Explore",
+        "link": "section10"
+      },
+      {
+        "id": "6",
+        "value": "Dúvidas",
+        "link": "section11"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "label": "Plataforma",
+    "items": [
+      {
+        "id": "1",
+        "value": "Nossa Loja",
+        "link": "/#"
+      },
+
+      {
+        "id": "2",
+        "value": "Traduções & Musicais",
+        "link": "/#"
+      },
+      {
+        "id": "3",
+        "value": "Conjugação",
+        "link": "/#"
+      },
+      {
+        "id": "4",
+        "value": "Contato",
+        "link": "/#"
+      },
+      {
+        "id": "5",
+        "value": "Termos de uso",
+        "link": "/#"
+      },
+      {
+        "id": "6",
+        "value": "Termos de privacidade",
+        "link": "/#"
+      }
+    ]
+  }
+]

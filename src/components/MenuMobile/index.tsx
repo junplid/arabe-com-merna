@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { ContextLanguage } from "@/contexts/language.context";
+import { useContext, useState } from "react";
 import useOnclickOutside from "react-cool-onclickoutside";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp, IoLanguage } from "react-icons/io5";
@@ -10,10 +11,9 @@ const optionsLanguage: OptionsLanguage_T[] = ["EN", "BR"];
 
 export const MenuMobileComponent = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false as boolean);
+  const { languageSelected, setLanguageSelected } = useContext(ContextLanguage);
+
   const [openLanguage, setOpenLanguage] = useState<boolean>(false as boolean);
-  const [selected, setselected] = useState<OptionsLanguage_T>(
-    "BR" as OptionsLanguage_T
-  );
 
   const ref = useOnclickOutside(() => {
     if (open) setOpen(false);
@@ -29,7 +29,7 @@ export const MenuMobileComponent = (): JSX.Element => {
     <div ref={ref}>
       <button
         onClick={() => setOpen(!open)}
-        className="z-40 absolute -translate-y-14 right-0 -translate-x-4 border p-2"
+        className="absolute right-0 z-40 p-2 -translate-x-4 border -translate-y-14"
       >
         {open ? (
           <IoCloseSharp className="text-primary" size={30} />
@@ -50,21 +50,21 @@ export const MenuMobileComponent = (): JSX.Element => {
               } hover:bg-gray-50 duration-300 flex items-center`}
             >
               <IoLanguage size={25} className="text-primary" />
-              <span className="text-base text-primary font-medium">
-                {selected}
+              <span className="text-base font-medium text-primary">
+                {languageSelected}
               </span>
             </button>
             {openLanguage && (
-              <ul className="z-50 absolute shadow-md duration-150 shadow-slate-200/40 bg-slate-50 translate-y-2 w-full">
+              <ul className="absolute z-50 w-full duration-150 translate-y-2 shadow-md shadow-slate-200/40 bg-slate-50">
                 {optionsLanguage.map((op) => (
                   <li
-                    className="group hover:text-green-500 gap-x-1 cursor-pointer select-none p-1 px-2 flex items-center justify-between"
+                    className="flex items-center justify-between p-1 px-2 cursor-pointer select-none group hover:text-green-500 gap-x-1"
                     key={op}
-                    onClick={() => setselected(op)}
+                    onClick={() => setLanguageSelected(op)}
                   >
                     <span
                       className={
-                        selected === op
+                        languageSelected === op
                           ? "duration-300 group-hover:text-green-600 text-primary"
                           : "duration-300 group-hover:text-gray-500 text-gray-400"
                       }
@@ -73,7 +73,7 @@ export const MenuMobileComponent = (): JSX.Element => {
                     </span>
                     <span
                       className={`duration-300 rounded-full w-2 h-2 ${
-                        selected === op
+                        languageSelected === op
                           ? "group-hover:bg-green-600 bg-primary"
                           : "group-hover:bg-gray-300 bg-gray-200"
                       }`}
@@ -83,29 +83,33 @@ export const MenuMobileComponent = (): JSX.Element => {
               </ul>
             )}
           </div>
-          <a className="h-14 flex items-center justify-center text-base font-medium duration-200 border border-primary/60 bg-primary/5 text-primary cursor-pointer rounded-md w-full">
-            Área do aluno
+          <a className="flex items-center justify-center w-full text-base font-medium duration-200 border rounded-md cursor-pointer h-14 border-primary/60 bg-primary/5 text-primary">
+            {languageSelected === "BR" ? "Área do aluno" : "Student area"}
           </a>
         </div>
-        <nav className="mt-4 px-4">
+        <nav className="px-4 mt-4">
           <ul className="text-primary">
             <li>
-              <a className="text-secondary border-b font-medium text-lg block px-2 py-3">
-                O curso
+              <a className="block px-2 py-3 text-lg font-medium border-b text-secondary">
+                {languageSelected === "BR" ? "O Curso" : "Course"}
               </a>
             </li>
             <li>
-              <a className="border-b font-medium text-lg block px-2 py-3">
-                A Loja
+              <a className="block px-2 py-3 text-lg font-medium border-b">
+                {languageSelected === "BR" ? "A Loja" : "Store"}
               </a>
             </li>
             <li>
-              <a className="border-b font-medium text-lg block px-2 py-3">
-                Traduções & Musicais
+              <a className="block px-2 py-3 text-lg font-medium border-b">
+                {languageSelected === "BR"
+                  ? "Traduções & Musicais"
+                  : "Translations and Music"}
               </a>
             </li>
             <li>
-              <a className="font-medium text-lg block px-2 py-3">Conjugação</a>
+              <a className="block px-2 py-3 text-lg font-medium">
+                {languageSelected === "BR" ? "Conjugação" : "Conjugation"}
+              </a>
             </li>
           </ul>
         </nav>

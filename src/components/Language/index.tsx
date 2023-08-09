@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { ContextLanguage } from "@/contexts/language.context";
+import { useContext, useState } from "react";
 import useOnclickOutside from "react-cool-onclickoutside";
 import { IoLanguage } from "react-icons/io5";
 
@@ -9,9 +10,7 @@ const optionsLanguage: OptionsLanguage_T[] = ["EN", "BR"];
 
 export const LanguageComponent = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false as boolean);
-  const [selected, setselected] = useState<OptionsLanguage_T>(
-    "BR" as OptionsLanguage_T
-  );
+  const { languageSelected, setLanguageSelected } = useContext(ContextLanguage);
 
   const ref = useOnclickOutside(() => {
     if (open) setOpen(false);
@@ -19,7 +18,7 @@ export const LanguageComponent = (): JSX.Element => {
   });
 
   return (
-    <div ref={ref} className="hidden mobile:block relative">
+    <div ref={ref} className="relative hidden mobile:block">
       {/* preview */}
       <div
         onClick={() => (!open ? setOpen(true) : null)}
@@ -28,19 +27,21 @@ export const LanguageComponent = (): JSX.Element => {
         } hover:bg-gray-50 duration-300 flex items-center`}
       >
         <IoLanguage size={20} className="text-primary" />
-        <span className="text-sm text-primary font-medium">{selected}</span>
+        <span className="text-sm font-medium text-primary">
+          {languageSelected}
+        </span>
       </div>
       {open && (
-        <ul className="z-50 absolute shadow-md duration-150 shadow-slate-200/40 bg-slate-50 translate-y-2 w-full">
+        <ul className="absolute z-50 w-full duration-150 translate-y-2 shadow-md shadow-slate-200/40 bg-slate-50">
           {optionsLanguage.map((op) => (
             <li
-              className="group hover:text-green-500 gap-x-1 cursor-pointer select-none p-1 px-2 flex items-center justify-between"
+              className="flex items-center justify-between p-1 px-2 cursor-pointer select-none group hover:text-green-500 gap-x-1"
               key={op}
-              onClick={() => setselected(op)}
+              onClick={() => setLanguageSelected(op)}
             >
               <span
                 className={
-                  selected === op
+                  languageSelected === op
                     ? "duration-300 group-hover:text-green-600 text-primary"
                     : "duration-300 group-hover:text-gray-500 text-gray-400"
                 }
@@ -49,7 +50,7 @@ export const LanguageComponent = (): JSX.Element => {
               </span>
               <span
                 className={`duration-300 rounded-full w-2 h-2 ${
-                  selected === op
+                  languageSelected === op
                     ? "group-hover:bg-green-600 bg-primary"
                     : "group-hover:bg-gray-300 bg-gray-200"
                 }`}
