@@ -1,16 +1,22 @@
 "use client";
 
+import { ContextLanguage } from "@/contexts/language.context";
+import { useContext } from "react";
 import DataListDoubts from "./data.json";
 import { useCollapse } from "react-collapsed";
 import { FiChevronDown } from "react-icons/fi";
 
+import LanguagePageHome from "../../../../language/home.page.json";
+
 interface PropsDoubts_I {}
 
 interface PropsArticleDoubt_I {
-  label: string;
-  text?: string;
+  question: string;
+  response: {
+    id: string;
+    value: string;
+  }[];
   id: string;
-  list: string[];
 }
 const ArticleDoubt: React.FC<PropsArticleDoubt_I> = (
   props: PropsArticleDoubt_I
@@ -22,7 +28,6 @@ const ArticleDoubt: React.FC<PropsArticleDoubt_I> = (
       className={`${
         isExpanded ? "" : ""
       } border-b last:border-b-0 border-gray/30`}
-      key={props.id}
     >
       <a
         className={`flex justify-between items-center gap-x-4 px-8 duration-200 relative py-6 text-lg tracking-wide ${
@@ -32,7 +37,7 @@ const ArticleDoubt: React.FC<PropsArticleDoubt_I> = (
       >
         <span className="flex items-center gap-x-7">
           <strong className="font-semibold">{props.id.padStart(2, "0")}</strong>{" "}
-          {props.label}
+          {props.question}
         </span>
         <FiChevronDown
           className={`text-primary duration-200 ${
@@ -45,13 +50,14 @@ const ArticleDoubt: React.FC<PropsArticleDoubt_I> = (
         className={` font-light text-base bg-emerald-50/75 tracking-wide`}
         {...getCollapseProps()}
       >
-        {props?.text && <p className="px-8 py-4">{props.text}</p>}
-        {props?.list && (
+        {props.response.length > 1 ? (
           <ul className="px-8 py-4 flex flex-col gap-y-0.5">
-            {props.list.map((item, i) => (
-              <li key={i}>- {item}</li>
+            {props.response.map((item) => (
+              <li key={item.id}>{item.value}</li>
             ))}
           </ul>
+        ) : (
+          <p className="px-8 py-4">{props.response[0].value}</p>
         )}
       </div>
     </article>
@@ -59,9 +65,11 @@ const ArticleDoubt: React.FC<PropsArticleDoubt_I> = (
 };
 
 export default function ComponentDoubts(props: PropsDoubts_I): JSX.Element {
+  const { languageSelected } = useContext(ContextLanguage);
+
   return (
     <div className="overflow-hidden border border-gray/30">
-      {(DataListDoubts as PropsArticleDoubt_I[]).map((doubt) => (
+      {LanguagePageHome[languageSelected].section11.items.map((doubt) => (
         <ArticleDoubt key={doubt.id} {...doubt} />
       ))}
     </div>

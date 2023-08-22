@@ -1,10 +1,16 @@
+"use client";
 import ComponentElementScroll from "../../components/ElementScroll";
+import LanguagePageHome from "../../../../language/home.page.json";
+import { ContextLanguage } from "@/contexts/language.context";
+import { useContext } from "react";
 
 interface PropsSection6PageHome_I {}
 
 export default function Section6PageHome(
   props: PropsSection6PageHome_I
 ): JSX.Element {
+  const { languageSelected } = useContext(ContextLanguage);
+
   return (
     <ComponentElementScroll name="section6">
       <section
@@ -16,177 +22,50 @@ export default function Section6PageHome(
         <div className="flex flex-col w-11/12 m-auto">
           <div className="flex flex-col items-center gap-y-12">
             <h2 className="max-w-3xl text-3xl font-medium text-center text-primary">
-              <span className="font-semibold text-secondary">Depoimentos</span>{" "}
-              de quem escolheu a{" "}
               <span className="font-semibold text-secondary">
-                Árabe com Merna
+                {
+                  LanguagePageHome[languageSelected].section6.title[
+                    "part-1-semibold"
+                  ]
+                }
               </span>{" "}
-              para aprender o idioma Árabe
+              {
+                LanguagePageHome[languageSelected].section6.title[
+                  "part-2-normal"
+                ]
+              }{" "}
+              <span className="font-semibold text-secondary">
+                {
+                  LanguagePageHome[languageSelected].section6.title[
+                    "part-3-semibold"
+                  ]
+                }
+              </span>{" "}
+              {
+                LanguagePageHome[languageSelected].section6.title[
+                  "part-4-normal"
+                ]
+              }
             </h2>
 
             <div className="w-full">
               <div className="flex w-full pt-2 pb-8 overflow-x-hidden gap-x-4">
-                <article
-                  style={{ minWidth: 310, width: 310 }}
-                  className="flex flex-col items-end p-5 text-lg text-white shadow-lg gap-y-3 shadow-black/30 bg-primary"
-                >
-                  <p className="font-light leading-relaxed tracking-wider line-clamp-[8]">
-                    Minha experiência com a{" "}
-                    <span className="text-secondary">Árabe com Merna</span> foi
-                    surpreendente. Aqui tive meu primeiro contato com um ensino
-                    profissional de alta qualidade. Graças a professora Merna,
-                    destravei...
-                  </p>
-                  <div className="flex flex-col items-end">
-                    <h3 className="font-semibold leading-tight tracking-widest">
-                      Rian Junplid
-                    </h3>
-                    <span
-                      className="font-light leading-tight"
-                      style={{ color: "#D8D8C0" }}
+                {LanguagePageHome[languageSelected].section6.items.map(
+                  (item) => (
+                    <article
+                      key={item.id}
+                      style={{ minWidth: 310, width: 310 }}
+                      className="flex flex-col items-end p-5 text-lg text-white shadow-lg gap-y-3 shadow-black/30 bg-primary"
                     >
-                      Salvador BA
-                    </span>
-                  </div>
-                </article>
-                <article
-                  style={{ minWidth: 310, width: 310 }}
-                  className="flex flex-col items-end p-5 text-lg text-white shadow-lg shadow-black/30 bg-primary"
-                >
-                  <p className="font-light leading-relaxed tracking-wider line-clamp-[8]">
-                    Minha experiência com a{" "}
-                    <span className="text-secondary">Árabe com Merna</span> foi
-                    surpreendente. Aqui tive meu primeiro contato com um ensino
-                    profissional de alta qualidade. Graças a professora Merna,
-                    destravei...
-                  </p>
-                  <div className="flex flex-col items-end">
-                    <h3 className="font-semibold leading-tight tracking-widest">
-                      Rian Junplid
-                    </h3>
-                    <span
-                      className="font-light leading-tight"
-                      style={{ color: "#D8D8C0" }}
-                    >
-                      Salvador BA
-                    </span>
-                  </div>
-                </article>
-                <article
-                  style={{ minWidth: 310, width: 310 }}
-                  className="flex flex-col items-end p-5 text-lg text-white shadow-lg shadow-black/30 bg-primary"
-                >
-                  <p className="font-light leading-relaxed tracking-wider line-clamp-[8]">
-                    Minha experiência com a{" "}
-                    <span className="text-secondary">Árabe com Merna</span> foi
-                    surpreendente. Aqui tive meu primeiro contato com um ensino
-                    profissional de alta qualidade. Graças a professora Merna,
-                    destravei...
-                  </p>
-                  <div className="flex flex-col items-end">
-                    <h3 className="font-semibold leading-tight tracking-widest">
-                      Rian Junplid
-                    </h3>
-                    <span
-                      className="font-light leading-tight"
-                      style={{ color: "#D8D8C0" }}
-                    >
-                      Salvador BA
-                    </span>
-                  </div>
-                </article>
-                <article
-                  style={{ minWidth: 310, width: 310 }}
-                  className="flex flex-col items-end p-5 text-lg text-white shadow-lg shadow-black/30 bg-primary"
-                >
-                  <p className="font-light leading-relaxed tracking-wider line-clamp-[8]">
-                    Minha experiência com a{" "}
-                    <span className="text-secondary">Árabe com Merna</span> foi
-                    surpreendente. Aqui tive meu primeiro contato com um ensino
-                    profissional de alta qualidade. Graças a professora Merna,
-                    destravei...
-                  </p>
-                  <div className="flex flex-col items-end">
-                    <h3 className="font-semibold leading-tight tracking-widest">
-                      Rian Junplid
-                    </h3>
-                    <span
-                      className="font-light leading-tight"
-                      style={{ color: "#D8D8C0" }}
-                    >
-                      Salvador BA
-                    </span>
-                  </div>
-                </article>
-                <article
-                  style={{ minWidth: 310, width: 310 }}
-                  className="flex flex-col items-end p-5 text-lg text-white shadow-lg shadow-black/30 bg-primary"
-                >
-                  <p className="font-light leading-relaxed tracking-wider line-clamp-[8]">
-                    Minha experiência com a{" "}
-                    <span className="text-secondary">Árabe com Merna</span> foi
-                    surpreendente. Aqui tive meu primeiro contato com um ensino
-                    profissional de alta qualidade. Graças a professora Merna,
-                    destravei...
-                  </p>
-                  <div className="flex flex-col items-end">
-                    <h3 className="font-semibold leading-tight tracking-widest">
-                      Rian Junplid
-                    </h3>
-                    <span
-                      className="font-light leading-tight"
-                      style={{ color: "#D8D8C0" }}
-                    >
-                      Salvador BA
-                    </span>
-                  </div>
-                </article>
-                <article
-                  style={{ minWidth: 310, width: 310 }}
-                  className="flex flex-col items-end p-5 text-lg text-white shadow-lg shadow-black/30 bg-primary"
-                >
-                  <p className="font-light leading-relaxed tracking-wider line-clamp-[8]">
-                    Minha experiência com a{" "}
-                    <span className="text-secondary">Árabe com Merna</span> foi
-                    surpreendente. Aqui tive meu primeiro contato com um ensino
-                    profissional de alta qualidade. Graças a professora Merna,
-                    destravei...
-                  </p>
-                  <div className="flex flex-col items-end">
-                    <h3 className="font-semibold leading-tight tracking-widest">
-                      Rian Junplid
-                    </h3>
-                    <span
-                      className="font-light leading-tight"
-                      style={{ color: "#D8D8C0" }}
-                    >
-                      Salvador BA
-                    </span>
-                  </div>
-                </article>
-                <article
-                  style={{ minWidth: 310, width: 310 }}
-                  className="flex flex-col items-end p-5 text-lg text-white shadow-lg shadow-black/30 bg-primary"
-                >
-                  <p className="font-light leading-relaxed tracking-wider line-clamp-[8]">
-                    Minha experiência com a{" "}
-                    <span className="text-secondary">Árabe com Merna</span> foi
-                    surpreendente. Aqui tive meu primeiro contato com um ensino
-                    profissional de alta qualidade. Graças a professora Merna,
-                    destravei...
-                  </p>
-                  <div className="flex flex-col items-end">
-                    <h3 className="font-semibold leading-tight tracking-widest">
-                      Rian Junplid
-                    </h3>
-                    <span
-                      className="font-light leading-tight"
-                      style={{ color: "#D8D8C0" }}
-                    >
-                      Salvador BA
-                    </span>
-                  </div>
-                </article>
+                      <p className="line-clamp-6">{item.text}</p>
+                      <div className="flex flex-col items-end">
+                        <h3 className="font-semibold leading-tight tracking-widest">
+                          {item.name}
+                        </h3>
+                      </div>
+                    </article>
+                  )
+                )}
               </div>
               <div className="flex items-center justify-center mt-2 gap-x-2">
                 <span className="block h-3 rounded-full w-14 bg-secondary"></span>

@@ -5,9 +5,13 @@ import { useContext, useState } from "react";
 import useOnclickOutside from "react-cool-onclickoutside";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp, IoLanguage } from "react-icons/io5";
+import LanguagePageHome from "../../language/home.page.json";
 
-type OptionsLanguage_T = "EN" | "BR";
-const optionsLanguage: OptionsLanguage_T[] = ["EN", "BR"];
+type OptionsLanguage_T = "pt-br";
+const optionsLanguage: OptionsLanguage_T[] = ["pt-br"];
+const viewOptions = {
+  "pt-br": "BR",
+};
 
 export const MenuMobileComponent = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false as boolean);
@@ -69,7 +73,7 @@ export const MenuMobileComponent = (): JSX.Element => {
                           : "duration-300 group-hover:text-gray-500 text-gray-400"
                       }
                     >
-                      {op}
+                      {viewOptions[op]}
                     </span>
                     <span
                       className={`duration-300 rounded-full w-2 h-2 ${
@@ -84,33 +88,22 @@ export const MenuMobileComponent = (): JSX.Element => {
             )}
           </div>
           <a className="flex items-center justify-center w-full text-base font-medium duration-200 border rounded-md cursor-pointer h-14 border-primary/60 bg-primary/5 text-primary">
-            {languageSelected === "BR" ? "Área do aluno" : "Student area"}
+            {LanguagePageHome[languageSelected].header["button-student-area"]}
           </a>
         </div>
         <nav className="px-4 mt-4">
           <ul className="text-primary">
-            <li>
-              <a className="block px-2 py-3 text-lg font-medium border-b text-secondary">
-                {languageSelected === "BR" ? "O Curso" : "Course"}
-              </a>
-            </li>
-            <li>
-              <a className="block px-2 py-3 text-lg font-medium border-b">
-                {languageSelected === "BR" ? "A Loja" : "Store"}
-              </a>
-            </li>
-            <li>
-              <a className="block px-2 py-3 text-lg font-medium border-b">
-                {languageSelected === "BR"
-                  ? "Traduções & Musicais"
-                  : "Translations and Music"}
-              </a>
-            </li>
-            <li>
-              <a className="block px-2 py-3 text-lg font-medium">
-                {languageSelected === "BR" ? "Conjugação" : "Conjugation"}
-              </a>
-            </li>
+            {LanguagePageHome[languageSelected].header.nav.map((item) => (
+              <li key={item.id}>
+                <a
+                  {...(item.link && { href: item.link })}
+                  // onClick={() => item.scrollTop && scroll.scrollTo(0)}
+                  className="block px-2 py-3 text-lg font-medium border-b text-secondary"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

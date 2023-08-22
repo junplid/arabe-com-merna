@@ -1,0 +1,1452 @@
+{
+  "en": {
+    "top": "Partnerships",
+    "header": {
+      "nav": [
+        {
+          "label": "Course",
+          "scrollTop": true,
+          "id": "1"
+        },
+        {
+          "label": "Store",
+          "link": "/#",
+          "scrollTop": false,
+          "id": "2"
+        },
+        {
+          "label": "Translations & Musicals",
+          "link": "/#",
+          "scrollTop": false,
+          "id": "3"
+        },
+        {
+          "label": "Conjugation",
+          "link": "/#",
+          "scrollTop": false,
+          "id": "4"
+        }
+      ],
+      "button-student-area": "Atudent area"
+    },
+    "section1": {
+      "paragraph": "We are the first methodology that guarantees fluency in the Arabic language and truly inserts you into the culture",
+      "title": {
+        "part-1-normal": "Become",
+        "part-2-semibold": "fluent in Arabic",
+        "part-3-normal": "efficiently and uncomplicated"
+      },
+      "button": "Start now"
+    },
+    "section2": {
+      "assessments": "Based on +1k reviews from our students",
+      "countries": "+20 Coutries"
+    },
+    "section3": {
+      "hook": "How it works",
+      "title": {
+        "part-1-normal": "Learn to",
+        "part-2-semibold": "read",
+        "part-3-semibold": "write",
+        "part-4-normal": "and",
+        "part-5-semibold": "converse",
+        "part-6-normal": "in Arabic with more confidence... A course that starts from",
+        "part-7-semibold": "nil",
+        "part-8-normal": "and go with you to the",
+        "part-9-semibold": "advanced"
+      },
+      "button": "book my spot",
+      "items": [
+        {
+          "id": "1",
+          "img": "/icons/talk.png",
+          "html": "<span>Methodology focused on <strong className=\"font-semibold text-primary\">conversation</strong></span>"
+        },
+        {
+          "id": "2",
+          "img": "/icons/live.png",
+          "html": "<span>Aulas <strong className=\"font-semibold text-primary\">ao vivo</strong> e gravadas</span>"
+        },
+        {
+          "id": "3",
+          "img": "/icons/books.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Materials</strong> and <strong className=\"font-semibold text-primary\">supporting content</strong></span>"
+        },
+        {
+          "id": "4",
+          "img": "/icons/users.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Student</strong> follow-up</span>"
+        },
+        {
+          "id": "5",
+          "img": "/icons/edit.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Detailed correction</strong> of exercises</span>"
+        },
+        {
+          "id": "6",
+          "img": "/icons/whatsapp.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">WhatsApp group</strong> for doubts</span>"
+        },
+        {
+          "id": "7",
+          "img": "/icons/box.png",
+          "html": "<span>Uncomplicated method, from <strong className=\"font-semibold text-primary\">basics</strong> to <strong className=\"font-semibold text-primary\">advanced</strong></span>"
+        },
+        {
+          "id": "8",
+          "img": "/icons/certification.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Certificates</strong> guaranteed <strong className=\"font-semibold text-primary\">completion</strong></span>"
+        }
+      ]
+    },
+    "section4": {
+      "title": {
+        "part-1-normal": "Why learn the",
+        "part-2-semibold": "Arabic language"
+      },
+      "paragraph-1": "Arabic is spoken by more than 400 million people worldwide, and it is the official language in over 20 countries.",
+      "list": {
+        "buttons-items": [
+          {
+            "id": "1",
+            "label": "Culture"
+          },
+          {
+            "id": "2",
+            "label": "Trips"
+          },
+          {
+            "id": "3",
+            "label": "Careers"
+          },
+          {
+            "id": "4",
+            "label": "Religion"
+          }
+        ],
+        "values": [
+          {
+            "id": "1",
+            "text": "Learning Arabic allows access to a rich and diverse culture, linked to Islamic civilization, literature, art and music. Knowing the language gives you a deep understanding of these traditions and establishes an authentic connection with native speakers.",
+            "img": ""
+          }
+        ]
+      },
+      "register": {
+        "title": "I want to enroll",
+        "inputs": {
+          "name": "Full name",
+          "whatsapp": "Whatsapp",
+          "email": "E-mail",
+          "country": "Coutry",
+          "state": "State",
+          "password": "Password",
+          "confirm-password": "Confirm password"
+        },
+        "label-level": "Arabic level",
+        "level": [
+          {
+            "id": "1",
+            "label": "Beginner",
+            "value": "beginner"
+          },
+          {
+            "id": "2",
+            "label": "Intermediary",
+            "value": "intermediary"
+          },
+          {
+            "id": "3",
+            "label": "Advanced",
+            "value": "advanced"
+          },
+          {
+            "id": "4",
+            "label": "I don't know how to identify my level",
+            "value": "not-level"
+          }
+        ],
+        "button-submit": "Create enrollment",
+        "warning": {
+          "part-1-normal": "By clicking on create enrollment you agree to all terms of use of the Arabic platform with Merna",
+          "part-2-link-semibold": "terms of use",
+          "part-3-normal": "from the Arab platform with Merna"
+        }
+      }
+    },
+    "section5": {
+      "title": {
+        "part-1-normal": "Our",
+        "part-2-semibold": "students'",
+        "part-3-normal": "results"
+      },
+      "paragraph": {
+        "part-1-normal": "They all",
+        "part-2-semibold": "managed",
+        "part-3-normal": "to speak in Arabic",
+        "part-4-semibold": "and so will you"
+      },
+      "carousels": [
+        {
+          "id": "1",
+          "items": [
+            {
+              "id": "1",
+              "paragraph": "I am a flight attendant and I study Egyptian and Standard Arabic with Professor Merna."
+            },
+            {
+              "id": "2",
+              "paragraph": "I'm a doctor from São Paulo and now I live in São Paulo, Merna is the best!"
+            },
+            {
+              "id": "3",
+              "paragraph": "I've been studying Arabic with Merna for 6 months and she helps me a lot."
+            },
+            {
+              "id": "4",
+              "paragraph": "I am learning Arabic because of the culture and I want to travel to Egypt."
+            },
+            {
+              "id": "5",
+              "paragraph": "I've been studying Arabic with Merna for 9 months and I'm very happy."
+            },
+            {
+              "id": "6",
+              "paragraph": "I can speak Arabic well because my teacher is excellent!"
+            },
+            {
+              "id": "7",
+              "paragraph": "I live in Japan and I am studying Arabic with Merna online."
+            },
+            {
+              "id": "8",
+              "paragraph": "I am a football coach and speaking Arabic is important to me."
+            },
+            {
+              "id": "9",
+              "paragraph": "She is very excellent and the classes are very good."
+            },
+            {
+              "id": "10",
+              "paragraph": "I like to learn languages and I love Arabic"
+            },
+            {
+              "id": "11",
+              "paragraph": "Now I can speak Arabic with my Egyptian friends, I'm so happy!"
+            },
+            {
+              "id": "12",
+              "paragraph": "I study Arabic with Merna because I am a flight attendant and I work in the United Arab Emirates."
+            },
+            {
+              "id": "13",
+              "paragraph": "You can also speak Arabic, but you have to study every day."
+            },
+            {
+              "id": "14",
+              "paragraph": "I am a dancer and a dance teacher and I study Arabic with Merna"
+            },
+            {
+              "id": "15",
+              "paragraph": "I made a very big evolution in just 2 years!"
+            },
+            {
+              "id": "16",
+              "paragraph": "I am very happy and I want to continue studying Arabic!"
+            },
+            {
+              "id": "17",
+              "paragraph": "I study Arabic with Merna and international relations in college"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "items": [
+            {
+              "id": "1",
+              "paragraph": "I am a film director and videographer and I study Arabic because I live in the Middle East."
+            },
+            {
+              "id": "2",
+              "paragraph": "I'm from the South of Brazil, but I study Arabic online with Merna"
+            },
+            {
+              "id": "3",
+              "paragraph": "I'm studying Arabic because I'm going to travel to Egypt with my university"
+            },
+            {
+              "id": "4",
+              "paragraph": "I am an engineer and director and I like to study languages a lot."
+            },
+            {
+              "id": "5",
+              "paragraph": "I saw the teacher on instagram and now I've been taking classes with her for a year"
+            },
+            {
+              "id": "6",
+              "paragraph": "I am a fitness trainer in Dubai and I study and study Arabic with Merna. The course is really good!"
+            },
+            {
+              "id": "7",
+              "paragraph": "I've been studying Arabic with Merna for 2 years and I recorded this video to say thank you."
+            },
+            {
+              "id": "8",
+              "paragraph": "I speak 4 languages and now I'm studying Arabic!"
+            },
+            {
+              "id": "9",
+              "paragraph": "I study Spanish and I'm studying Arabic with Merna"
+            },
+            {
+              "id": "10",
+              "paragraph": "I'm Brazilian, I live in Portugal and I like to learn languages."
+            },
+            {
+              "id": "11",
+              "paragraph": "I'm a belly dancing teacher and that's why I'm studying Arabic with Merna."
+            },
+            {
+              "id": "12",
+              "paragraph": "I work from home and study Arabic once a week with teacher Merna."
+            },
+            {
+              "id": "13",
+              "paragraph": "Arabic is a fascinating language and Merna teaches it very well."
+            },
+            {
+              "id": "14",
+              "paragraph": "I'm a psychologist and psychoanalyst, I've been Arab with Merna for a year and I'm very happy!"
+            },
+            {
+              "id": "15",
+              "paragraph": "I like to study and read in Arabic."
+            },
+            {
+              "id": "16",
+              "paragraph": "I love studying Arabic every day."
+            },
+            {
+              "id": "17",
+              "paragraph": "I'm Michelle, eyebrow designer and I study Arabic with Merna."
+            }
+          ]
+        }
+      ]
+    },
+    "section6": {
+      "title": {
+        "part-1-semibold": "Testimonials",
+        "part-2-normal": "from those who chose",
+        "part-3-semibold": "Árabe com Merna",
+        "part-4-normal": "to learn the Arabic language"
+      },
+      "items": [
+        {
+          "id": "1",
+          "text": "Great teacher. Uses the best methodology I've ever seen. She already has the classes ready, so she doesn't waste time. With her methodology, studying the language has been easy and pleasant, as the methodology she uses makes language learning easier. She always makes audios of the classes, of the words and phrases used during the class. This helps a lot, as I can always review any pronunciations I may have forgotten during the week. He is always available to answer questions that may arise during the week. I was very lucky to find her.",
+          "name": "Rodrigo Coutsoukos"
+        },
+        {
+          "id": "2",
+          "text": "Merna is simply WONDERFUL! I never imagined that I would learn so much in such a short time. In addition to being a lovely person, she is super practical, quick and explanatory. In less than 2 months I have already been able to read, write and speak several things!",
+          "name": "Natalia Perides"
+        },
+        {
+          "id": "3",
+          "text": "This teacher is TOP! The best! I've been living in Arab countries for 7 years now. I've had teachers around here too, but I've never been able to develop very well! Now I'm saying enough things in a short time! HIGHLY RECOMMEND!!",
+          "name": "Silas Paixão"
+        },
+        {
+          "id": "4",
+          "text": "She is an excellent teacher and a very sweet person too. Her teaching method facilitates learning the Arabic language and she is always willing to help. In addition, initially it focuses on content that gives independence to the person learning Arabic, which makes the student more confident. I also really like that Merna always sends audios with the class content and Images with everything seen, this way it is easier to review the content and ensure that nothing will be forgotten. Super nominate!",
+          "name": "Giordana Gusmão"
+        },
+        {
+          "id": "5",
+          "text": "Excellent teaching method, very attentive and always willing to answer questions. I always liked Arabic and thought it would be difficult to learn because it is a very different language and culture, but after the classes I felt more confident.",
+          "name": "Alessandra Stein"
+        },
+        {
+          "id": "6",
+          "text": "Very attentive and insightful teacher. She understands the student's need and demonstrates empathy. Her classes are dynamic and motivating. I am an Arabic student and I highly recommend your educational services. I have also given private lessons in English and Merna, for me it is an example.",
+          "name": "Maria Aparecida Lopes"
+        },
+        {
+          "id": "7",
+          "text": "Merna is one of the best language teachers I've ever had. Very competent, caring and committed. In addition to teaching the language, she also enriches the classes with cultural content. I am loving learning the Arabic language and a large part of my development is due to Merna, who is a teacher with a very high pedagogical and cultural level, Thank you!",
+          "name": "Deborah Iara"
+        },
+        {
+          "id": "8",
+          "text": "Excellent teacher with lots of teaching experience! It presents great quality material and is always available to answer questions even outside of class hours! In just a few classes, it was already possible to make a big leap in learning, thanks to his way of teaching the language, managing to understand the specific needs of the student! Highly recommend!",
+          "name": "Larissa Oliveira"
+        },
+        {
+          "id": "9",
+          "text": "The Arabic classes with Profe Merna are wonderful, I am very surprised because I always thought it would be impossible to learn this language. Excellent methodology, we always review the content and she insists on the pronunciation. Share the screen by writing everything to facilitate distance learning, record the pronunciation in audio, send support videos... I'm loving it!",
+          "name": "Aline Todeschini"
+        },
+        {
+          "id": "10",
+          "text": "I've just taken 10 Arabic classes with teacher Merna and I'm loving it. I feel that I have advanced a lot in the Language thanks to your method and attention. A serious teacher who is always on time and keeps appointments.",
+          "name": "Felipe Wolokita"
+        },
+        {
+          "id": "11",
+          "text": "Excellent teacher, very intelligent, flexible, patient, has good dynamics in class. I'm loving the experience. Classes are also very fun. I'm learning immensely and I can only thank you for being my teacher!",
+          "name": "Júlio Cesar de Andrade"
+        },
+        {
+          "id": "12",
+          "text": "Professor Merna is simply fantastic, always very available and very flexible. After 5 classes I already formed sentences and I thought that would be impossible. She is very clear in the way she teaches and makes sure we always understand each other. One day I'm going to speak Arabic and I know it's her I'm going to thank. I strongly recommend this teacher.",
+          "name": "Joana Lopes"
+        },
+        {
+          "id": "13",
+          "text": "Merna is very competent. She knows how to explain everything with patience, respects the student's choices and is generally a kind person. Her material is rich and exemplifies linguistic structures very well. Highly recommended. I never thought she could learn so much in 1 hour! impressed! I indicate a lot!",
+          "name": "Édson Reis Meira"
+        },
+        {
+          "id": "14",
+          "text": "I highly recommend classes with Merna! I've been taking Egyptian Arabic for 3 weeks and I didn't expect to have all this progress in a short time. I can now form several sentences on my own! She is always very attentive to the small details of pronunciation and writing. After classes, she always sends what we did + audio with the pronunciations of the class and material prepared by her.",
+          "name": "Isabella Pereira"
+        }
+      ]
+    },
+    "section7": {
+      "title": {
+        "part-1-normal": "This is how you will",
+        "part-2-semibold": "learn"
+      },
+      "paragraph": "With teaching structured in six modules, with current contents ranging from basic to advanced.",
+      "button": "Start now",
+      "items": [
+        {
+          "id": "1",
+          "title": "Literacy",
+          "paragraph": "At this level, the student will achieve autonomy in reading and writing Arabic, mastering all the letters, sounds and correct pronunciation of phonemes. You will develop solid skills to start your language journey with confidence"
+        },
+        {
+          "id": "2",
+          "title": "Basic level",
+          "paragraph": "At the end of this level, the student will talk about various everyday topics and will communicate in a basic way in common situations, ensuring an enriching and authentic experience."
+        },
+        {
+          "id": "3",
+          "title": "Pre-intermediate",
+          "paragraph": "You will have skills for everyday conversations in Arabic, understanding song lyrics and movie clips. In addition, you will have a solid grammatical domain and a wide vocabulary to understand more complex contexts."
+        },
+        {
+          "id": "4",
+          "title": "Intermediary",
+          "paragraph": "Upon completion of this level, you will master advanced Arabic conversations, have a broad technical vocabulary, and be able to understand and sing complete songs."
+        },
+        {
+          "id": "5",
+          "title": "post-intermediate",
+          "paragraph": "You can speak fluently, effortlessly, and use Arabic professionally by writing complex texts. These skills will ensure you communicate effectively, confidently and competently in the language."
+        },
+        {
+          "id": "6",
+          "title": "Advanced",
+          "paragraph": "You will be very familiar with the Arabic language and will be able to use it naturally in many situations and occasions. You will feel complete confidence and fun when communicating fluently in the language."
+        }
+      ]
+    },
+    "section8": {
+      "title": {
+        "part-1-normal": "By joining my new class, you receive a",
+        "part-2-semibold": "special discount",
+        "part-3-normal": "and still have access to",
+        "part-4-semibold": "exclusive bonuses",
+        "part-5-normal": "incredible"
+      },
+      "items": [
+        {
+          "id": "1",
+          "title": "Bonus 1",
+          "img": "/images/section-8/demostração-app.png",
+          "subtitle": "App of Arabic with Merna",
+          "paragraph": [
+            {
+              "id": "1",
+              "text": "You will have access to interactive lessons and practical exercises, which will reinforce the content learned in the classroom."
+            },
+            {
+              "id": "2",
+              "text": "In addition, the app offers audio and pronunciation features, allowing you to practice listening and improve your pronunciation."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Bonus 2",
+          "img": "/images/section-8/club-tradruções.png",
+          "subtitle": "Music translation club",
+          "paragraph": [
+            {
+              "id": "1",
+              "text": "An excellent opportunity is offered to students, who have the unique advantage of enjoying complete and completely free access to our innovative music translation panel."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "Bonus 3",
+          "img": "/images/section-8/egipcio-normal.png",
+          "subtitle": "Super discount",
+          "paragraph": [
+            {
+              "id": "1",
+              "text": "Egyptian Arabic students receive a 70% discount on the Standard Arabic course, while Standard Arabic students enjoy a 70% discount on the Egyptian Arabic course."
+            }
+          ]
+        }
+      ]
+    },
+    "section9": {
+      "subtitle": "Hey student!",
+      "title": "Professor Merna here! 💚",
+      "paragraphs": [
+        {
+          "id": "1",
+          "text": "I have been an Arabic teacher for almost 10 years. I started my work in the field of languages in 2014, teaching English and Arabic to foreigners in my hometown of Cairo. Being raised in a bilingual environment, I developed an innate ability to both learn and teach languages."
+        },
+        {
+          "id": "2",
+          "text": "After my arrival in Brazil, I continued my career as an Arabic and English teacher in several educational institutions. With the advancement of distance learning, especially during the pandemic period, I delved into this field and developed my own methodology for teaching the Arabic language."
+        },
+        {
+          "id": "3",
+          "text": "Inspired by my passion for making learning more accessible and engaging, I decided to start my own school. In this endeavor, I have achieved exceptional results in teaching the Arabic language, despite being recognized as one of the most challenging languages in the world."
+        }
+      ]
+    },
+    "section10": {
+      "title": "Explore"
+    },
+    "section11": {
+      "title": {
+        "part-1-semibold": "Doubts?",
+        "part-2-normal": "See our FAQ section"
+      },
+      "items": [
+        {
+          "id": "01",
+          "question": "Does the course have a fixed schedule?",
+          "response": [
+            {
+              "id": "1",
+              "value": "Classes are online via Zoom and are recorded, making them available to students, as well as all the material we will cover. If the student is unable to attend the live class, he will still be able to follow it through the recording."
+            }
+          ]
+        },
+        {
+          "id": "02",
+          "question": "Who guarantees that I will learn the language?",
+          "response": [
+            {
+              "id": "1",
+              "value": "Our school has a quality structure and a highly capable methodology to guarantee your learning. Our methodology provides quick and easy learning, the student speaks from the first class. Its method is innovative with a focus on results and our system is recognized as one of the most efficient in learning."
+            }
+          ]
+        },
+        {
+          "id": "03",
+          "question": "What is the methodology used in the course?",
+          "response": [
+            {
+              "id": "1",
+              "value": "With our methodology, after the literacy module, the student will learn to speak the language from the first class, with more modules focused on everyday situations. Our approach does not follow traditional methods; you will be trained to form your own sentences and participate in conversations during class. Guaranteed results in record time."
+            }
+          ]
+        },
+        {
+          "id": "04",
+          "question": "Do I need to be literate in Arabic to speak the language?",
+          "response": [
+            {
+              "id": "1",
+              "value": "No, we have already achieved fluency with several students without them being literate, using phonetic transliteration. However, we strongly recommend literacy in Arabic, as this will allow the student to gain independence in the language and improve their knowledge."
+            }
+          ]
+        },
+        {
+          "id": "05",
+          "question": "Who is the course for?",
+          "response": [
+            {
+              "id": "1",
+              "value": "- He has never had contact with an Arab in his life and is starting from scratch."
+            },
+            {
+              "id": "2",
+              "value": "- You've already studied the language, but you forgot a lot of things or you don't feel safe to speak."
+            },
+            {
+              "id": "3",
+              "value": "- Can communicate, but wants to gain more vocabulary and improve knowledge."
+            },
+            {
+              "id": "4",
+              "value": "- Want to watch series, movies, read books and understand what is being said without difficulty."
+            },
+            {
+              "id": "5",
+              "value": "- Increase the range of opportunities in the labor market."
+            },
+            {
+              "id": "6",
+              "value": "- He wants to travel without going through the trouble because he doesn't know the language."
+            },
+            {
+              "id": "7",
+              "value": "- If you want to do an exchange someday, you need to have a solid foundation in the language."
+            },
+            {
+              "id": "8",
+              "value": "- Want to master Arabic in a simple and uncomplicated way."
+            }
+          ]
+        },
+        {
+          "id": "06",
+          "question": "What do I do if I have a question during the course?",
+          "response": [
+            {
+              "id": "1",
+              "value": "Throughout your Arabic learning journey, you will have direct access to the teacher and our team. Feel free to send your questions, activities for correction and even pronunciation audios. We will be by your side, accompanying you, step by step and offering continuous support."
+            }
+          ]
+        },
+        {
+          "id": "07",
+          "question": "Does the course have a certificate?",
+          "response": [
+            {
+              "id": "1",
+              "value": "Yes, the student will receive a certificate attesting to the completion of the modules, course load and all relevant information needed."
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "paragraph": {
+        "part-1-normal": "Become",
+        "part-2-semibold": "fluent",
+        "part-3-normal": "in Arabic in an efficient and uncomplicated way"
+      },
+      "nav": {
+        "labelCourse": "Course",
+        "labelPlataform": "Plataform",
+        "course": [
+          {
+            "id": "1",
+            "value": "How it works",
+            "link": "section3"
+          },
+          {
+            "id": "2",
+            "value": "Why learn?",
+            "link": "section4"
+          },
+          {
+            "id": "3",
+            "value": "Results",
+            "link": "section5"
+          },
+          {
+            "id": "4",
+            "value": "Depositions",
+            "link": "section6"
+          },
+          {
+            "id": "7",
+            "value": "Modules",
+            "link": "section7"
+          },
+          {
+            "id": "8",
+            "value": "Bonus",
+            "link": "section8"
+          },
+          {
+            "id": "9",
+            "value": "The teacher",
+            "link": "section9"
+          },
+          {
+            "id": "5",
+            "value": "Explore",
+            "link": "section10"
+          },
+          {
+            "id": "6",
+            "value": "Doubts",
+            "link": "section11"
+          }
+        ],
+        "plataform": [
+          {
+            "id": "1",
+            "value": "Store",
+            "link": "/#"
+          },
+          {
+            "id": "2",
+            "value": "Translations & Musicals",
+            "link": "/#"
+          },
+          {
+            "id": "3",
+            "value": "Conjugation",
+            "link": "/#"
+          },
+          {
+            "id": "4",
+            "value": "Contact",
+            "link": "/#"
+          },
+          {
+            "id": "5",
+            "value": "Terms of use",
+            "link": "/#"
+          },
+          {
+            "id": "6",
+            "value": "privacy terms",
+            "link": "/#"
+          }
+        ]
+      }
+    }
+  },
+  "pt-br": {
+    "top": "Parcerias",
+    "header": {
+      "nav": [
+        {
+          "label": "O curso",
+          "scrollTop": true,
+          "id": "1"
+        },
+        {
+          "label": "Nossa Loja",
+          "link": "/#",
+          "scrollTop": false,
+          "id": "2"
+        },
+        {
+          "label": "Traduções & Musicais",
+          "link": "/#",
+          "scrollTop": false,
+          "id": "3"
+        },
+        {
+          "label": "Conjugação",
+          "link": "/#",
+          "scrollTop": false,
+          "id": "4"
+        }
+      ],
+      "button-student-area": "Área do aluno"
+    },
+    "section1": {
+      "paragraph": "Somos a primeira metodologia que garante a fluência no idioma Árabe e te insere de verdade na cultura",
+      "title": {
+        "part-1-normal": "Torne-se",
+        "part-2-semibold": "fluente em Árabe",
+        "part-3-normal": "de forma eficiente e descomplicado"
+      },
+      "button": "Comece agora"
+    },
+    "section2": {
+      "assessments": "Baseado em +1mil avaliações de nossos alunos",
+      "countries": "+20 Países"
+    },
+    "section3": {
+      "hook": "Como funciona",
+      "title": {
+        "part-1-normal": "Aprender a",
+        "part-2-semibold": "ler",
+        "part-3-semibold": "escrever",
+        "part-4-normal": "e",
+        "part-5-semibold": "conversar",
+        "part-6-normal": "em Árabe com mais confiança... Um curso que começa do",
+        "part-7-semibold": "zero",
+        "part-8-normal": "e vai com você até o",
+        "part-9-semibold": "avançado"
+      },
+      "button": "Reservar minha vaga",
+      "items": [
+        {
+          "id": "1",
+          "img": "/icons/talk.png",
+          "html": "<span>Metodologia focada na <strong className=\"font-semibold text-primary\">conversação</strong></span>"
+        },
+        {
+          "id": "2",
+          "img": "/icons/live.png",
+          "html": "<span>Aulas <strong className=\"font-semibold text-primary\">ao vivo</strong> e gravadas</span>"
+        },
+        {
+          "id": "3",
+          "img": "/icons/books.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Materiais</strong> e <strong className=\"font-semibold text-primary\">conteúdo de apoio</strong></span>"
+        },
+        {
+          "id": "4",
+          "img": "/icons/users.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Acompanhamento</strong> do aluno</span>"
+        },
+        {
+          "id": "5",
+          "img": "/icons/edit.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Correção detalhada</strong> de exercícios</span>"
+        },
+        {
+          "id": "6",
+          "img": "/icons/whatsapp.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Grupo no WhatsApp</strong> para dúvidas</span>"
+        },
+        {
+          "id": "7",
+          "img": "/icons/box.png",
+          "html": "<span>Método descomplicado, do <strong className=\"font-semibold text-primary\">básico</strong> ao <strong className=\"font-semibold text-primary\">avançado</strong></span>"
+        },
+        {
+          "id": "8",
+          "img": "/icons/certification.png",
+          "html": "<span><strong className=\"font-semibold text-primary\">Certificados</strong> deconclusão <strong className=\"font-semibold text-primary\">garantidos</strong></span>"
+        }
+      ]
+    },
+    "section4": {
+      "title": {
+        "part-1-normal": "Porque aprender a",
+        "part-2-semibold": "lingua árabe"
+      },
+      "paragraph-1": "O árabe é falado por mais de 400 milhões de pessoas em todo o mundo, sendo a língua oficial em mais de 20 países.",
+      "list": {
+        "buttons-items": [
+          {
+            "id": "1",
+            "label": "Cultura"
+          },
+          {
+            "id": "2",
+            "label": "Viagens"
+          },
+          {
+            "id": "3",
+            "label": "Carreiras"
+          },
+          {
+            "id": "4",
+            "label": "Religião"
+          }
+        ],
+        "values": [
+          {
+            "id": "1",
+            "text": "Aprender árabe permite acesso a uma cultura rica e diversificada, ligada à civilização islâmica, à literatura, à arte e à música. Conhecer o idioma proporciona compreensão profunda dessas tradições e estabelece conexão autêntica com falantes nativos.",
+            "img": ""
+          }
+        ]
+      },
+      "register": {
+        "title": "Quero me matricular",
+        "inputs": {
+          "name": "Nome completo",
+          "whatsapp": "Whatsapp",
+          "email": "E-mail",
+          "country": "País",
+          "state": "Estado",
+          "password": "Senha",
+          "confirm-password": "Confirmar senha"
+        },
+        "label-level": "Nível em árabe",
+        "level": [
+          {
+            "id": "1",
+            "label": "Iniciante",
+            "value": "beginner"
+          },
+          {
+            "id": "2",
+            "label": "Intermediário",
+            "value": "intermediary"
+          },
+          {
+            "id": "3",
+            "label": "Avançado",
+            "value": "Advanced"
+          },
+          {
+            "id": "4",
+            "label": "Não sei identificar meu nível",
+            "value": "not-level"
+          }
+        ],
+        "button-submit": "Criar matricula",
+        "warning": {
+          "part-1-normal": "Ao clicar em criar matricula você concorda com todos os termos de uso da plataforma Árabe com Merna",
+          "part-2-link-semibold": "termos de uso",
+          "part-3-normal": "da plataforma Árabe com Merna"
+        }
+      }
+    },
+    "section5": {
+      "title": {
+        "part-1-normal": "Os",
+        "part-2-semibold": "resultados",
+        "part-3-normal": "dos nossos alunos"
+      },
+      "paragraph": {
+        "part-1-normal": "Todos eles",
+        "part-2-semibold": "conseguiram",
+        "part-3-normal": "falar em árabe e",
+        "part-4-semibold": "você também vai"
+      },
+      "carousels": [
+        {
+          "id": "1",
+          "items": [
+            {
+              "id": "1",
+              "paragraph": "Eu sou comissário de bordo e estudo árabe egípcio e padrão com a professora Merna."
+            },
+            {
+              "id": "2",
+              "paragraph": "Eu sou médica de São Paulo e agora moro em São Paulo, Merna é a melhor!"
+            },
+            {
+              "id": "3",
+              "paragraph": "Faz 6 meses que eu estudo árabe com Merna e ela me ajuda muito."
+            },
+            {
+              "id": "4",
+              "paragraph": "Eu estou aprendendo árabe por causa da cultura e quero viajar para o Egito."
+            },
+            {
+              "id": "5",
+              "paragraph": "Faz 9 meses que eu estudo árabe com Merna e eu estou muito feliz."
+            },
+            {
+              "id": "6",
+              "paragraph": "Eu sei falar árabe bem porque a minha professora é excelente!"
+            },
+            {
+              "id": "7",
+              "paragraph": "Eu moro no Japão e estou estudando árabe com Merna on-line."
+            },
+            {
+              "id": "8",
+              "paragraph": "Eu sou treinador de futebol e falar árabe é importante para mim."
+            },
+            {
+              "id": "9",
+              "paragraph": "Ela é muito excelente e as aulas são muito boas."
+            },
+            {
+              "id": "10",
+              "paragraph": "Eu gosto de aprender idiomas e eu amo o árabe"
+            },
+            {
+              "id": "11",
+              "paragraph": "Agora eu posso falar árabe com os meus amigos egípcios, estou muito feliz!"
+            },
+            {
+              "id": "12",
+              "paragraph": "Eu estudo árabe com a Merna porque eu sou comissaria e trabalho no Emirados Árabes."
+            },
+            {
+              "id": "13",
+              "paragraph": "Vocês também podem falar árabe, mas tem que estudar todos os dias."
+            },
+            {
+              "id": "14",
+              "paragraph": "Eu sou bailarina e professora de dança e estudo árabe com Merna"
+            },
+            {
+              "id": "15",
+              "paragraph": "Eu fiz uma evolução muito grande em apenas 2 anos!"
+            },
+            {
+              "id": "16",
+              "paragraph": "Eu estou muito feliz e quero continuar estudando árabe!"
+            },
+            {
+              "id": "17",
+              "paragraph": "Eu estudo árabe com Merna e relações internacionais na faculdade"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "items": [
+            {
+              "id": "1",
+              "paragraph": "Eu sou diretor de filmes e cinegrafista e estudo árabe porque eu moro no oriente médio."
+            },
+            {
+              "id": "2",
+              "paragraph": "Eu sou do Sul do Brasil, mas eu estudo árabe on-line com Merna"
+            },
+            {
+              "id": "3",
+              "paragraph": "Eu estou estudando árabe porque eu vou viajar para Egito com a minha universidade"
+            },
+            {
+              "id": "4",
+              "paragraph": "Eu sou engenheiro e diretor e gosto de estudar idiomas muito"
+            },
+            {
+              "id": "5",
+              "paragraph": "Eu vi a professora no instagram e agora faz ano que eu faço aulas com ela"
+            },
+            {
+              "id": "6",
+              "paragraph": "Eu sou preparador físico em Dubai e estudo e estudo árabe com Merna. O curso é muito bom!"
+            },
+            {
+              "id": "7",
+              "paragraph": "Faz 2 anos que eu estudo árabe com Merna e estou gravada este vídeo para agradecer."
+            },
+            {
+              "id": "8",
+              "paragraph": "Eu falo 4 idiomas e agora estou estudando árabe!"
+            },
+            {
+              "id": "9",
+              "paragraph": "Eu curso letras espanhol, e estou estudando árabe com Merna"
+            },
+            {
+              "id": "10",
+              "paragraph": "Eu sou brasileiro, moro em Portugal e gosto de aprender idiomas."
+            },
+            {
+              "id": "11",
+              "paragraph": "Eu sou professora de dança do ventre e por isso eu estou estudando árabe com Merna."
+            },
+            {
+              "id": "12",
+              "paragraph": "Eu trabalho em casa e estudo árabe uma vez por semana com a professora Merna."
+            },
+            {
+              "id": "13",
+              "paragraph": "O árabe é um idioma fascinante e a Merna ensina muito bem."
+            },
+            {
+              "id": "14",
+              "paragraph": "Eu sou psicóloga e psicanalista, faz um ano que eu estou árabe com Merna e eu estou muito feliz!"
+            },
+            {
+              "id": "15",
+              "paragraph": "Eu gosto de estudar e ler em árabe."
+            },
+            {
+              "id": "16",
+              "paragraph": "Eu amo estudar árabe todos os dias."
+            },
+            {
+              "id": "17",
+              "paragraph": "Eu sou Michelle, designer de sobrancelhas e estudo árabe com Merna."
+            }
+          ]
+        }
+      ]
+    },
+    "section6": {
+      "title": {
+        "part-1-semibold": "Depoimentos",
+        "part-2-normal": "de quem escolheu a",
+        "part-3-semibold": "Árabe com Merna",
+        "part-4-normal": "para aprender o idioma Árabe"
+      },
+      "items": [
+        {
+          "id": "1",
+          "text": "Ótima professora. Usa a melhor metodologia que eu já vi. Ela já tem as aulas prontas e por isso não perde tempo. Com a metodologia dela estudar O idioma está sendo fácil e agradável, pois a metodologia que ela usa torna o aprendizado do idioma mais fácil. Ela sempre faz áudios das aulas, das palavras e frases utilizadas durante a aula. Isso ajuda muito, pois posso sempre revisar durante a semana alguma pronúncia que tenha esquecido. Fica sempre a disposição para tirar dúvidas que possam surgir durante a semana. Tive muita sorte de encontrar ela.",
+          "name": "Rodrigo Coutsoukos"
+        },
+        {
+          "id": "2",
+          "text": "A Merna é simplesmente MARAVILHOSA! Jamais imaginei que aprenderia tanto em pouco tempo. Além de ser um amor de pessoa, ela é super prática, rápida e explicativa. Em menos de 2 meses já consegui ler, escrever e falar várias coisas!",
+          "name": "Natalia Perides"
+        },
+        {
+          "id": "3",
+          "text": "Essa professora é TOP! A melhor! Estou morando em países árabes já há 7 anos. já tive professores até por aqui também, mas nunca consegui desenvolver muito bem! Agora já estou falando bastante coisas em pouco tempo! RECOMENDO MUITO!!",
+          "name": "Silas Paixão"
+        },
+        {
+          "id": "4",
+          "text": "É uma excelente professora e uma pessoa muito querida também. Seu método de ensino facilita a aprendizagem da língua árabe e ela está sempre disposta a ajudar. Além disso, inicialmente ela foca em conteúdos que dão independência para a pessoa que está aprendendo árabe, o que deixa o aluno mais q confiante. Também gosto muito que a Merna sempre envie áudios com o conteúdo da aula e Imagens com tudo o que foi visto, desta forma fica mais fácil de revisar o conteúdo e garantir que nada vai ser esquecido. Super indico!",
+          "name": "Giordana Gusmão"
+        },
+        {
+          "id": "5",
+          "text": "Excelente método de ensino, muito atenciosa e sempre disposta a tirar as dúvidas. Sempre gostei de árabe e achava que teria dificuldades em aprender por ser uma língua e cultura muito diferente, mas depois das aulas me senti mais confiante.",
+          "name": "Alessandra Stein"
+        },
+        {
+          "id": "6",
+          "text": "Professora bem atenta e perspicaz. Compreende a necessidade do aluno e demonstra empatia. Suas aulas são dinâmicas e motivadoras. Sou aluna de Árabe e super recomendo seus serviços educacionais. Também já dei aula particular de Inglês e Merna, para mim é um exemplo.",
+          "name": "Maria Aparecida Lopes"
+        },
+        {
+          "id": "7",
+          "text": "Merna é uma das melhores professoras de idiomas que já tive. Bastante competente, atenciosa e empenhada. Além de ensinar o idioma, também enriquece as aulas com conteúdo culturais. Eu estou amando aprender o Idioma árabe e boa parte do meu desenvolvimento se deve a Merna, que é uma professora de altíssimo nível pedagógico e cultural, Obrigada!",
+          "name": "Deborah Iara"
+        },
+        {
+          "id": "8",
+          "text": "Professora com didática excelente e muita experiência com ensino! Apresenta material de ótima qualidade e está sempre disponível para tirar dúvidas mesmo fora do horário das aulas! Em poucas aulas já foi possível fazer um grande salto de aprendizado, graças a sua forma de ensinar o idioma, conseguindo perceber as necessidades específicas do aluno!  Recomendo muito!",
+          "name": "Larissa Oliveira"
+        },
+        {
+          "id": "9",
+          "text": "As aulas de árabe com a Profe Merna são maravilhosas, estou muito admirada pois sempre achei que seria impossível aprender essa língua. Excelente metodologia, sempre revisamos o conteúdo e ela insiste com a pronúncia. Compartilha a tela escrevendo tudinho para facilitar a aprendizagem a distância, grava em áudio a pronúncia, envia vídeos de apoio...estou adorando!",
+          "name": "Aline Todeschini"
+        },
+        {
+          "id": "10",
+          "text": "Acabei de fazer 10 aulas de árabe com a professora Merna e estou adorando. Sinto que avancei bastante no Idioma graças ao seu método e atenção. Uma professora séria que está sempre no horário e cumpre com os compromissos.",
+          "name": "Felipe Wolokita"
+        },
+        {
+          "id": "11",
+          "text": "Professora excelente, muito inteligente, flexível, paciente, possui boa dinâmica nas aulas. Estou amando a experiência. As aulas se tornam também bem divertidas. Estou aprendendo imensamente e só tenho a agradecer por ser minha professora!",
+          "name": "Júlio Cesar de Andrade"
+        },
+        {
+          "id": "12",
+          "text": "A professora Merna é simplesmente fantástica, sempre muito disponível e muito flexível. Ao fim de 5 aulas já formo frases e julguei que isso seria impossível. É muito clara na forma de ensino e certifica se sempre se entendemos. Um dia vou falar árabe e sei que é a ela que vou agradecer. Recomendo vivamente esta professora.",
+          "name": "Joana Lopes"
+        },
+        {
+          "id": "13",
+          "text": "Merna é muito competente. Sabe explicar tudo com paciência, respeita as escolhas do aluno e em geral é uma pessoa amável. Seu material é rico e exemplifica muito bem as estruturas linguísticas. Altamente recomendada. Nunca pensei que pudesse aprender tanto em 1h! impressionada! Índico muito!",
+          "name": "Édson Reis Meira"
+        },
+        {
+          "id": "14",
+          "text": "Super recomendo as aulas com a Merna! Faço árabe egípcio há 3 semanas e não esperava ter todo esse avanço em pouco tempo. Já consigo formar diversas frases sozinhas! É sempre muito atenciosa aos pequenos detalhes da pronúncia e da escrita. Depois das aulas sempre manda o que fizemos + áudio com as pronúncias da aula e material preparado por ela.",
+          "name": "Isabella Pereira"
+        }
+      ]
+    },
+    "section7": {
+      "title": {
+        "part-1-normal": "É assim que você vai",
+        "part-2-semibold": "aprender"
+      },
+      "paragraph": "Com o ensino estruturado em seis modulos, com conteúdos atuais que vão do básico ao avançado.",
+      "button": "Comece agora",
+      "items": [
+        {
+          "id": "1",
+          "title": "Alfabetização",
+          "paragraph": "Neste nível, o aluno alcançará autonomia na leitura e escrita do árabe, dominando todas as letras, sons e pronúncia correta dos fonemas. Desenvolverá habilidades sólidas para iniciar sua jornada no idioma com confiança"
+        },
+        {
+          "id": "2",
+          "title": "Nivel Básico",
+          "paragraph": "Ao final desse nível, o aluno falará sobre vários temas do dia a dia e se comunicará de forma básica em situações comuns, garantindo uma experiência enriquecedora e autêntica."
+        },
+        {
+          "id": "3",
+          "title": "Pré-intermediário",
+          "paragraph": "Você terá habilidades para conversas cotidianas em árabe, compreender letras de músicas e trechos de filmes. Além disso, terá domínio gramatical sólido e amplo vocabulário para entender contextos mais complexos."
+        },
+        {
+          "id": "4",
+          "title": "Intermediário",
+          "paragraph": "Ao concluir este nível, você dominará conversas avançadas em árabe, terá amplo vocabulário técnico e conseguirá compreender e cantar músicas completas."
+        },
+        {
+          "id": "5",
+          "title": "Pós-intermediário",
+          "paragraph": "Você falará fluentemente, sem esforço, e usará o árabe profissionalmente, escrevendo textos complexos. Essas habilidades garantirão uma comunicação eficaz, confiante e competente no idioma."
+        },
+        {
+          "id": "6",
+          "title": "Avançado",
+          "paragraph": "Você estará muito familiarizado com o idioma árabe e será capaz de utilizá-lo de maneira natural em várias situações e ocasiões. Sentirá confiança total e diversão ao se comunicar com fluência na língua."
+        }
+      ]
+    },
+    "section8": {
+      "title": {
+        "part-1-normal": "Entrando para a minha nova turma, você recebe um",
+        "part-2-semibold": "desconto especial",
+        "part-3-normal": "e ainda tem acesso a",
+        "part-4-semibold": "bônus exclusivos",
+        "part-5-normal": "incríveis"
+      },
+      "items": [
+        {
+          "id": "1",
+          "title": "Bônus 1",
+          "img": "/images/section-8/demostração-app.png",
+          "subtitle": "App do Árabe com Merna",
+          "paragraph": [
+            {
+              "id": "1",
+              "text": "Você terá acesso a lições interativas e exercícios práticos, que irão reforçar o conteúdo aprendido em sala de aula."
+            },
+            {
+              "id": "2",
+              "text": "Além disso, o aplicativo oferece recursos de áudio e pronúncia, permitindo que você pratique a escuta e melhore sua pronúncia."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Bônus 2",
+          "img": "/images/section-8/club-tradruções.png",
+          "subtitle": "Clube de traduções de música",
+          "paragraph": [
+            {
+              "id": "1",
+              "text": "Uma excelente oportunidade é oferecida aos alunos, que têm a vantagem exclusiva de desfrutar do acesso completo e totalmente gratuito ao nosso inovador painel de traduções musicais."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "Bônus 3",
+          "img": "/images/section-8/egipcio-normal.png",
+          "subtitle": "Super desconto",
+          "paragraph": [
+            {
+              "id": "1",
+              "text": "Alunos do árabe egípcio recebem um desconto de 70% no curso de árabe padrão, enquanto alunos do árabe padrão desfrutam de um desconto de 70% no curso de árabe egípcio."
+            }
+          ]
+        }
+      ]
+    },
+    "section9": {
+      "subtitle": "Ei, aluno!",
+      "title": "Professora Merna aqui! 💚",
+      "paragraphs": [
+        {
+          "id": "1",
+          "text": "Sou professora de árabe há quase 10 anos. Comecei o meu trabalho no campo dos idiomas em 2014, lecionando inglês e árabe para estrangeiros em minha cidade natal, Cairo. Por ser criada em um ambiente bilíngue, desenvolvi uma habilidade inata tanto para aprender quanto para ensinar idiomas."
+        },
+        {
+          "id": "2",
+          "text": "Após minha chegada ao Brasil, continuei minha trajetória como professora de árabe e inglês em diversas instituições educacionais. Com o avanço do ensino à distância, principalmente durante o período de pandemia, aprofundei-me nesse campo e desenvolvi minha própria metodologia de ensino do idioma árabe. "
+        },
+        {
+          "id": "3",
+          "text": "Inspirada por minha paixão em tornar o aprendizado mais acessível e envolvente, decidi inaugurar minha própria escola. Nesse empreendimento, tenho obtido resultados excepcionais no ensino do idioma árabe, apesar de ser reconhecido como uma das línguas mais desafiadoras do mundo."
+        }
+      ]
+    },
+    "section10": {
+      "title": "Explore"
+    },
+    "section11": {
+      "title": {
+        "part-1-semibold": "Dúvidas?",
+        "part-2-normal": "Veja nossa seção de perguntas frequentes"
+      },
+      "items": [
+        {
+          "id": "01",
+          "question": "O curso tem horário fixo?",
+          "response": [
+            {
+              "id": "1",
+              "value": "As aulas são online pelo Zoom e são gravadas, ficando disponíveis para os alunos, assim como todo o material que abordaremos. Caso o aluno não consiga assistir à aula ao vivo, ainda poderá acompanhá-la através da gravação."
+            }
+          ]
+        },
+        {
+          "id": "02",
+          "question": "Quem garante que eu vou aprender o idioma?",
+          "response": [
+            {
+              "id": "1",
+              "value": "A nossa escola possui uma estrutura de qualidade e uma metodologia altamente capacita para garantir seu aprendizado. A nossa metodologia proporciona aprendizado rápido e fácil, o aluno fala desde a primeira aula. Seu método é inovador com foco nos resultados e nosso sistema é reconhecido como um dos mais eficientes em aprendizado."
+            }
+          ]
+        },
+        {
+          "id": "03",
+          "question": "Qual é a metodologia usada no curso?",
+          "response": [
+            {
+              "id": "1",
+              "value": "Com a nossa metodologia, após o módulo da alfabetização, o aluno aprenderá a falar o idioma desde a primeira aula, com mais módulos focados em situações cotidianas. Nossa abordagem não segue métodos tradicionais; você será treinado para formar suas próprias frases e participar de conversas durante as aulas. Resultados garantidos em tempo recorde."
+            }
+          ]
+        },
+        {
+          "id": "04",
+          "question": "Eu preciso ser alfabetizado em árabe para falar o idioma?",
+          "response": [
+            {
+              "id": "1",
+              "value": "Não, já alcançamos fluência com vários alunos sem que eles fossem alfabetizados, utilizando a transliteração fonética. No entanto, recomendamos fortemente a alfabetização no idioma árabe, pois isso permitirá que o aluno ganhe independência no idioma e aprimore seus conhecimentos."
+            }
+          ]
+        },
+        {
+          "id": "05",
+          "question": "Para quem é o curso?",
+          "response": [
+            {
+              "id": "1",
+              "value": "- Nunca teve contato com árabe na vida e está começando do zero."
+            },
+            {
+              "id": "2",
+              "value": "- Já estudou o idioma, mas esqueceu muitas coisas ou não se sente seguro(a) para falar."
+            },
+            {
+              "id": "3",
+              "value": "- Consegue se comunicar, mas quer ganhar mais vocabulário e melhorar o conhecimento."
+            },
+            {
+              "id": "4",
+              "value": "- Quer assistir a séries, filmes, ler livros e entender o que está sendo dito sem dificuldade."
+            },
+            {
+              "id": "5",
+              "value": "- Aumentar o leque de oportunidades no mercado de trabalho."
+            },
+            {
+              "id": "6",
+              "value": "- Quer viajar sem passar perrengue por não saber o idioma."
+            },
+            {
+              "id": "7",
+              "value": "- Quer fazer intercâmbio algum dia, é preciso ter uma base sólida no idioma."
+            },
+            {
+              "id": "8",
+              "value": "- Quer dominar o árabe de maneira simples e descomplicada."
+            }
+          ]
+        },
+        {
+          "id": "06",
+          "question": "Como faço se tiver alguma dúvida durante o curso?",
+          "response": [
+            {
+              "id": "1",
+              "value": "Durante toda a sua jornada de aprendizado do árabe, você terá acesso direto à professora e à nossa equipe. Fique à vontade para enviar suas dúvidas, atividades para correção e até áudios de pronúncia. Estaremos ao seu lado, acompanhando você, passo a passo e oferecendo suporte contínuo."
+            }
+          ]
+        },
+        {
+          "id": "07",
+          "question": "O curso possui certificado?",
+          "response": [
+            {
+              "id": "1",
+              "value": "Sim, o aluno receberá um certificado que atesta a conclusão dos módulos, carga horária e todas as informações relevantes necessárias."
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "paragraph": {
+        "part-1-normal": "Torne-se",
+        "part-2-semibold": "fluente",
+        "part-3-normal": "em Árabe de um modo eficiente e descomplicado"
+      },
+      "nav": {
+        "labelCourse": "Curso",
+        "labelPlataform": "Plataforma",
+        "course": [
+          {
+            "id": "1",
+            "value": "Como funciona",
+            "link": "section3"
+          },
+          {
+            "id": "2",
+            "value": "Por que aprender?",
+            "link": "section4"
+          },
+          {
+            "id": "3",
+            "value": "Resultados",
+            "link": "section5"
+          },
+          {
+            "id": "4",
+            "value": "Depoimentos",
+            "link": "section6"
+          },
+          {
+            "id": "7",
+            "value": "Módulos",
+            "link": "section7"
+          },
+          {
+            "id": "8",
+            "value": "Bônus",
+            "link": "section8"
+          },
+          {
+            "id": "9",
+            "value": "A professora",
+            "link": "section9"
+          },
+          {
+            "id": "5",
+            "value": "Explore",
+            "link": "section10"
+          },
+          {
+            "id": "6",
+            "value": "Dúvidas",
+            "link": "section11"
+          }
+        ],
+        "plataform": [
+          {
+            "id": "1",
+            "value": "Nossa Loja",
+            "link": "/#"
+          },
+          {
+            "id": "2",
+            "value": "Traduções & Musicais",
+            "link": "/#"
+          },
+          {
+            "id": "3",
+            "value": "Conjugação",
+            "link": "/#"
+          },
+          {
+            "id": "4",
+            "value": "Contato",
+            "link": "/#"
+          },
+          {
+            "id": "5",
+            "value": "Termos de uso",
+            "link": "/#"
+          },
+          {
+            "id": "6",
+            "value": "Termos de privacidade",
+            "link": "/#"
+          }
+        ]
+      }
+    }
+  }
+}

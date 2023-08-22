@@ -1,11 +1,17 @@
+"use client";
 import ComponentElementScroll from "../../components/ElementScroll";
 import Image from "next/image";
+import LanguagePageHome from "../../../../language/home.page.json";
+import { ContextLanguage } from "@/contexts/language.context";
+import { useContext } from "react";
 
 interface PropsSection9PageHome_I {}
 
 export default function Section9PageHome(
   props: PropsSection9PageHome_I
 ): JSX.Element {
+  const { languageSelected } = useContext(ContextLanguage);
+
   return (
     <ComponentElementScroll name="section9">
       <section
@@ -23,33 +29,26 @@ export default function Section9PageHome(
           />
           <div className="flex flex-col gap-y-6">
             <h3 className="font-bold text-primary">
-              <span className="text-2xl">Ei, aluno!</span> <br />
-              <span className="text-3xl">Professora Merna aqui! 💚</span>
+              <span className="text-2xl">
+                {LanguagePageHome[languageSelected].section9.subtitle}
+              </span>{" "}
+              <br />
+              <span className="text-3xl">
+                {LanguagePageHome[languageSelected].section9.title}
+              </span>
             </h3>
             <div className="flex flex-col gap-y-5">
-              <p className="text-lg" style={{ color: "#2A2A2A" }}>
-                Sou professora de árabe há quase 10 anos. Comecei o meu trabalho
-                no campo dos idiomas em 2014, lecionando inglês e árabe para
-                estrangeiros em minha cidade natal, Cairo. Por ser criada em um
-                ambiente bilíngue, desenvolvi uma habilidade inata tanto para
-                aprender quanto para ensinar idiomas.
-              </p>
-              <p className="text-lg" style={{ color: "#2A2A2A" }}>
-                Após minha chegada ao Brasil, continuei minha trajetória como
-                professora de árabe e inglês em diversas instituições
-                educacionais. Com o avanço do ensino à distância, principalmente
-                durante o período de pandemia, aprofundei-me nesse campo e
-                desenvolvi minha própria metodologia de ensino do idioma árabe.
-              </p>
-              <p className="text-lg" style={{ color: "#2A2A2A" }}>
-                Inspirada por minha paixão em tornar o aprendizado mais
-                acessível e envolvente, decidi inaugurar minha própria escola.
-                Nesse empreendimento, tenho obtido resultados excepcionais no
-                ensino do idioma{" "}
-                <strong className="font-semibold text-primary">árabe</strong>,
-                apesar de ser reconhecido como uma das línguas mais desafiadoras
-                do mundo.
-              </p>
+              {LanguagePageHome[languageSelected].section9.paragraphs.map(
+                (paragraph) => (
+                  <p
+                    key={paragraph.id}
+                    className="text-lg"
+                    style={{ color: "#2A2A2A" }}
+                  >
+                    {paragraph.text}
+                  </p>
+                )
+              )}
             </div>
           </div>
         </div>

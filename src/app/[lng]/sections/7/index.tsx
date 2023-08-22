@@ -1,14 +1,19 @@
+"use client";
 import Image from "next/image";
-import DATA_LEVELS from "../../data/levels.json";
 
 import { PiMonitorPlayBold } from "react-icons/pi";
 import ComponentElementScroll from "../../components/ElementScroll";
+import LanguagePageHome from "../../../../language/home.page.json";
+import { ContextLanguage } from "@/contexts/language.context";
+import { useContext } from "react";
 
 interface PropsSection7PageHome_I {}
 
 export default function Section7PageHome(
   props: PropsSection7PageHome_I
 ): JSX.Element {
+  const { languageSelected } = useContext(ContextLanguage);
+
   return (
     <ComponentElementScroll name="section7">
       <section
@@ -26,18 +31,25 @@ export default function Section7PageHome(
               <div className="flex flex-col items-baseline gap-y-7">
                 <div className="flex flex-col gap-y-2">
                   <h2 className="text-3xl">
-                    É assim que você vai{" "}
+                    {
+                      LanguagePageHome[languageSelected].section7.title[
+                        "part-1-normal"
+                      ]
+                    }{" "}
                     <strong className="font-semibold text-secondary">
-                      aprender
+                      {
+                        LanguagePageHome[languageSelected].section7.title[
+                          "part-2-semibold"
+                        ]
+                      }
                     </strong>
                   </h2>
                   <p className="max-w-xl text-lg text-white lg:text-xl">
-                    Com o ensino estruturado em seis modulos, com conteúdos
-                    atuais que vão do básico ao avançado.
+                    {LanguagePageHome[languageSelected].section7.paragraph}
                   </p>
                 </div>
                 <a className="flex gap-5 py-2 text-sm font-medium duration-200 bg-white rounded-md cursor-pointer px-7 text-primary">
-                  Comece agora
+                  {LanguagePageHome[languageSelected].section7.button}
                 </a>
               </div>
               <Image
@@ -48,19 +60,23 @@ export default function Section7PageHome(
               />
             </div>
             <div className="-translate-y-2 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
-              {DATA_LEVELS.map((level) => (
-                <article
-                  style={{ background: "#fff" }}
-                  className="flex flex-col p-5 shadow-lg gap-y-2 rounded-3xl text-primary"
-                  key={level.id}
-                >
-                  <div className="flex items-center gap-x-2">
-                    <PiMonitorPlayBold size={29} />
-                    <h3 className="text-lg font-semibold">{level.title}</h3>
-                  </div>
-                  <p style={{ fontSize: 15, color: "#323232" }}>{level.text}</p>
-                </article>
-              ))}
+              {LanguagePageHome[languageSelected].section7.items.map(
+                (level) => (
+                  <article
+                    style={{ background: "#fff" }}
+                    className="flex flex-col p-5 shadow-lg gap-y-2 rounded-3xl text-primary"
+                    key={level.id}
+                  >
+                    <div className="flex items-center gap-x-2">
+                      <PiMonitorPlayBold size={29} />
+                      <h3 className="text-lg font-semibold">{level.title}</h3>
+                    </div>
+                    <p style={{ fontSize: 15, color: "#323232" }}>
+                      {level.paragraph}
+                    </p>
+                  </article>
+                )
+              )}
             </div>
           </div>
         </div>

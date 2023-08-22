@@ -30,6 +30,8 @@ import ComponentCountryCatar from "../countries/Catar";
 import ComponentCountryBahrein from "../countries/Bahrein";
 import { useContext } from "react";
 import { ContextExploreMap, Countries_T } from "@/contexts/exploreMap.context";
+import LanguagePageHome from "../../../../../language/home.page.json";
+import { ContextLanguage } from "@/contexts/language.context";
 
 export interface PropsCountryComponent {
   active: boolean;
@@ -38,6 +40,7 @@ export interface PropsCountryComponent {
 
 export default function ComponentMapExplore(): JSX.Element {
   const { countrySelected, setCountrySelected } = useContext(ContextExploreMap);
+  const { languageSelected } = useContext(ContextLanguage);
 
   return (
     <div className="flex flex-col items-center gap-y-2">

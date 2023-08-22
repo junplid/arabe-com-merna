@@ -2,6 +2,7 @@
 
 import { ContextLanguage } from "@/contexts/language.context";
 import { useContext } from "react";
+import LanguagePageHome from "../../language/home.page.json";
 
 export const NavTabletComponent = (): JSX.Element => {
   const { languageSelected } = useContext(ContextLanguage);
@@ -12,28 +13,17 @@ export const NavTabletComponent = (): JSX.Element => {
     >
       <nav className="relative">
         <ul className="flex items-center justify-around text-sm font-semibold sm:text-base text-primary gap-x-2 sm:gap-x-5">
-          <li>
-            <a className="cursor-pointer text-secondary">
-              {languageSelected === "BR" ? "O Curso" : "Course"}
-            </a>
-          </li>
-          <li>
-            <a className="cursor-pointer">
-              {languageSelected === "BR" ? "A Loja" : "Store"}
-            </a>
-          </li>
-          <li>
-            <a className="cursor-pointer">
-              {languageSelected === "BR"
-                ? "Traduções & Musicais"
-                : "Translations and Music"}
-            </a>
-          </li>
-          <li>
-            <a className="cursor-pointer">
-              {languageSelected === "BR" ? "Conjugação" : "Conjugation"}
-            </a>
-          </li>
+          {LanguagePageHome[languageSelected].header.nav.map((item) => (
+            <li key={item.id}>
+              <a
+                {...(item.link && { href: item.link })}
+                // onClick={() => item.scrollTop && scroll.scrollTo(0)}
+                className="cursor-pointer text-secondary"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

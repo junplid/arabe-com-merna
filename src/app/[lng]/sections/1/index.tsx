@@ -2,6 +2,7 @@
 import { ContextLanguage } from "@/contexts/language.context";
 import Image from "next/image";
 import { useContext } from "react";
+import LanguagePageHome from "../../../../language/home.page.json";
 
 interface PropsSection1_I {}
 
@@ -15,30 +16,23 @@ export default function Section1PageHome(props: PropsSection1_I): JSX.Element {
           style={{ maxWidth: 563 }}
           className="flex flex-col items-baseline py-4 lg:py-0 gap-y-4"
         >
-          {languageSelected === "BR" ? (
-            <h1 className="text-3xl font-medium leading-tight lg:text-4xl text-primary">
-              Torne-se{" "}
-              <span className="font-semibold text-secondary">
-                fluente em Árabe
-              </span>{" "}
-              de forma eficiente e descomplicado
-            </h1>
-          ) : (
-            <h1 className="text-3xl font-medium leading-tight lg:text-4xl text-primary">
-              Torne-se{" "}
-              <span className="font-semibold text-secondary">
-                fluente em Árabe
-              </span>{" "}
-              de forma eficiente e descomplicado
-            </h1>
-          )}
+          <h1 className="text-3xl font-medium leading-tight lg:text-4xl text-primary">
+            {LanguagePageHome[languageSelected].section1.title["part-1-normal"]}{" "}
+            <span className="font-semibold text-secondary">
+              {
+                LanguagePageHome[languageSelected].section1.title[
+                  "part-2-semibold"
+                ]
+              }
+            </span>{" "}
+            {LanguagePageHome[languageSelected].section1.title["part-3-normal"]}
+          </h1>
 
           <p className="text-lg text-primary lg:text-xl">
-            Somos a primeira metodologia que garante a fluência no idioma Árabe
-            e te insere de verdade na cultura
+            {LanguagePageHome[languageSelected].section1.paragraph}
           </p>
           <a className="py-2 text-sm font-medium text-white duration-200 rounded-md cursor-pointer hover:bg-primary-hover bg-primary px-7">
-            Comece agora
+            {LanguagePageHome[languageSelected].section1.button}
           </a>
         </div>
         <div className="px-5 md:max-w-md lg:max-w-2xl lg:px-0">

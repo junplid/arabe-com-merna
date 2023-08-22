@@ -5,8 +5,12 @@ import { useContext, useState } from "react";
 import useOnclickOutside from "react-cool-onclickoutside";
 import { IoLanguage } from "react-icons/io5";
 
-type OptionsLanguage_T = "EN" | "BR";
-const optionsLanguage: OptionsLanguage_T[] = ["EN", "BR"];
+type OptionsLanguage_T = "pt-br" | "en";
+const optionsLanguage: OptionsLanguage_T[] = ["pt-br", "en"];
+const viewOptions = {
+  "pt-br": "BR",
+  en: "EN",
+};
 
 export const LanguageComponent = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false as boolean);
@@ -46,7 +50,7 @@ export const LanguageComponent = (): JSX.Element => {
                     : "duration-300 group-hover:text-gray-500 text-gray-400"
                 }
               >
-                {op}
+                {viewOptions[op]}
               </span>
               <span
                 className={`duration-300 rounded-full w-2 h-2 ${

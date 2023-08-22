@@ -1,7 +1,7 @@
 "use client";
 import { createContext, useMemo, useState } from "react";
 
-type OptionsLanguage_T = "EN" | "BR";
+type OptionsLanguage_T = "pt-br" | "en";
 
 interface PropsContextLanguage_I {
   languageSelected: OptionsLanguage_T;
@@ -9,7 +9,7 @@ interface PropsContextLanguage_I {
 }
 
 export const ContextLanguage = createContext({
-  languageSelected: "BR",
+  languageSelected: "pt-br",
 } as PropsContextLanguage_I);
 
 interface PropsProviderContextLanguage_I {
@@ -20,7 +20,7 @@ export const ProviderContextLanguage: React.FC<
   PropsProviderContextLanguage_I
 > = ({ children }): JSX.Element => {
   const [languageSelected, setLanguageSelected] = useState<OptionsLanguage_T>(
-    "BR" as OptionsLanguage_T
+    "pt-br" as OptionsLanguage_T
   );
 
   const data_values = useMemo(() => {

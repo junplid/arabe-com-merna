@@ -1,13 +1,18 @@
+"use client";
 import ComponentElementScroll from "../../components/ElementScroll";
-import { data_how_it_works } from "../../data/howItWorks";
 import Image from "next/image";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import LanguagePageHome from "../../../../language/home.page.json";
+import { ContextLanguage } from "@/contexts/language.context";
+import { useContext } from "react";
 
 interface PropsSection3PageHome_I {}
 
 export default function Section3PageHome(
   props: PropsSection3PageHome_I
 ): JSX.Element {
+  const { languageSelected } = useContext(ContextLanguage);
+
   return (
     <ComponentElementScroll name="section3">
       <section className="flex items-center px-4 py-24 bg-section-1">
@@ -16,46 +21,87 @@ export default function Section3PageHome(
             <div className="flex flex-col items-baseline gap-y-7">
               <div className="flex flex-col gap-y-1">
                 <span className="font-medium uppercase text-gray">
-                  Como funciona
+                  {LanguagePageHome[languageSelected].section3.hook}
                 </span>
                 <h2 className="text-3xl text-primary">
-                  Aprender a{" "}
-                  <strong className="font-semibold text-secondary">ler</strong>,{" "}
+                  {
+                    LanguagePageHome[languageSelected].section3.title[
+                      "part-1-normal"
+                    ]
+                  }{" "}
                   <strong className="font-semibold text-secondary">
-                    escrever
+                    {
+                      LanguagePageHome[languageSelected].section3.title[
+                        "part-2-semibold"
+                      ]
+                    }
+                  </strong>
+                  ,{" "}
+                  <strong className="font-semibold text-secondary">
+                    {
+                      LanguagePageHome[languageSelected].section3.title[
+                        "part-3-semibold"
+                      ]
+                    }
                   </strong>{" "}
-                  e{" "}
+                  {
+                    LanguagePageHome[languageSelected].section3.title[
+                      "part-4-normal"
+                    ]
+                  }{" "}
                   <strong className="font-semibold text-secondary">
-                    conversar
+                    {
+                      LanguagePageHome[languageSelected].section3.title[
+                        "part-5-semibold"
+                      ]
+                    }
                   </strong>{" "}
-                  em Árabe com mais confiança... Um curso que começa do{" "}
-                  <strong className="font-semibold text-secondary">zero</strong>{" "}
-                  e vai com você até o{" "}
+                  {
+                    LanguagePageHome[languageSelected].section3.title[
+                      "part-6-normal"
+                    ]
+                  }{" "}
                   <strong className="font-semibold text-secondary">
-                    avançado
+                    {
+                      LanguagePageHome[languageSelected].section3.title[
+                        "part-7-semibold"
+                      ]
+                    }
+                  </strong>{" "}
+                  {
+                    LanguagePageHome[languageSelected].section3.title[
+                      "part-8-normal"
+                    ]
+                  }{" "}
+                  <strong className="font-semibold text-secondary">
+                    {
+                      LanguagePageHome[languageSelected].section3.title[
+                        "part-9-semibold"
+                      ]
+                    }
                   </strong>
                 </h2>
               </div>
               <a className="flex gap-5 px-5 py-2 text-sm font-medium text-white duration-200 rounded-md cursor-pointer hover:bg-primary-hover bg-primary">
-                Reservar minha vaga
+                {LanguagePageHome[languageSelected].section3.button}
                 <HiArrowNarrowRight size={20} className="text-white" />
               </a>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              {data_how_it_works.map((item) => (
+              {LanguagePageHome[languageSelected].section3.items.map((item) => (
                 <article
                   style={{ background: "#FFF" }}
                   className="flex items-center px-6 py-4 font-light border shadow-md select-none gap-x-4 text-primary rounded-xl shadow-gray/10 border-slate-400/70"
-                  key={item.key}
+                  key={item.id}
                 >
                   <Image
-                    src={item.Icon}
+                    src={item.img}
                     width={32}
                     height={32}
                     priority
                     alt="Icone"
                   />
-                  <span>{item.label}</span>
+                  <span dangerouslySetInnerHTML={{ __html: item.html }} />
                 </article>
               ))}
             </div>
