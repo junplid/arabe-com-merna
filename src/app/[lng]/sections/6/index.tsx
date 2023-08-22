@@ -3,6 +3,7 @@ import ComponentElementScroll from "../../components/ElementScroll";
 import LanguagePageHome from "../../../../language/home.page.json";
 import { ContextLanguage } from "@/contexts/language.context";
 import { useContext } from "react";
+import ComponentTestimonialsCarousel from "../../components/carousels/testimonials.carousel";
 
 interface PropsSection6PageHome_I {}
 
@@ -49,24 +50,7 @@ export default function Section6PageHome(
             </h2>
 
             <div className="w-full">
-              <div className="flex w-full pt-2 pb-8 overflow-x-hidden gap-x-4">
-                {LanguagePageHome[languageSelected].section6.items.map(
-                  (item) => (
-                    <article
-                      key={item.id}
-                      style={{ minWidth: 310, width: 310 }}
-                      className="flex flex-col items-end p-5 text-lg text-white shadow-lg gap-y-3 shadow-black/30 bg-primary"
-                    >
-                      <p className="line-clamp-6">{item.text}</p>
-                      <div className="flex flex-col items-end">
-                        <h3 className="font-semibold leading-tight tracking-widest">
-                          {item.name}
-                        </h3>
-                      </div>
-                    </article>
-                  )
-                )}
-              </div>
+              <ComponentTestimonialsCarousel />
               <div className="flex items-center justify-center mt-2 gap-x-2">
                 <span className="block h-3 rounded-full w-14 bg-secondary"></span>
                 <span className="block w-3 h-3 rounded-full bg-primary"></span>
