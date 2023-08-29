@@ -3,6 +3,7 @@
 import { FC, useState } from "react";
 import useOnclickOutside from "react-cool-onclickoutside";
 import { IoLanguage } from "react-icons/io5";
+import { useCookies } from "react-cookie";
 
 type OptionsLanguage_T = "pt-br" | "en";
 const optionsLanguage: OptionsLanguage_T[] = ["pt-br", "en"];
@@ -18,6 +19,7 @@ interface PropsLanguageComponent_I {
 export const LanguageComponent: FC<PropsLanguageComponent_I> = ({
   lng = "pt-br",
 }: PropsLanguageComponent_I): JSX.Element => {
+  const [_cookies, setCookies] = useCookies(["lng"]);
   const [open, setOpen] = useState<boolean>(false as boolean);
 
   const ref = useOnclickOutside(() => {
@@ -29,7 +31,7 @@ export const LanguageComponent: FC<PropsLanguageComponent_I> = ({
     <div ref={ref} className="relative hidden mobile:block">
       <div
         onClick={() => (!open ? setOpen(true) : null)}
-        className={`border px-4 py-2 border-gray-200 gap-x-2 cursor-pointer ${
+        className={`border px-4 py-2 border-slate-400 gap-x-2 cursor-pointer ${
           open ? "bg-gray-50" : ""
         } hover:bg-gray-50 duration-300 flex items-center`}
       >
@@ -45,8 +47,8 @@ export const LanguageComponent: FC<PropsLanguageComponent_I> = ({
               className="flex items-center justify-between p-1 px-2 cursor-pointer select-none group hover:text-green-500 gap-x-1"
               key={op}
               onClick={() => {
-                // setar cookie
-                // recarregar paǵina
+                setCookies("lng", op);
+                window.location.reload();
               }}
             >
               <span

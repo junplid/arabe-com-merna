@@ -15,7 +15,7 @@ export default function SectionDepositionsHomePage({
         style={{
           background: "#E0FED6",
         }}
-        className="flex items-center px-4 py-24 border-t border-slate-400"
+        className="flex items-center px-4 py-24"
       >
         <div className="flex flex-col w-11/12 m-auto">
           <div className="flex flex-col items-center gap-y-12">

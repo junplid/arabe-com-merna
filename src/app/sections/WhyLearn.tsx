@@ -1,7 +1,9 @@
+"use client";
 import { LanguageSectionWhyLearn } from "@/language/home/why-learn";
 import ComponentElementScroll from "../components/ElementScroll";
 import { EnrollmentFormComponent } from "../components/EnrollmentForm";
 import Image from "next/image";
+import { useState } from "react";
 
 interface PropsSection4PageHome_I {
   lng?: "pt-br" | "en";
@@ -10,11 +12,13 @@ interface PropsSection4PageHome_I {
 export default function SectionWhyLearnHomePage({
   lng = "pt-br",
 }: PropsSection4PageHome_I): JSX.Element {
+  const [selected, setSelected] = useState<string>("1" as string);
+
   return (
     <ComponentElementScroll name="section4">
       <section className="flex items-center px-4 py-24 bg-primary">
         <div className="w-full m-auto max-w-default">
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid items-start grid-cols-2 gap-10">
             <article className="flex flex-col gap-y-5">
               <div className="flex flex-col gap-y-4">
                 <h2 className="text-3xl text-white">
@@ -32,9 +36,10 @@ export default function SectionWhyLearnHomePage({
                   {LanguageSectionWhyLearn[lng].list["buttons-items"].map(
                     (btn) => (
                       <button
+                        onClick={() => setSelected(btn.id)}
                         key={btn.label}
-                        className={`px-8 py-1.5 rounded-lg ${
-                          false
+                        className={`px-8 duration-200 py-1.5 rounded-lg ${
+                          selected === btn.id
                             ? "bg-terc text-secondary"
                             : "bg-secondary text-terc"
                         }  font-semibold  shadow-sm`}
@@ -45,25 +50,24 @@ export default function SectionWhyLearnHomePage({
                   )}
                 </div>
                 <p className="text-lg font-light text-white">
-                  Aprender árabe permite acesso a uma cultura rica e
-                  diversificada, ligada à civilização islâmica, à literatura, à
-                  arte e à música. Conhecer o idioma proporciona compreensão
-                  profunda dessas tradições e estabelece conexão autêntica com
-                  falantes nativos.
+                  {
+                    LanguageSectionWhyLearn[lng].list.values.find(
+                      (e) => e.id === selected
+                    )?.text
+                  }
                 </p>
                 <div className="flex gap-2">
-                  <Image
-                    width={279}
-                    height={228}
-                    alt="imagem"
-                    src={"/images/section-4/carreira 1.jpg"}
-                  />
-                  <Image
-                    width={279}
-                    height={228}
-                    alt="imagem"
-                    src={"/images/section-4/carreira 1.jpg"}
-                  />
+                  {LanguageSectionWhyLearn[lng].list.values
+                    .find((e) => e.id === selected)
+                    ?.imgs.map((img) => (
+                      <Image
+                        width={279}
+                        height={228}
+                        alt="imagem"
+                        src={img}
+                        key={img}
+                      />
+                    ))}
                 </div>
               </div>
             </article>

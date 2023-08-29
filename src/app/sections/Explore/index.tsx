@@ -64,7 +64,7 @@ export default function SectionExploreHomePage({
               </h4>
             </div>
 
-            <ComponentMapExplore />
+            <ComponentMapExplore lng={lng} />
           </div>
         </div>
       </section>

@@ -28,13 +28,20 @@ import ComponentCountryCatar from "../countries/Catar";
 import ComponentCountryBahrein from "../countries/Bahrein";
 import { useContext } from "react";
 import { ContextExploreMap, Countries_T } from "@/contexts/exploreMap.context";
+import { LanguageSectionExplore } from "@/language/home/explore";
 
 export interface PropsCountryComponent {
   active: boolean;
   onSelect(country: Countries_T): void;
 }
 
-export default function ComponentMapExplore(): JSX.Element {
+interface PropsComponentMapExplore_I {
+  lng?: "en" | "pt-br";
+}
+
+export default function ComponentMapExplore({
+  lng = "pt-br",
+}: PropsComponentMapExplore_I): JSX.Element {
   const { countrySelected, setCountrySelected } = useContext(ContextExploreMap);
 
   return (
@@ -140,13 +147,15 @@ export default function ComponentMapExplore(): JSX.Element {
 
         <div className="flex flex-col">
           <h4 className="text-lg font-semibold">
-            {DataCountries[countrySelected].title}
+            {LanguageSectionExplore[lng].countries[countrySelected].title}
           </h4>
-          <span>{DataCountries[countrySelected].capital}</span>
+          <span>
+            {LanguageSectionExplore[lng].countries[countrySelected].capital}
+          </span>
         </div>
       </div>
       <p className="text-lg leading-relaxed text-center">
-        {DataCountries[countrySelected].text}
+        {LanguageSectionExplore[lng].countries[countrySelected].text}
       </p>
     </div>
   );

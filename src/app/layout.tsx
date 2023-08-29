@@ -13,6 +13,7 @@ import { cookies } from "next/headers";
 import { LanguageTopOfPage } from "@/language/home/top-of-page";
 import { LanguageHeader } from "@/language/home/header";
 import { LanguageFooter } from "@/language/home/footer";
+import FloatingWhatsAppComponent from "./components/FloatingWhatsApp";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html>
       <body className={inter.className}>
         <ComponentScrollToTop />
+        <FloatingWhatsAppComponent />
         <div>
           <div className="px-4 bg-primary">
             <div className="flex items-center justify-end m-auto max-w-default h-9">
@@ -55,7 +57,7 @@ export default function RootLayout({
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4 lg:gap-7">
                   <LogoComponent />
-                  <ComponentNavHeader />
+                  <ComponentNavHeader lng={lng} />
                 </div>
                 <div className="flex items-center gap-4">
                   <LanguageComponent lng={lng} />

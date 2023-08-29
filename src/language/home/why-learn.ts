@@ -28,8 +28,35 @@ export const LanguageSectionWhyLearn = {
       values: [
         {
           id: "1",
-          text: "Learning Arabic allows access to a rich and diverse culture, linked to Islamic civilization, literature, art and music. Knowing the language gives you a deep understanding of these traditions and establishes an authentic connection with native speakers.",
-          img: "",
+          text: "Learning Arabic allows access to a rich and diverse culture, linked to Islamic civilization, literature, art and music. Knowing the language gives you a deep understanding of these traditions and establishes an authentic connection with native speakers",
+          imgs: [
+            "/images/section-4/cultura 1.jpg",
+            "/images/section-4/cultura 3.jpg",
+          ],
+        },
+        {
+          id: "2",
+          text: "The Arab world is home to some of the world's most spectacular and impressive sights. The Sheikh Zayed Mosque in Abu Dhabi is a stunning example of modern Islamic architecture. The pyramids in Egypt are another historical landmark that has continued to fascinate visitors for thousands of years. Petra, Jordan is an ancient city carved from stone, and the Burj Khalifa in Dubai is a modern icon offering incredible views of the city",
+          imgs: [
+            "/images/section-4/viagens 2.jpg",
+            "/images/section-4/viagens 3.jpg",
+          ],
+        },
+        {
+          id: "3",
+          text: "The Arab world offers many opportunities in areas ranging from business to education and tourism. Cities like Dubai and Doha are becoming global hubs for finance and technology. In addition, many renowned universities are located in Arab countries, offering exchange opportunities. Tourism is also on the rise, with destinations such as Egypt, Morocco and Qatar attracting millions of visitors each year.",
+          imgs: [
+            "/images/section-4/carreira 1.jpg",
+            "/images/section-4/carreira 4.jpg",
+          ],
+        },
+        {
+          id: "4",
+          text: "Learning Arabic is essential for anyone seeking a deeper understanding of the Islamic religion. As it is the language of the Qur'an, the holy book of Islam, many prayers and religious ceremonies are performed in Arabic. Furthermore, understanding Arabic can allow for better communication and understanding of Muslim traditions around the world.",
+          imgs: [
+            "/images/section-4/religiao 3.jpg",
+            "/images/section-4/religiao 4.jpg",
+          ],
         },
       ],
     },
@@ -105,8 +132,35 @@ export const LanguageSectionWhyLearn = {
       values: [
         {
           id: "1",
-          text: "Aprender árabe permite acesso a uma cultura rica e diversificada, ligada à civilização islâmica, à literatura, à arte e à música. Conhecer o idioma proporciona compreensão profunda dessas tradições e estabelece conexão autêntica com falantes nativos.",
-          img: "",
+          text: "Aprender árabe permite o acesso a uma cultura rica e diversificada, ligada à civilização islâmica, à literatura, à arte e à música. Conhecer o idioma proporciona uma compreensão profunda dessas tradições e estabelece uma conexão autêntica com falantes nativos.",
+          imgs: [
+            "/images/section-4/cultura 1.jpg",
+            "/images/section-4/cultura 3.jpg",
+          ],
+        },
+        {
+          id: "2",
+          text: "O mundo árabe abriga algumas das paisagens mais espetaculares e impressionantes do mundo. A Mesquita Sheikh Zayed em Abu Dhabi é um exemplo impressionante da arquitetura islâmica moderna. As pirâmides do Egito são outro marco histórico que continua a fascinar os visitantes há milhares de anos. Petra, na Jordânia, é uma cidade antiga esculpida em pedra, e o Burj Khalifa, em Dubai, é um ícone moderno que oferece vistas incríveis da cidade",
+          imgs: [
+            "/images/section-4/viagens 2.jpg",
+            "/images/section-4/viagens 3.jpg",
+          ],
+        },
+        {
+          id: "3",
+          text: "O mundo árabe oferece muitas oportunidades em áreas que vão desde negócios até educação e turismo. Cidades como Dubai e Doha estão a tornar-se centros globais de finanças e tecnologia. Além disso, muitas universidades renomadas estão localizadas em países árabes, oferecendo oportunidades de intercâmbio. O turismo também está em ascensão, com destinos como o Egipto, Marrocos e Qatar atraindo milhões de visitantes todos os anos.",
+          imgs: [
+            "/images/section-4/carreira 1.jpg",
+            "/images/section-4/carreira 4.jpg",
+          ],
+        },
+        {
+          id: "4",
+          text: "Aprender árabe é essencial para quem procura uma compreensão mais profunda da religião islâmica. Por ser a língua do Alcorão, o livro sagrado do Islã, muitas orações e cerimônias religiosas são realizadas em árabe. Além disso, compreender o árabe pode permitir uma melhor comunicação e compreensão das tradições muçulmanas em todo o mundo.",
+          imgs: [
+            "/images/section-4/religiao 3.jpg",
+            "/images/section-4/religiao 4.jpg",
+          ],
         },
       ],
     },

@@ -10,14 +10,15 @@ import SectionBonusHomePage from "./sections/Bonus";
 import SectionTeacherHomePage from "./sections/Teacher";
 import SectionExploreHomePage from "./sections/Explore";
 import SectionDoubtsHomePage from "./sections/Doubts";
+import { cookies } from "next/headers";
 
 interface PropsPage {
   params: {};
-  searchParams: { lng?: "en" | "pt-br" | undefined };
+  searchParams: {};
 }
 
 export default function Home(props: PropsPage) {
-  const lng = props.searchParams?.lng;
+  const lng = cookies().get("lng")?.value as "pt-br" | "en" | undefined;
 
   return (
     <div>
@@ -29,13 +30,13 @@ export default function Home(props: PropsPage) {
       <SectionDepositionsHomePage lng={lng} />
       <SectionLearnHomePage lng={lng} />
       <SectionBonusHomePage lng={lng} />
-      <SectionTeacherHomePage />
+      <SectionTeacherHomePage lng={lng} />
       <ProviderContextExploreMap>
         <div style={{ background: "#021B11" }}>
-          <SectionExploreHomePage />
+          <SectionExploreHomePage lng={lng} />
         </div>
       </ProviderContextExploreMap>
-      <SectionDoubtsHomePage />
+      <SectionDoubtsHomePage lng={lng} />
     </div>
   );
 }
