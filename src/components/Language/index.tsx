@@ -1,7 +1,6 @@
 "use client";
 
-import { ContextLanguage } from "@/contexts/language.context";
-import { useContext, useState } from "react";
+import { FC, useState } from "react";
 import useOnclickOutside from "react-cool-onclickoutside";
 import { IoLanguage } from "react-icons/io5";
 
@@ -12,9 +11,14 @@ const viewOptions = {
   en: "EN",
 };
 
-export const LanguageComponent = (): JSX.Element => {
+interface PropsLanguageComponent_I {
+  lng?: "pt-br" | "en";
+}
+
+export const LanguageComponent: FC<PropsLanguageComponent_I> = ({
+  lng = "pt-br",
+}: PropsLanguageComponent_I): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false as boolean);
-  const { languageSelected, setLanguageSelected } = useContext(ContextLanguage);
 
   const ref = useOnclickOutside(() => {
     if (open) setOpen(false);
@@ -23,7 +27,6 @@ export const LanguageComponent = (): JSX.Element => {
 
   return (
     <div ref={ref} className="relative hidden mobile:block">
-      {/* preview */}
       <div
         onClick={() => (!open ? setOpen(true) : null)}
         className={`border px-4 py-2 border-gray-200 gap-x-2 cursor-pointer ${
@@ -32,7 +35,7 @@ export const LanguageComponent = (): JSX.Element => {
       >
         <IoLanguage size={20} className="text-primary" />
         <span className="text-sm font-medium text-primary">
-          {languageSelected}
+          {viewOptions[lng]}
         </span>
       </div>
       {open && (
@@ -41,11 +44,14 @@ export const LanguageComponent = (): JSX.Element => {
             <li
               className="flex items-center justify-between p-1 px-2 cursor-pointer select-none group hover:text-green-500 gap-x-1"
               key={op}
-              onClick={() => setLanguageSelected(op)}
+              onClick={() => {
+                // setar cookie
+                // recarregar paǵina
+              }}
             >
               <span
                 className={
-                  languageSelected === op
+                  lng === op
                     ? "duration-300 group-hover:text-green-600 text-primary"
                     : "duration-300 group-hover:text-gray-500 text-gray-400"
                 }
@@ -54,7 +60,7 @@ export const LanguageComponent = (): JSX.Element => {
               </span>
               <span
                 className={`duration-300 rounded-full w-2 h-2 ${
-                  languageSelected === op
+                  lng === op
                     ? "group-hover:bg-green-600 bg-primary"
                     : "group-hover:bg-gray-300 bg-gray-200"
                 }`}

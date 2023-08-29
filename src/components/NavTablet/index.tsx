@@ -1,19 +1,20 @@
-"use client";
+import { LanguageHeader } from "@/language/home/header";
+import { FC } from "react";
 
-import { ContextLanguage } from "@/contexts/language.context";
-import { useContext } from "react";
-import LanguagePageHome from "../../language/home.page.json";
+interface PropsNavTabletComponent_I {
+  lng?: "en" | "pt-br";
+}
 
-export const NavTabletComponent = (): JSX.Element => {
-  const { languageSelected } = useContext(ContextLanguage);
-
+export const NavTabletComponent: FC<PropsNavTabletComponent_I> = ({
+  lng = "pt-br",
+}: PropsNavTabletComponent_I): JSX.Element => {
   return (
     <div
       className={`px-4 mt-3 border-t pt-2 hidden mobile:block md:hidden w-full left-0 duration-200`}
     >
       <nav className="relative">
         <ul className="flex items-center justify-around text-sm font-semibold sm:text-base text-primary gap-x-2 sm:gap-x-5">
-          {LanguagePageHome[languageSelected].header.nav.map((item) => (
+          {LanguageHeader[lng].nav.map((item) => (
             <li key={item.id}>
               <a
                 {...(item.link && { href: item.link })}

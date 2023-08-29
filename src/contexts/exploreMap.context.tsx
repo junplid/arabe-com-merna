@@ -11,7 +11,6 @@ export type Countries_T =
   | "libia"
   | "egito"
   | "sudao"
-  | "eritreia"
   | "somalia"
   | "iemen"
   | "arabiaSaudita"
@@ -24,8 +23,7 @@ export type Countries_T =
   | "emiradosArabesUnidos"
   | "oma"
   | "catar"
-  | "bahrein"
-  | "chade";
+  | "bahrein";
 
 interface PropsContextExploreMap_I {
   countrySelected: Countries_T;

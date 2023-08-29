@@ -1,0 +1,128 @@
+{
+  "saaraOcidental": {
+    "title": "Saara Ocidental",
+    "icon": "/images/section-10/paises/icons/saara-ocidental.png",
+    "capital": "Capital El Aiune",
+    "text": "O Saara Ocidental é uma região disputada localizada no noroeste da África. A área tem sido objeto de um conflito prolongado entre o Marrocos e o movimento de independência do povo saaráui, conhecido como Frente Polisário, em busca da autodeterminação."
+  },
+  "marrocos": {
+    "title": "Marrocos",
+    "icon": "/images/section-10/paises/icons/marrocos.png",
+    "capital": "Capital Rabat",
+    "text": "O Marrocos, localizado no noroeste da África, é um país diverso e culturalmente rico. Conhecido por suas paisagens deslumbrantes, como as montanhas do Atlas e o deserto do Saara, o Marrocos também atrai visitantes com sua vibrante cultura, arquitetura fascinante e influências árabes e berberes."
+  },
+  "mauritania": {
+    "title": "Mauritania",
+    "icon": "/images/section-10/paises/icons/mauritania.png",
+    "capital": "Capital Nouakchott",
+    "text": "A Mauritânia, localizada no noroeste da África, enfrenta desafios socioeconômicos e questões relacionadas aos direitos humanos. O país está trabalhando para superar esses obstáculos, buscando promover o desenvolvimento e a estabilidade política em prol do bem-estar de sua população."
+  },
+  "argelia": {
+    "title": "Argelia",
+    "icon": "/images/section-10/paises/icons/argelia.png",
+    "capital": "Capital Algiers",
+    "text": "A Argélia, localizada no norte da África, é o maior país do continente africano e é conhecida por sua rica história e cultura. Com paisagens impressionantes, que vão desde o deserto do Saara até as montanhas do Atlas, a Argélia também possui uma influente herança árabe e berbere que se reflete em sua gastronomia, música e tradições."
+  },
+  "tunisia": {
+    "title": "Tunisia",
+    "icon": "/images/section-10/paises/icons/tunisia.png",
+    "capital": "Capital Tunes",
+    "text": "A Tunísia, situada no norte da África, é um país com uma rica mistura de culturas e influências. Conhecida por suas praias deslumbrantes ao longo do Mar Mediterrâneo e sua história fascinante, a Tunísia também é famosa por suas cidades antigas, como Cartago, e como o berço da Primavera Árabe, um movimento que teve um impacto significativo em todo o mundo árabe."
+  },
+  "libia": {
+    "title": "Libia",
+    "icon": "/images/section-10/paises/icons/libia.png",
+    "capital": "Capital Trípoli",
+    "text": "A Líbia, localizada no norte da África, é um país marcado por uma história turbulenta e desafios políticos e econômicos. Com uma população diversa e recursos naturais significativos, a Líbia busca superar conflitos internos e promover a estabilidade, visando o desenvolvimento e o bem-estar de seu povo."
+  },
+  "egito": {
+    "title": "Egito",
+    "capital": "Capital Cairo",
+    "icon": "/images/section-10/paises/icons/egito.png",
+    "text": "O Egito, localizado no nordeste da África, é um país com uma história milenar e uma cultura fascinante. Conhecido por seus monumentos icônicos, como as pirâmides de Gizé e o Templo de Karnak, o Egito também é um importante centro político e econômico na região do Oriente Médio."
+  },
+  "sudao": {
+    "title": "Sudão",
+    "icon": "/images/section-10/paises/icons/sudao-do-sul.png",
+    "capital": "Capital Cartum",
+    "text": "O Sudão, localizado no nordeste da África, é um país diverso com uma rica história e paisagens impressionantes, incluindo o Rio Nilo e o Deserto do Saara. Embora tenha enfrentado conflitos e desafios socioeconômicos, o Sudão está trabalhando para promover a estabilidade política, o desenvolvimento sustentável e a reconciliação nacional, buscando um futuro mais próspero para sua população."
+  },
+  "somalia": {
+    "title": "Somalia",
+    "icon": "/images/section-10/paises/icons/somalia.png",
+    "capital": "Capital Mogadíscio",
+    "text": "A Somália, localizada no Chifre da África, é um país com uma história complexa e desafios significativos. Com conflitos, instabilidade política e dificuldades socioeconômicas, a Somália está empenhada em buscar a paz, o desenvolvimento e a reconstrução, com o apoio da comunidade internacional."
+  },
+  "iemen": {
+    "title": "Iemen",
+    "icon": "/images/section-10/paises/icons/iemen.png",
+    "capital": "Capital Sanaã",
+    "text": "O Iêmen, localizado no extremo sul da Península Arábica, é um país assolado por conflitos, crises humanitárias e instabilidade política. Com uma população que enfrenta desafios socioeconômicos e uma grave crise humanitária, o Iêmen busca alcançar a paz, a estabilidade e o desenvolvimento para seu povo."
+  },
+  "arabiaSaudita": {
+    "title": "Arábia saldita",
+    "icon": "/images/section-10/paises/icons/arabia-saudita.png",
+    "capital": "CApital Riad",
+    "text": "A Arábia Saudita, localizada na Península Arábica, é conhecida por suas vastas reservas de petróleo e por ser o lar de locais sagrados do Islã, como Meca e Medina. Com uma economia diversificada em expansão e reformas sociais em andamento, a Arábia Saudita busca modernizar seu país enquanto preserva suas tradições culturais."
+  },
+  "jordania": {
+    "title": "Jordania",
+    "icon": "/images/section-10/paises/icons/jordania.png",
+    "capital": "Capital Amã",
+    "text": "A Jordânia, situada no Oriente Médio, é um país que abriga uma rica herança histórica e cultural. Com paisagens impressionantes, como o deserto de Wadi Rum e as maravilhas antigas de Petra, a Jordânia também é conhecida por sua estabilidade política e sua abordagem acolhedora aos turistas e refugiados."
+  },
+  "palestina": {
+    "title": "Palestina",
+    "icon": "/images/section-10/paises/icons/palestina.png",
+    "capital": "Capital Jerusalém",
+    "text": "A Palestina é uma região situada no Oriente Médio, historicamente marcada por conflitos e disputas territoriais. Com uma busca contínua pela autodeterminação e reconhecimento como um Estado independente, a Palestina é uma importante questão geopolítica e humanitária que busca uma solução justa e duradoura para o conflito israelo-palestino."
+  },
+  "libano": {
+    "title": "Libano",
+    "icon": "/images/section-10/paises/icons/libano.png",
+    "capital": "Capital Beirute",
+    "text": "O Líbano, localizado no Oriente Médio, é um país conhecido por sua diversidade cultural e paisagens deslumbrantes. Apesar de enfrentar desafios políticos e econômicos, o Líbano é reconhecido por sua rica herança histórica, gastronomia renomada e hospitalidade calorosa."
+  },
+  "siria": {
+    "title": "Siria",
+    "icon": "/images/section-10/paises/icons/siria.png",
+    "capital": "Capital Damasco",
+    "text": "A Síria, localizada no Oriente Médio, enfrenta uma crise humanitária e um conflito devastador que tem impactado profundamente seu povo e infraestrutura. Com uma rica história e cultura, a Síria busca superar os desafios e reconstruir um futuro de paz e estabilidade para seu povo."
+  },
+  "iraque": {
+    "title": "Iraque",
+    "icon": "/images/section-10/paises/icons/iraque.png",
+    "capital": "Capital Bagdá",
+    "text": "O Iraque, localizado no Oriente Médio, é um país com uma história antiga e complexa. Após décadas de conflitos e instabilidade, o Iraque está empenhado em reconstruir e fortalecer suas instituições, buscando a estabilidade política e o desenvolvimento socioeconômico em benefício de seu povo."
+  },
+  "kuwait": {
+    "title": "Kuwait",
+    "icon": "/images/section-10/paises/icons/kuwait.png",
+    "capital": "Capital Kuwait",
+    "text": "O Kuwait, localizado na Península Arábica, é um país conhecido por suas riquezas de petróleo e seu alto padrão de vida. Com uma economia diversificada e uma infraestrutura moderna, o Kuwait é um importante centro comercial e financeiro na região, buscando promover o desenvolvimento sustentável e o bem-estar de sua população."
+  },
+  "bahrein": {
+    "title": "Bahrein",
+    "icon": "/images/section-10/paises/icons/bahrein.png",
+    "capital": "Capital Manama",
+    "text": "O Bahrein, um pequeno país insular localizado no Golfo Pérsico, é conhecido por sua economia diversificada, com destaque para os setores financeiro e de serviços. Com uma história rica e uma mistura de culturas, o Bahrein é um centro regional para negócios e turismo, oferecendo uma combinação única de tradição e modernidade."
+  },
+  "catar": {
+    "icon": "/images/section-10/paises/icons/catar.png",
+    "title": "Catar",
+    "capital": "Capital Doha",
+    "text": "O Catar, localizado na Península Arábica, é um país rico em gás natural e se destaca por sua economia próspera e infraestrutura moderna. Com um forte compromisso em sediar eventos esportivos e culturais de renome mundial, o Catar tem se consolidado como um centro global para negócios, turismo e inovação."
+  },
+  "emiradosArabesUnidos": {
+    "icon": "/images/section-10/paises/icons/emirados-arabes-unidos.png",
+    "title": "Emirados Arabes Unidos",
+    "capital": "Capital Abu Dahbi",
+    "text": "Os Emirados Árabes Unidos (EAU), localizados no Golfo Pérsico, são um país reconhecido por sua modernidade, diversidade e desenvolvimento acelerado. Com uma economia forte e infraestrutura impressionante, os EAU são um importante centro de negócios, turismo e inovação, atraindo pessoas de todo o mundo."
+  },
+  "oma": {
+    "title": "Oma",
+    "icon": "/images/section-10/paises/icons/oma.png",
+    "capital": "Capital Mascate",
+    "text": "O Omã, localizado na Península Arábica, é um país com uma rica história e cultura. Conhecido por suas paisagens deslumbrantes, como as montanhas Al Hajar e as praias do Golfo de Omã, o Omã também possui uma economia diversificada e uma abordagem progressista, promovendo o turismo sustentável e o desenvolvimento socioeconômico."
+  }
+}
