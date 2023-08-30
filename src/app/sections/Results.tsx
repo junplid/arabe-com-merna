@@ -28,7 +28,7 @@ export default function SectionResultsHomePage({
               {LanguageSectionResults[lng].title["part-3-normal"]}
             </h2>
           </div>
-          <div className="w-11/12 mx-auto">
+          <div className="w-11/12 pr-5 ml-auto">
             <div className="grid grid-cols-[minmax(360px,440px)_1fr] gap-x-5">
               <div className="flex flex-col items-center">
                 <Image

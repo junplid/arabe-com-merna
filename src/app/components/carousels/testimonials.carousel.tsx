@@ -65,18 +65,16 @@ export default function ComponentDepositionsCarousel({
         renderDotsOutside={false}
         showDots
         arrows={false}
-        autoPlay
         swipeable
         rewind={false}
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
-        sliderClass="mb-10"
         slidesToSlide={1}
         dotListClass="flex items-center justify-center gap-x-2"
       >
         {LanguageSectionDepositions[lng].items.map((item) => (
-          <div className="p-5 first:pl-0" key={item.id}>
+          <div className="p-5 pb-10 first:pl-0" key={item.id}>
             <article className="flex flex-col items-end w-full p-5 text-lg text-white shadow-lg gap-y-3 shadow-black/30 bg-primary">
               <p className="line-clamp-6">{item.text}</p>
               <div className="flex flex-col items-end">
