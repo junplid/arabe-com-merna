@@ -8,10 +8,10 @@ export default function FloatingWhatsAppComponent(
   return (
     <a
       href={`https://wa.me/558197120224?text=${encodeURI(
-        "Gostoria de saber mais informações sobre o curso do Árabe"
+        "Gostaria de saber mais informações sobre o curso do Árabe"
       )}`}
       target="_blank"
-      className="fixed bottom-0 right-0 p-3 -translate-y-24 rounded-full shadow-md -translate-x-7"
+      className="fixed bottom-0 right-0 z-50 p-3 -translate-y-24 rounded-full shadow-md -translate-x-7"
       style={{
         background: "#3c9a33",
       }}

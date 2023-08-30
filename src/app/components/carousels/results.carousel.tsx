@@ -2,11 +2,13 @@
 
 import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
-import { tv, VariantProps } from "tailwind-variants";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 import { LanguageSectionResults } from "@/language/home/results";
 import { useState } from "react";
 import styled from "styled-components";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import ReactPlayer from "react-player";
+import { IoClose } from "react-icons/io5";
 
 const ImageTum = styled.div<{ link: string }>`
   width: 112px;
@@ -19,17 +21,30 @@ const ImageTum = styled.div<{ link: string }>`
   border: 1px solid #fff;
 `;
 
+interface PropsSelected_I {
+  code: string;
+  text: string;
+}
 interface PropsArticle_I {
   paragraph: string;
   name: string;
   code: string;
+  setSelected(vl: PropsSelected_I): void;
 }
 
 const ArticleComponent: React.FC<PropsArticle_I> = (
   props: PropsArticle_I
 ): JSX.Element => {
   return (
-    <a className="m-1.5 cursor-pointer">
+    <a
+      onClick={() =>
+        props.setSelected({
+          code: props.code,
+          text: props.paragraph,
+        })
+      }
+      className="m-1.5 cursor-pointer"
+    >
       <article
         style={{ minWidth: 320 }}
         className="flex items-center justify-between w-full px-5 py-4 duration-300 shadow-md bg-primary hover:bg-primary-hover gap-x-5 group shadow-slate-400/80 rounded-3xl"
@@ -91,12 +106,50 @@ interface PropsComponentResultsCarousel_I {
 export const ComponentResultsCarousel: React.FC<
   PropsComponentResultsCarousel_I
 > = ({ lng = "pt-br" }: PropsComponentResultsCarousel_I): JSX.Element => {
-  const [selected, setSelected] = useState<string | null>(
-    null as string | null
+  const [selected, setSelected] = useState<PropsSelected_I | null>(
+    null as PropsSelected_I | null
   );
 
   return (
     <div className="grid w-full">
+      {selected && (
+        <div className="fixed top-0 left-0 z-50 flex items-center w-screen h-screen bg-primary/60 backdrop-blur-md">
+          <div className="w-full max-w-2xl p-5 pt-0 m-auto shadow-lg bg-slate-50">
+            <div className="flex items-center justify-between gap-1 py-5">
+              <p className="text-lg font-light leading-tight line-clamp-2 text-primary">
+                {selected.text}
+              </p>
+              <button
+                title="Fechar"
+                onClick={() => {
+                  const body = document.querySelector("body");
+                  enableBodyScroll(body!);
+                  setSelected(null);
+                }}
+              >
+                <IoClose
+                  size={45}
+                  className="duration-300 text-primary hover:text-red-600"
+                />
+              </button>
+            </div>
+            <div>
+              <ReactPlayer
+                url={`https://www.youtube.com/watch?v=${selected.code}`}
+                controls={false}
+                loop
+                volume={100}
+                fallback={<div>Carregando...</div>}
+                style={{
+                  width: "100%",
+                }}
+                width={"100%"}
+                playing
+              />
+            </div>
+          </div>
+        </div>
+      )}
       <Carousel
         draggable
         infinite
@@ -142,6 +195,11 @@ export const ComponentResultsCarousel: React.FC<
                 name="Rian Junplid"
                 paragraph={item.paragraph}
                 code={item.link}
+                setSelected={(vl) => {
+                  const body = document.querySelector("body");
+                  disableBodyScroll(body!);
+                  setSelected(vl);
+                }}
               />
             ))}
           </div>
