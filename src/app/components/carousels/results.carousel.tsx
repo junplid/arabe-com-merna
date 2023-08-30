@@ -138,6 +138,7 @@ export const ComponentResultsCarousel: React.FC<
           <div className="flex flex-col" key={e}>
             {carousel_items.map((item) => (
               <ArticleComponent
+                key={item.id}
                 name="Rian Junplid"
                 paragraph={item.paragraph}
                 code={item.link}
