@@ -1,5 +1,6 @@
 import "./globals.css";
 import "react-multi-carousel/lib/styles.css";
+import "animate.css/animate.min.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ComponentScrollToTop from "./components/ScrollToTop";

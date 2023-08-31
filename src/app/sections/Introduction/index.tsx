@@ -1,5 +1,5 @@
 import { LanguageSectionIntroduction } from "@/language/home/introduction";
-import Image from "next/image";
+import AnimationMainSection1Component from "./animation";
 
 interface PropsSection1_I {
   lng?: "pt-br" | "en";
@@ -31,13 +31,7 @@ export default function SectionIntroductionHomePage({
           </a>
         </div>
         <div className="px-5 md:max-w-md lg:max-w-2xl lg:px-0">
-          <Image
-            src={"/images/main.png"}
-            alt="Imagem principal"
-            width={580 + 380}
-            height={406.55 + 380}
-            priority
-          />
+          <AnimationMainSection1Component />
         </div>
       </div>
     </section>
