@@ -32,7 +32,7 @@ export const EnrollmentFormComponent: React.FC<
           type="text"
           placeholder={LanguageSectionWhyLearn[lng].register.inputs.name}
         />
-        <div className="flex items-center gap-x-4">
+        <div className="flex flex-col items-center gap-4 lg:flex-row">
           <input
             className="w-full h-10 pl-4 border outline-primary rounded-xl border-border-gray"
             type="text"
@@ -44,7 +44,7 @@ export const EnrollmentFormComponent: React.FC<
             placeholder={LanguageSectionWhyLearn[lng].register.inputs.email}
           />
         </div>
-        <div className="flex items-center gap-x-4">
+        <div className="flex flex-col items-center gap-4 : lg:flex-row">
           <input
             className="w-full h-10 pl-4 border outline-primary rounded-xl border-border-gray"
             type="text"
@@ -56,7 +56,7 @@ export const EnrollmentFormComponent: React.FC<
             placeholder={LanguageSectionWhyLearn[lng].register.inputs.state}
           />
         </div>
-        <div className="flex items-center gap-x-4">
+        <div className="flex flex-col items-center gap-4 lg:flex-row">
           <input
             className="w-full h-10 pl-4 border outline-primary rounded-xl border-border-gray"
             type="text"

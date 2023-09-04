@@ -12,6 +12,8 @@ export const LanguageSectionBonus = {
         id: "1",
         title: "Bonus 1",
         img: "/images/section-8/demostração-app.png",
+        w: 149,
+        h: 149,
         subtitle: "App of Arabic with Merna",
         paragraph: [
           {
@@ -27,6 +29,8 @@ export const LanguageSectionBonus = {
       {
         id: "2",
         title: "Bonus 2",
+        w: 236,
+        h: 149,
         img: "/images/section-8/club-tradruções.png",
         subtitle: "Music translation club",
         paragraph: [
@@ -41,6 +45,8 @@ export const LanguageSectionBonus = {
         title: "Bonus 3",
         img: "/images/section-8/egipcio-normal.png",
         subtitle: "Super discount",
+        w: 306,
+        h: 149,
         paragraph: [
           {
             id: "1",
@@ -64,6 +70,8 @@ export const LanguageSectionBonus = {
         title: "Bônus 1",
         img: "/images/section-8/demostração-app.png",
         subtitle: "App do Árabe com Merna",
+        w: 149,
+        h: 149,
         paragraph: [
           {
             id: "1",
@@ -80,6 +88,8 @@ export const LanguageSectionBonus = {
         title: "Bônus 2",
         img: "/images/section-8/club-tradruções.png",
         subtitle: "Clube de traduções de música",
+        w: 236,
+        h: 149,
         paragraph: [
           {
             id: "1",
@@ -92,6 +102,8 @@ export const LanguageSectionBonus = {
         title: "Bônus 3",
         img: "/images/section-8/egipcio-normal.png",
         subtitle: "Super desconto",
+        w: 306,
+        h: 149,
         paragraph: [
           {
             id: "1",

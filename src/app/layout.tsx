@@ -47,7 +47,7 @@ export default function RootLayout({
               </span>
             </div>
           </div>
-          <div
+          {/* <div
             style={{
               background: "#fff",
               boxShadow: "0px 5px 15px 0px rgba(0, 0, 0, 0.13)",
@@ -72,9 +72,9 @@ export default function RootLayout({
           </div>
           <div className="block mobile:hidden">
             <MenuMobileComponent lng={lng} />
-          </div>
+          </div> */}
           <main>{children}</main>
-          <div style={{ background: "#F5FAFA" }}>
+          {/* <div style={{ background: "#F5FAFA" }}>
             <footer className="flex flex-col w-full gap-y-16">
               <div className="px-4 ">
                 <div className="w-full pt-16 m-auto max-w-default">
@@ -124,7 +124,7 @@ export default function RootLayout({
                 </div>
               </div>
             </footer>
-          </div>
+          </div> */}
         </div>
       </body>
     </html>

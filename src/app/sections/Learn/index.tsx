@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 import { PiMonitorPlayBold } from "react-icons/pi";
-import ComponentElementScroll from "../components/ElementScroll";
+import ComponentElementScroll from "../../components/ElementScroll";
 import { LanguageSectionLearn } from "@/language/home/learn";
+import AnimationSessionLearnComponent from "./animation";
 
 interface PropsSection7PageHome_I {
   lng?: "pt-br" | "en";
@@ -49,20 +50,18 @@ export default function SectionLearnHomePage({
               />
             </div>
             <div className="-translate-y-2 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
-              {LanguageSectionLearn[lng].items.map((level) => (
-                <article
-                  style={{ background: "#fff" }}
-                  className="flex flex-col p-5 shadow-lg gap-y-2 rounded-3xl text-primary"
-                  key={level.id}
-                >
-                  <div className="flex items-center gap-x-2">
-                    <PiMonitorPlayBold size={29} />
-                    <h3 className="text-lg font-semibold">{level.title}</h3>
-                  </div>
-                  <p style={{ fontSize: 15, color: "#323232" }}>
-                    {level.paragraph}
-                  </p>
-                </article>
+              {LanguageSectionLearn[lng].items.map((level, i) => (
+                <AnimationSessionLearnComponent i={i} key={level.id}>
+                  <article className="flex flex-col gap-y-2">
+                    <div className="flex items-center gap-x-2">
+                      <PiMonitorPlayBold size={29} />
+                      <h3 className="text-lg font-semibold">{level.title}</h3>
+                    </div>
+                    <p style={{ fontSize: 16, color: "#323232" }}>
+                      {level.paragraph}
+                    </p>
+                  </article>
+                </AnimationSessionLearnComponent>
               ))}
             </div>
           </div>

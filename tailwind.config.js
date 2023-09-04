@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       maxWidth: {
         default: "73.125rem",
+        outher: "55rem",
       },
       screens: {
         mobile: "500px",
@@ -31,8 +32,8 @@ module.exports = {
         secondary: "#89C030",
         "section-1": "#E0FED6",
         terc: "#123535",
-        green: '#48C01E',
-        'green-strong': '#609707'
+        green: "#48C01E",
+        "green-strong": "#609707",
       },
     },
   },

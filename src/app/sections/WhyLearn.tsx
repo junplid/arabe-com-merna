@@ -4,10 +4,45 @@ import ComponentElementScroll from "../components/ElementScroll";
 import { EnrollmentFormComponent } from "../components/EnrollmentForm";
 import Image from "next/image";
 import { useState } from "react";
+import { keyframes, styled } from "styled-components";
 
 interface PropsSection4PageHome_I {
   lng?: "pt-br" | "en";
 }
+
+const animationP = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
+
+const Paragraph = styled.p`
+  animation: ${animationP} forwards;
+  animation-duration: 300ms;
+`;
+
+const animationImg = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
+
+const ItemImage = styled.div<{ delay: string }>`
+  animation: ${animationImg} forwards;
+  animation-duration: 300ms;
+  opacity: 0;
+  animation-delay: ${({ delay }) => `${delay}ms`};
+`;
 
 export default function SectionWhyLearnHomePage({
   lng = "pt-br",
@@ -18,7 +53,7 @@ export default function SectionWhyLearnHomePage({
     <ComponentElementScroll name="section4">
       <section className="flex items-center px-4 py-24 bg-primary">
         <div className="w-full m-auto max-w-default">
-          <div className="grid items-start grid-cols-2 gap-10">
+          <div className="grid items-start grid-cols-[repeat(auto-fit,minmax(415px,1fr))] gap-8">
             <article className="flex flex-col gap-y-5">
               <div className="flex flex-col gap-y-4">
                 <h2 className="text-3xl text-white">
@@ -32,13 +67,13 @@ export default function SectionWhyLearnHomePage({
                 </p>
               </div>
               <div className="flex flex-col gap-y-6">
-                <div className="flex items-center justify-between">
+                <div className="grid items-center justify-between grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2">
                   {LanguageSectionWhyLearn[lng].list["buttons-items"].map(
                     (btn) => (
                       <button
                         onClick={() => setSelected(btn.id)}
                         key={btn.label}
-                        className={`px-8 duration-200 py-1.5 rounded-lg ${
+                        className={`px-0.5 duration-200 py-1.5 rounded-lg ${
                           selected === btn.id
                             ? "bg-terc text-secondary"
                             : "bg-secondary text-terc"
@@ -49,25 +84,39 @@ export default function SectionWhyLearnHomePage({
                     )
                   )}
                 </div>
-                <p className="text-lg font-light text-white">
-                  {
-                    LanguageSectionWhyLearn[lng].list.values.find(
-                      (e) => e.id === selected
-                    )?.text
-                  }
-                </p>
-                <div className="flex gap-2">
-                  {LanguageSectionWhyLearn[lng].list.values
-                    .find((e) => e.id === selected)
-                    ?.imgs.map((img) => (
-                      <Image
-                        width={279}
-                        height={228}
-                        alt="imagem"
-                        src={img}
-                        key={img}
-                      />
-                    ))}
+
+                {LanguageSectionWhyLearn[lng].list.values.map((item) => (
+                  <Paragraph
+                    key={item.id}
+                    className={`text-lg font-light text-white ${
+                      item.id === selected ? "" : "hidden"
+                    } `}
+                  >
+                    {item.text}
+                  </Paragraph>
+                ))}
+                <div className="flex justify-center gap-2">
+                  {LanguageSectionWhyLearn[lng].list.values.map((item) => {
+                    if (item.id === selected) {
+                      return item.imgs.map((img, i) => (
+                        <ItemImage
+                          delay={i === 0 ? "200" : "400"}
+                          key={img}
+                          className={`border text-lg font-light text-white ${
+                            item.id === selected ? "" : "hidden"
+                          } `}
+                        >
+                          <Image
+                            width={279}
+                            height={228}
+                            alt="imagem"
+                            src={img}
+                          />
+                        </ItemImage>
+                      ));
+                    }
+                    return undefined;
+                  })}
                 </div>
               </div>
             </article>

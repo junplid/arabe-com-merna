@@ -15,16 +15,19 @@ export default function SectionTeacherHomePage({
         style={{ background: "#F2FFEC" }}
         className="flex items-center px-4 py-24 text-white"
       >
-        <div className="flex justify-between m-auto gap-x-14 max-w-default">
+        <div className="flex flex-row items-start justify-between m-auto lg:items-center lg: gap-x-14 max-w-default">
           <Image
             src={"/images/section-9/professora.png"}
             width={500}
             height={521}
-            style={{ height: "auto", width: "100%" }}
+            style={{ height: "auto", width: "100%", objectFit: "contain" }}
             alt="Professora Merna"
-            className=""
+            className="sticky top-32 md:top-20"
           />
-          <div className="flex flex-col gap-y-6">
+          <div
+            style={{ minWidth: 300 }}
+            className="flex flex-col w-full gap-y-6"
+          >
             <h3 className="font-bold text-primary">
               <span className="text-2xl">
                 {LanguageSectionTeacher[lng].subtitle}

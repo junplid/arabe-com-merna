@@ -7,5 +7,13 @@ interface PropsAnimationMainSection1Component_I {}
 export default function AnimationMainSection1Component(
   props: PropsAnimationMainSection1Component_I
 ): JSX.Element {
-  return <Lottie style={{ height: 407 }} loop={false} animationData={Main} />;
+  return (
+    <Lottie
+      style={{
+        minWidth: 333,
+      }}
+      loop={false}
+      animationData={Main}
+    />
+  );
 }
