@@ -15,6 +15,7 @@ export default function AnimationSessionHowItWorksComponent(
       animateOnce
       animateIn="animate__fadeInUp"
       delay={props.i * 100}
+      offset={0}
     >
       {props.children}
     </AnimationOnScroll>

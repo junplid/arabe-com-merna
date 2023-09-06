@@ -10,7 +10,7 @@ export default function ComponentNavFooter({
   lng = "pt-br",
 }: PropsComponentNavFooter_I): JSX.Element {
   return (
-    <div className="flex justify-between w-full max-w-md">
+    <div className="flex justify-center w-full md:max-w-md gap-x-6 md:justify-between">
       <div className="flex flex-col items-baseline gap-y-3">
         <h4 className="text-2xl font-semibold text-primary">
           {LanguageFooter[lng].nav.labelCourse}

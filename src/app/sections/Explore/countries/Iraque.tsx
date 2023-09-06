@@ -9,71 +9,45 @@ export default function ComponentCountryIraque(
   props: PropsComponentCountryIraque_I
 ): JSX.Element {
   return (
-    <div
+    <g
       onClick={() => !props.active && props.onSelect("iraque")}
-      className="pointer-events-none group country iraque"
-      title="Iraque"
+      className={`${!props.active ? "cursor-pointer" : ""} group`}
     >
-      <Image
-        src={"/images/section-10/paises/icons/iraque.png"}
-        height={28}
-        width={28}
-        alt="Iraque"
-        className={`country icon-iraque duration-200 ${
-          props.active ? "opacity-0" : "opacity-100 cursor-pointer"
+      <title>Iraque</title>
+      <path
+        d="M605.017 11.9585C593.997 0.991087 578.925 0.292079 572.614 1.36159L570.754 1.86101C570.116 2.03218 569.551 2.40649 569.145 2.92724L563.185 10.5735C562.687 11.2123 562.465 12.0235 562.568 12.8269L565.408 34.9905C565.534 35.9736 565.172 36.9564 564.439 37.6234L549.738 50.9956C548.715 51.9267 548.45 53.4319 549.094 54.6565L553.549 63.1268C554.074 64.1251 555.11 64.7502 556.238 64.7502H564.855C565.35 64.7502 565.838 64.8712 566.275 65.1026L609.453 87.9388C610.085 88.2731 610.815 88.3737 611.514 88.2228L624.808 85.3536C625.993 85.098 626.912 84.1629 627.147 82.9743L628.875 74.2457C629.156 72.8231 630.404 71.798 631.854 71.798H635.485C637.762 71.798 639.233 69.382 638.22 67.3424C634.869 60.5965 632.077 54.3159 629.957 49.0459C629.579 48.107 628.759 47.4204 627.783 47.1538C609.68 42.211 605.638 24.0407 605.876 14.2174C605.896 13.3765 605.613 12.5519 605.017 11.9585Z"
+        fill={props.active ? "#e9d74e" : "#0C6746"}
+        fillOpacity={props.active ? "0.8" : "0.7"}
+        className={`duration-200 ${
+          props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
         }`}
         style={{ pointerEvents: "all" }}
       />
-      <svg
-        width="93"
-        height="89"
-        viewBox="0 0 93 89"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g filter="url(#filter0_b_225_57)">
-          <path
-            d="M57.0171 11.9585C45.9971 0.991085 30.9253 0.292077 24.6142 1.36159L22.7536 1.86101C22.1159 2.03218 21.5513 2.40649 21.1454 2.92724L15.1852 10.5735C14.6873 11.2123 14.4651 12.0235 14.568 12.8269L17.4078 34.9905C17.5338 35.9736 17.1721 36.9564 16.4389 37.6234L1.73827 50.9956C0.714701 51.9267 0.449771 53.4319 1.09392 54.6565L5.5493 63.1268C6.07442 64.1251 7.10952 64.7502 8.23752 64.7502H16.855C17.35 64.7502 17.8375 64.8712 18.2751 65.1026L61.4527 87.9388C62.0848 88.2731 62.8146 88.3737 63.5135 88.2228L76.8083 85.3536C77.9927 85.098 78.9119 84.1629 79.1471 82.9743L80.8748 74.2457C81.1564 72.8231 82.4043 71.798 83.8544 71.798H87.4848C89.7623 71.798 91.2326 69.382 90.2195 67.3424C86.8686 60.5965 84.0773 54.3159 81.9568 49.0459C81.579 48.107 80.7589 47.4204 79.7826 47.1538C61.6803 42.211 57.6377 24.0407 57.8757 14.2174C57.896 13.3765 57.6132 12.5519 57.0171 11.9585Z"
-            fill={props.active ? "#e9d74e" : "#0C6746"}
-            fillOpacity={props.active ? "0.8" : "0.5"}
-            className={`duration-200 ${
-              props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
-            }`}
-            style={{ pointerEvents: "all" }}
-          />
-          <path
-            d="M57.0171 11.9585C45.9971 0.991085 30.9253 0.292077 24.6142 1.36159L22.7536 1.86101C22.1159 2.03218 21.5513 2.40649 21.1454 2.92724L15.1852 10.5735C14.6873 11.2123 14.4651 12.0235 14.568 12.8269L17.4078 34.9905C17.5338 35.9736 17.1721 36.9564 16.4389 37.6234L1.73827 50.9956C0.714701 51.9267 0.449771 53.4319 1.09392 54.6565L5.5493 63.1268C6.07442 64.1251 7.10952 64.7502 8.23752 64.7502H16.855C17.35 64.7502 17.8375 64.8712 18.2751 65.1026L61.4527 87.9388C62.0848 88.2731 62.8146 88.3737 63.5135 88.2228L76.8083 85.3536C77.9927 85.098 78.9119 84.1629 79.1471 82.9743L80.8748 74.2457C81.1564 72.8231 82.4043 71.798 83.8544 71.798H87.4848C89.7623 71.798 91.2326 69.382 90.2195 67.3424C86.8686 60.5965 84.0773 54.3159 81.9568 49.0459C81.579 48.107 80.7589 47.4204 79.7826 47.1538C61.6803 42.211 57.6377 24.0407 57.8757 14.2174C57.896 13.3765 57.6132 12.5519 57.0171 11.9585Z"
-            stroke="#F3F9F7"
-            strokeOpacity="0.25"
-            strokeWidth="1.19199"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_b_225_57"
-            x="-5.9264"
-            y="-5.67054"
-            width="103.143"
-            height="100.633"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feGaussianBlur in="BackgroundImageFix" stdDeviation="3.03742" />
-            <feComposite
-              in2="SourceAlpha"
-              operator="in"
-              result="effect1_backgroundBlur_225_57"
+      <path
+        d="M605.017 11.9585C593.997 0.991087 578.925 0.292079 572.614 1.36159L570.754 1.86101C570.116 2.03218 569.551 2.40649 569.145 2.92724L563.185 10.5735C562.687 11.2123 562.465 12.0235 562.568 12.8269L565.408 34.9905C565.534 35.9736 565.172 36.9564 564.439 37.6234L549.738 50.9956C548.715 51.9267 548.45 53.4319 549.094 54.6565L553.549 63.1268C554.074 64.1251 555.11 64.7502 556.238 64.7502H564.855C565.35 64.7502 565.838 64.8712 566.275 65.1026L609.453 87.9388C610.085 88.2731 610.815 88.3737 611.514 88.2228L624.808 85.3536C625.993 85.098 626.912 84.1629 627.147 82.9743L628.875 74.2457C629.156 72.8231 630.404 71.798 631.854 71.798H635.485C637.762 71.798 639.233 69.382 638.22 67.3424C634.869 60.5965 632.077 54.3159 629.957 49.0459C629.579 48.107 628.759 47.4204 627.783 47.1538C609.68 42.211 605.638 24.0407 605.876 14.2174C605.896 13.3765 605.613 12.5519 605.017 11.9585Z"
+        stroke="#F3F9F7"
+      />
+      {!props.active && (
+        <>
+          <rect x="580" y="30" width="29" height="29" fill="url(#pattern7)" />
+          <defs>
+            <pattern
+              id="pattern7"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use xlinkHref="#image7_317_273" transform="scale(0.0344828)" />
+            </pattern>
+            <image
+              id="image7_317_273"
+              width="29"
+              height="29"
+              xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAObSURBVHgBtZZLTBNRFIZPOzPSWmpbH1CU1IIxVDQRNcaIiLoxPhKjG+MjPjAx0ZhoXGl0objQSCQa48KFCBIgJooaHzQhkApEwkIFYnkIRaYotIaktJSBPmam3js6hE5LKUK/ZHLnnnPu+efce9oZGcyC52kb1wQcv7cQSlUyBANLgKJGQhw7RFJU7xGmpz3ePLKZAipV2Tkc4z2Fbk+jSxsjlAa57CPHBwoLwEnD/4hWgkEXSqLu8v7AWZglcop4KiNkt477+u1xi1bpsvNYD/MOeD5WZTNBL0jT7DvisHZJHXKp4RkYTnEepnGOghhjwDnaWZ2x7YDUEVZpJbVqE88GP4dCIZgvZDLZKBvidhTAYJtom6y0VGEycsHAy/kUxKB8iwg5+b4UtNoIUcLH3ECDERIBz69IWphSJE6F7S0FvZEAqh8SDKcgMgp8NE3iydqrl24wA4OQaJJSll6CBzcvC5W63W5cpXG64HGfFxYq1GG24REHqJTJcdsxqKkcGo1mudzlcuVNJ2jt+wJn7+yHcvOj8MRuJ1y8fxievL0XsQbbi6uuR0uHmyrN4/GsJuVyuT5awLDbAUVVV4BlA5CiS4P5guf5bSRSX4fKjnB29H+FYNAPppXrYYkmFRpazaBSJEN25kaYC0hLQU7n9DIeYey2twuXyPKlBrh6sjgstrO/FTrpVths2g4zgYpMwaJ8NGd2xgY4tvt8mK3FaoEfQ91gd9rCRZFgtaUUlmmjnlQY6DhdWHRA6sBb2YUSSZnwM8LITHiF8fvANyhBzaRRLxbmjWgdhnb2wuPXt+HcoWsROdCZDmHRNqkDP7mYIBau0WFottbB3q2H/637m2rcNyY8eDRRtL094u90BKa8oPEisZpoqJTqML90LrJM0vVI0K7T6YxCI5WUlJR7vd6LkGBSU1MteBRE6+rqXo2NjSVcNBgMFuJReMuYzeYGkiSrIbGUtbS00JOiGL1efwG18y9IDLRYJYYQb6xWK5OVldXLcdxRiOMrMV7wv51ard5jsVg6IkQxfX19PQaDwY4CD8I8gPKghg2dqa+v/zDVHvFh1tTUVKZSqfJwe8McQEc1qFAoduJ8Uh8RbYHNZvuZmZn5Bgnr0DQHZgmq8KFWqz1RU1PTGdU/U4L8/PwMJI6/n3ahyxAj1E0QRFl6evqLioqK5lg5Z9Uwubm5OUql0uT3+014TlEUz7LsANrGT7W1tTZ8hvHk+QMWknRAtVq2OQAAAABJRU5ErkJggg=="
             />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_backgroundBlur_225_57"
-              result="shape"
-            />
-          </filter>
-        </defs>
-      </svg>
-    </div>
+          </defs>
+        </>
+      )}
+    </g>
   );
 }

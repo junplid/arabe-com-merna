@@ -24,7 +24,7 @@ export default function SectionLearnHomePage({
         }}
       >
         <div className="w-full m-auto max-w-default">
-          <div className="flex flex-col gap-y-1">
+          <div className="flex flex-col gap-y-10">
             <div className="flex items-center justify-between">
               <div className="flex flex-col items-baseline gap-y-7">
                 <div className="flex flex-col gap-y-2">

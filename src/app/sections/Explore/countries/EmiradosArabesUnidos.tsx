@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { PropsCountryComponent } from "../map";
 
 interface PropsComponentCountryEmiradosArabesUnidos_I
@@ -10,71 +9,45 @@ export default function ComponentCountryEmiradosArabesUnidos(
   props: PropsComponentCountryEmiradosArabesUnidos_I
 ): JSX.Element {
   return (
-    <div
+    <g
       onClick={() => !props.active && props.onSelect("emiradosArabesUnidos")}
-      className="pointer-events-none group country emirados-arabes-unidos"
-      title="Emirados Arabes Unidos"
+      className={`${!props.active ? "cursor-pointer" : ""} group`}
     >
-      <Image
-        src={"/images/section-10/paises/icons/emirados-arabes-unidos.png"}
-        height={28}
-        width={28}
-        alt="Egito"
-        className={`country icon-emirados-arabes-unidos duration-200 ${
-          props.active ? "opacity-0" : "opacity-100 cursor-pointer"
+      <title>Emirados Árabes Unidos</title>
+      <path
+        d="M717.41 134.257L699.608 135.648C699.269 135.674 698.928 135.645 698.601 135.554C695.173 134.599 691.781 133.09 688.445 131.128C685.933 129.649 682.524 131.92 683.245 134.744L688.839 156.663C689.068 157.559 689.692 158.301 690.534 158.681L713.832 169.18C714.851 169.64 716.041 169.502 716.928 168.821L723.308 163.93C723.693 163.635 724.001 163.253 724.208 162.815L745.22 118.25C746.17 116.235 744.701 113.917 742.473 113.917H734.005C733.2 113.917 732.427 113.597 731.858 113.027L725.719 106.889C725.149 106.32 724.377 106 723.571 106H723.248C721.57 106 720.211 107.36 720.211 109.037V131.229C720.211 132.815 718.991 134.134 717.41 134.257Z"
+        fill={props.active ? "#e9d74e" : "#0C6746"}
+        fillOpacity={props.active ? "0.8" : "0.7"}
+        className={`duration-200 ${
+          props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
         }`}
         style={{ pointerEvents: "all" }}
       />
-      <svg
-        width="67"
-        height="66"
-        viewBox="0 0 67 66"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g filter="url(#filter0_b_225_69)">
-          <path
-            d="M36.4097 29.2572L18.6079 30.6477C18.2691 30.6742 17.9281 30.6448 17.6008 30.5536C14.1727 29.5987 10.7807 28.0904 7.44524 26.1276C4.93274 24.6491 1.5235 26.9197 2.2445 29.7443L7.83934 51.6632C8.06792 52.5587 8.69181 53.3014 9.53444 53.6812L32.8318 64.1803C33.8512 64.6397 35.0405 64.5019 35.9279 63.8215L42.3084 58.9296C42.6927 58.6349 43.001 58.2526 43.2076 57.8146L64.2204 13.2495C65.1704 11.2348 63.7006 8.91672 61.4731 8.91672H53.0052C52.1997 8.91672 51.4272 8.59676 50.8576 8.02723L44.719 1.88949C44.1494 1.31996 43.3768 1 42.5713 1H42.248C40.5704 1 39.2105 2.3599 39.2105 4.03742V26.229C39.2105 27.8148 37.9906 29.1337 36.4097 29.2572Z"
-            fill={props.active ? "#e9d74e" : "#0C6746"}
-            fillOpacity={props.active ? "0.8" : "0.5"}
-            className={`duration-200 ${
-              props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
-            }`}
-            style={{ pointerEvents: "all" }}
-          />
-          <path
-            d="M36.4097 29.2572L18.6079 30.6477C18.2691 30.6742 17.9281 30.6448 17.6008 30.5536C14.1727 29.5987 10.7807 28.0904 7.44524 26.1276C4.93274 24.6491 1.5235 26.9197 2.2445 29.7443L7.83934 51.6632C8.06792 52.5587 8.69181 53.3014 9.53444 53.6812L32.8318 64.1803C33.8512 64.6397 35.0405 64.5019 35.9279 63.8215L42.3084 58.9296C42.6927 58.6349 43.001 58.2526 43.2076 57.8146L64.2204 13.2495C65.1704 11.2348 63.7006 8.91672 61.4731 8.91672H53.0052C52.1997 8.91672 51.4272 8.59676 50.8576 8.02723L44.719 1.88949C44.1494 1.31996 43.3768 1 42.5713 1H42.248C40.5704 1 39.2105 2.3599 39.2105 4.03742V26.229C39.2105 27.8148 37.9906 29.1337 36.4097 29.2572Z"
-            stroke="#F3F9F7"
-            strokeOpacity="0.25"
-            strokeWidth="1.19199"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_b_225_69"
-            x="-4.52504"
-            y="-5.67103"
-            width="75.7107"
-            height="76.7903"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feGaussianBlur in="BackgroundImageFix" stdDeviation="3.03742" />
-            <feComposite
-              in2="SourceAlpha"
-              operator="in"
-              result="effect1_backgroundBlur_225_69"
+      <path
+        d="M717.41 134.257L699.608 135.648C699.269 135.674 698.928 135.645 698.601 135.554C695.173 134.599 691.781 133.09 688.445 131.128C685.933 129.649 682.524 131.92 683.245 134.744L688.839 156.663C689.068 157.559 689.692 158.301 690.534 158.681L713.832 169.18C714.851 169.64 716.041 169.502 716.928 168.821L723.308 163.93C723.693 163.635 724.001 163.253 724.208 162.815L745.22 118.25C746.17 116.235 744.701 113.917 742.473 113.917H734.005C733.2 113.917 732.427 113.597 731.858 113.027L725.719 106.889C725.149 106.32 724.377 106 723.571 106H723.248C721.57 106 720.211 107.36 720.211 109.037V131.229C720.211 132.815 718.991 134.134 717.41 134.257Z"
+        stroke="#F3F9F7"
+      />
+      {!props.active && (
+        <>
+          <rect x="693" y="124" width="29" height="29" fill="url(#pattern5)" />
+          <defs>
+            <pattern
+              id="pattern5"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use xlinkHref="#image5_317_273" transform="scale(0.0344828)" />
+            </pattern>
+            <image
+              id="image5_317_273"
+              width="29"
+              height="29"
+              xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMYSURBVHgBvZffS1NhGMef9z1nx7mN3CY6ylYG1UU3ipEook6QzCC666KLRIOgIFvdeBGV/0BRdlFgLNMgyCuDrjKYBFGMagWtu3aaml74Y7jNzZ3znrf3LLQtz9mObuwD5/D+4vme5wfPy0GwAzxPPXarYHUSTA6oc0eFg/IxPjzRNxHZiR1U6EDY02gfvFI3CBj1UoU2E0pw9r6cUoCkqAgI+zEhz6YvT/sL2UT5xDhquRW1koGhPocd8iDFFVBkmhlzCItue9013znfK73zWGtxtqu10ywJQZMs30AU5RXMCJn/fTuhSr24OjvVPdo7Ylh0oa25j5OInw0PgkEwjzJPNooiX+15cvr7wIuBfXlFf/Z2nmFBGkMUdgw2bV+TiHQsEp9/PfRyqEpTdKGlsV5IJMcLVpauqGammMdKY2D1y7CmqGSzPecIFMyfHgj/fbShXs+jbk+OqNjTcd6UTLdBkSBOP048h4dzRIVE6hKUAH1PWZgp7dz0Fqm5BE4I6xqqdUGFbxwMoSgsknmqEKEHjupqL6ZVznYoFahgGZ5VXxhiseNQKgqJUlofj8ddGHFcA5SRZDJZh1mGoZzwAHsw7LYbFAFmcf4FZcTEcSuYKkoQSgUtmKo1m9P5DfO11Z+gfHxWX5mMzrW3rnAKcWidilVWwk1HLRhBSqfVBq+776qp6R/1+cb4jDIhI0z+jqboWgz8X0NghI2NDSCEaO5ZLJa4x+N5o44z3TItpO8rQKNQJPm8pJTenZycnN8SPeQPRpM8dxuKhOoXkri0tDS8Odm6Fw7PfHhIOfwYdoleWDHGUbbXlbOWPQk2nPAmhIoZKJEoz/PrLpfrQiqVErPXt/UjFiI039F8j1OQV53/lmQ4FZ6FfKhhZYZzwqt6aLVaTy4uLgb+P7/t2kUI0f3vAteZhX6gIIIBZFnOETSbzW/dbneDlqCm6CZ73wfGPtrMHesIX2RTUe+cWrGSJKmegSAIfvbRXcvLy92hUEj3V8Nwu29qamqJRCItzPARlqujzDvMvJszmUwLLJ8/EonEVJRhxNYfKs88QNsxtO8AAAAASUVORK5CYII="
             />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_backgroundBlur_225_69"
-              result="shape"
-            />
-          </filter>
-        </defs>
-      </svg>
-    </div>
+          </defs>
+        </>
+      )}
+    </g>
   );
 }

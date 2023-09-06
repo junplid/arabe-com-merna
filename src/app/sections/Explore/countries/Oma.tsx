@@ -9,71 +9,45 @@ export default function ComponentCountryOma(
   props: PropsComponentCountryOma_I
 ): JSX.Element {
   return (
-    <div
+    <g
       onClick={() => !props.active && props.onSelect("oma")}
-      className="pointer-events-none group country oma"
-      title="Omã"
+      className={`${!props.active ? "cursor-pointer" : ""} group`}
     >
-      <Image
-        src={"/images/section-10/paises/icons/oma.png"}
-        height={28}
-        width={28}
-        alt="Omã"
-        className={`country icon-oma duration-200 ${
-          props.active ? "opacity-0" : "opacity-100 cursor-pointer"
+      <title>Omã</title>
+      <path
+        d="M757.518 121.48L751.021 116.362C749.487 115.154 747.227 115.686 746.394 117.453L724.967 162.898C724.76 163.336 724.452 163.718 724.067 164.013L716.246 170.01L702.178 180.796C700.941 181.744 700.623 183.474 701.441 184.801L712.617 202.915C713.675 204.631 716.103 204.867 717.714 203.655C721.782 200.596 727.045 198.49 731.474 197.265C733.237 196.777 734.254 194.904 734.289 193.074C734.38 188.293 738.093 184.583 741.412 182.423C742.815 181.509 743.429 179.714 743.285 178.045C742.91 173.709 746.17 170.367 749.191 168.427C750.52 167.573 751.251 165.953 750.845 164.426C748.435 155.368 750.642 150.935 753.047 149.18C754.072 148.431 755.079 147.473 755.272 146.218L758.64 124.328C758.807 123.246 758.378 122.158 757.518 121.48Z"
+        fill={props.active ? "#e9d74e" : "#0C6746"}
+        fillOpacity={props.active ? "0.8" : "0.7"}
+        className={`duration-200 ${
+          props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
         }`}
         style={{ pointerEvents: "all" }}
       />
-      <svg
-        width="60"
-        height="93"
-        viewBox="0 0 60 93"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g filter="url(#filter0_b_225_72)">
-          <path
-            d="M57.5176 7.47991L51.0213 2.36238C49.4871 1.15375 47.2273 1.68638 46.3944 3.45297L24.9667 48.8978C24.7601 49.3359 24.4518 49.7182 24.0674 50.0129L16.2461 56.0095L2.17787 66.7955C0.940991 67.7438 0.622586 69.4744 1.44094 70.8009L12.6167 88.9152C13.6752 90.6309 16.1033 90.867 17.7144 89.6552C21.7822 86.5955 27.0451 84.4904 31.4736 83.265C33.2372 82.777 34.2542 80.9037 34.2889 79.0742C34.3797 74.293 38.0933 70.5831 41.4119 68.4225C42.8154 67.5087 43.4295 65.7137 43.2852 64.0451C42.9104 59.7093 46.1696 56.3669 49.1906 54.4267C50.5201 53.5729 51.251 51.9533 50.8448 50.4264C48.4351 41.3683 50.6424 36.9349 53.0468 35.1799C54.0723 34.4314 55.0787 33.4732 55.2718 32.2183L58.6401 10.3278C58.8066 9.24559 58.3777 8.1575 57.5176 7.47991Z"
-            fill={props.active ? "#e9d74e" : "#0C6746"}
-            fillOpacity={props.active ? "0.8" : "0.5"}
-            className={`duration-200 ${
-              props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
-            }`}
-            style={{ pointerEvents: "all" }}
-          />
-          <path
-            d="M57.5176 7.47991L51.0213 2.36238C49.4871 1.15375 47.2273 1.68638 46.3944 3.45297L24.9667 48.8978C24.7601 49.3359 24.4518 49.7182 24.0674 50.0129L16.2461 56.0095L2.17787 66.7955C0.940991 67.7438 0.622586 69.4744 1.44094 70.8009L12.6167 88.9152C13.6752 90.6309 16.1033 90.867 17.7144 89.6552C21.7822 86.5955 27.0451 84.4904 31.4736 83.265C33.2372 82.777 34.2542 80.9037 34.2889 79.0742C34.3797 74.293 38.0933 70.5831 41.4119 68.4225C42.8154 67.5087 43.4295 65.7137 43.2852 64.0451C42.9104 59.7093 46.1696 56.3669 49.1906 54.4267C50.5201 53.5729 51.251 51.9533 50.8448 50.4264C48.4351 41.3683 50.6424 36.9349 53.0468 35.1799C54.0723 34.4314 55.0787 33.4732 55.2718 32.2183L58.6401 10.3278C58.8066 9.24559 58.3777 8.1575 57.5176 7.47991Z"
-            stroke="#F3F9F7"
-            strokeOpacity="0.25"
-            strokeWidth="1.19199"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_b_225_72"
-            x="-5.68275"
-            y="-4.96058"
-            width="71.0291"
-            height="102.044"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feGaussianBlur in="BackgroundImageFix" stdDeviation="3.03742" />
-            <feComposite
-              in2="SourceAlpha"
-              operator="in"
-              result="effect1_backgroundBlur_225_72"
+      <path
+        d="M757.518 121.48L751.021 116.362C749.487 115.154 747.227 115.686 746.394 117.453L724.967 162.898C724.76 163.336 724.452 163.718 724.067 164.013L716.246 170.01L702.178 180.796C700.941 181.744 700.623 183.474 701.441 184.801L712.617 202.915C713.675 204.631 716.103 204.867 717.714 203.655C721.782 200.596 727.045 198.49 731.474 197.265C733.237 196.777 734.254 194.904 734.289 193.074C734.38 188.293 738.093 184.583 741.412 182.423C742.815 181.509 743.429 179.714 743.285 178.045C742.91 173.709 746.17 170.367 749.191 168.427C750.52 167.573 751.251 165.953 750.845 164.426C748.435 155.368 750.642 150.935 753.047 149.18C754.072 148.431 755.079 147.473 755.272 146.218L758.64 124.328C758.807 123.246 758.378 122.158 757.518 121.48Z"
+        stroke="#F3F9F7"
+      />
+      {!props.active && (
+        <>
+          <rect x="726" y="163" width="29" height="29" fill="url(#pattern13)" />
+          <defs>
+            <pattern
+              id="pattern13"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use xlinkHref="#image13_317_273" transform="scale(0.0344828)" />
+            </pattern>
+            <image
+              id="image13_317_273"
+              width="29"
+              height="29"
+              xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALbSURBVHgBvZdPSBRRHMe/b3bW1QVlF4oCWd0oM8lQ6VKHaFMIiqA6eVhLD+WthA7RoSKL6BKUuBF0UaMkOnQLIa1WEC9tJEK526VV2chq22FrXXX+vH4zrOKf3Vp1Zj/w5r35vd/Md36/+b3hDcM6SSQSXuq8i+ecczWVSoU8Hk8633uwfJwkSWqi7jy1o9TcOdyC1J7TQwy43e4oNioaKas/vuV1321bVWU98ifNGHuUTCZvUvS/sjkI2Ywf4HWFheounky/VL/H1yOoU0LRdpSWlr6nV1GXl2hkd2O5kzmC0HARm8NLEb+jiFv/KRo70e7kn2MjnKMO5mDXNK2XIj6SUzQ5MPIAyyrTLCjiF5mqXykase9tZaraBmtwkXDPGlGuqDdgLT6K1qcPRP0QKWs4xpOzXru3fPEBwEQb5GgM8mhIxm8JZqBJf65RFzTWacRe/YzLaPa8fQxdWBdVYjOY9p2B2aQx7zbSy1Uc0vsfl+4YokW7KhDvDMAKnLbik2yieI+XzfEvusEz1AP7zgpjUpn5iakDzTAbZmf3RFFBpZoxfDt3dWlSKHHAElS+VVQUhTHYjHO9cKyG21i5kCnggsEEKAIDn0QB4TKfEByukgRll6NAMIFNCjukMQkqhlEgmFt9Y7xQVsRe8QXuy+Y0U+uQ550CzEBMadONH8fHDNHZhbmHTjguU45dqx1HT5XZv9YUwxy0u/BnPvgNiEoaeBcshUfBHU/10VLe5rBwn7ooLEPo7G4ZSK4Q1aNVYDutCZBhMhzsVrd/sHdJfvlkLT6NMY21w0Q4Z30B/+D15bY1ZVmDcC8XmY+Gm/5oUGEGAi2DbavtWddCjRIeppT4aCH3YWNqU7S58wf8QxeyTedcgBRxtFoLt0nbiw4zzp7oicL/xSIa2BXaBO4LtAz153LL67dCp6O/aZuq4iBtsPaTehVduIXMcRKKc1Ebh6yFAmeDoXzu9Re2UxD4F45J3QAAAABJRU5ErkJggg=="
             />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_backgroundBlur_225_72"
-              result="shape"
-            />
-          </filter>
-        </defs>
-      </svg>
-    </div>
+          </defs>
+        </>
+      )}
+    </g>
   );
 }

@@ -43,11 +43,11 @@ const ArticleComponent: React.FC<PropsArticle_I> = (
           text: props.paragraph,
         })
       }
-      className="m-1.5 cursor-pointer"
+      className="p-1.5 cursor-pointer"
     >
       <article
         style={{ minWidth: 320 }}
-        className="flex items-center justify-between w-full px-5 py-4 duration-300 shadow-md bg-primary hover:bg-primary-hover gap-x-5 group shadow-slate-400/80 rounded-3xl"
+        className="flex items-center justify-between w-full px-5 py-4 duration-300 shadow-md bg-primary hover:bg-primary-hover gap-x-2 lg:gap-x-5 group shadow-slate-400/80 rounded-3xl"
       >
         <div>
           <p className="text-xl font-semibold leading-tight tracking-wide text-white line-clamp-5">
@@ -79,22 +79,83 @@ const ArticleComponent: React.FC<PropsArticle_I> = (
 };
 
 const responsive: ResponsiveType = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1780 },
     items: 3,
     partialVisibilityGutter: 50,
   },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
+  desktop2: {
+    breakpoint: { max: 1780, min: 1626 },
+    items: 3,
+    partialVisibilityGutter: 10,
+  },
+  desktop3: {
+    breakpoint: { max: 1626, min: 1412 },
     items: 2,
+    partialVisibilityGutter: 80,
+  },
+  desktop4: {
+    breakpoint: { max: 1412, min: 1280 },
+    items: 2,
+    partialVisibilityGutter: 20,
+  },
+  desktop5: {
+    breakpoint: { max: 1280, min: 1194 },
+    items: 1,
+    partialVisibilityGutter: 280,
+  },
+  desktop6: {
+    breakpoint: { max: 1194, min: 1074 },
+    items: 1,
+    partialVisibilityGutter: 180,
+  },
+  desktop7: {
+    breakpoint: { max: 1074, min: 1024 },
+    items: 1,
+    partialVisibilityGutter: 100,
+  },
+  desktop8: {
+    breakpoint: { max: 1024, min: 930 },
+    items: 1,
+    partialVisibilityGutter: 250,
+  },
+  desktop9: {
+    breakpoint: { max: 930, min: 464 },
+    items: 1,
+    partialVisibilityGutter: 170,
+  },
+  desktop10: {
+    breakpoint: { max: 842, min: 768 },
+    items: 1,
+    partialVisibilityGutter: 70,
+  },
+  tablet: {
+    breakpoint: { max: 768, min: 464 },
+    items: 2,
+    partialVisibilityGutter: 10,
+  },
+  tablet2: {
+    breakpoint: { max: 710, min: 640 },
+    items: 1,
+    partialVisibilityGutter: 290,
+  },
+  tablet3: {
+    breakpoint: { max: 640, min: 564 },
+    items: 1,
+    partialVisibilityGutter: 200,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 564, min: 480 },
+    items: 1,
+    partialVisibilityGutter: 130,
+  },
+  mobile2: {
+    breakpoint: { max: 480, min: 0 },
+    items: 1,
+    partialVisibilityGutter: 80,
+  },
+  mobile3: {
+    breakpoint: { max: 422, min: 0 },
     items: 1,
   },
 };
@@ -188,7 +249,7 @@ export const ComponentResultsCarousel: React.FC<
         swipeable
       >
         {LanguageSectionResults[lng].carousels.map((carousel_items, e) => (
-          <div className="flex flex-col" key={e}>
+          <div className="grid" key={e}>
             {carousel_items.map((item) => (
               <ArticleComponent
                 key={item.id}

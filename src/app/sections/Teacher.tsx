@@ -15,14 +15,14 @@ export default function SectionTeacherHomePage({
         style={{ background: "#F2FFEC" }}
         className="flex items-center px-4 py-24 text-white"
       >
-        <div className="flex flex-row items-start justify-between m-auto lg:items-center lg: gap-x-14 max-w-default">
+        <div className="flex flex-col items-start justify-between m-auto gap-y-6 sm:flex-row lg:items-center lg: gap-x-14 max-w-default">
           <Image
             src={"/images/section-9/professora.png"}
             width={500}
             height={521}
             style={{ height: "auto", width: "100%", objectFit: "contain" }}
             alt="Professora Merna"
-            className="sticky top-32 md:top-20"
+            className="sm:sticky top-32 md:top-20"
           />
           <div
             style={{ minWidth: 300 }}

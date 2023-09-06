@@ -38,6 +38,7 @@ const ArticleDoubt: React.FC<PropsArticleDoubt_I> = (
           {props.question}
         </span>
         <FiChevronDown
+          style={{ minWidth: 23 }}
           className={`text-primary duration-200 ${
             isExpanded ? "rotate-180" : ""
           }`}

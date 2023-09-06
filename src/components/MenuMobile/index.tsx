@@ -47,8 +47,12 @@ export const MenuMobileComponent: FC<PropsMenuMobileComponent_I> = ({
         )}
       </button>
       <div
-        style={{ background: "#fff", top: open ? 100 : -280 }}
-        className={`pb-2 pt-5 fixed w-full left-0 shadow-lg shadow-black/10 duration-500`}
+        style={{
+          background: "#fff",
+          top: open ? 63 : -350,
+          position: "absolute",
+        }}
+        className={`pb-2 pt-5 w-full left-0 shadow-lg shadow-black/10 duration-500`}
       >
         <div className="flex gap-4 px-4">
           <div ref={refLanguage} className="relative w-2/3 h-14">
@@ -106,7 +110,7 @@ export const MenuMobileComponent: FC<PropsMenuMobileComponent_I> = ({
                 <a
                   {...(item.link && { href: item.link })}
                   // onClick={() => item.scrollTop && scroll.scrollTo(0)}
-                  className="block px-2 py-3 text-lg font-medium border-b text-secondary"
+                  className="block px-2 py-3 text-lg font-medium text-secondary"
                 >
                   {item.label}
                 </a>

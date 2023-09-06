@@ -9,20 +9,52 @@ interface PropsComponentDepositionsCarousel_I {
 
 const responsive: ResponsiveType = {
   superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 4000, min: 1500 },
     partialVisibilityGutter: 10,
     items: 5,
   },
+  desktop: {
+    breakpoint: { max: 1500, min: 1300 },
+    partialVisibilityGutter: 10,
+    items: 4,
+  },
+  desktop2: {
+    breakpoint: { max: 1300, min: 1150 },
+    partialVisibilityGutter: 70,
+    items: 3,
+  },
+  desktop3: {
+    breakpoint: { max: 1150, min: 1070 },
+    partialVisibilityGutter: 40,
+    items: 3,
+  },
+  desktop4: {
+    breakpoint: { max: 1070, min: 850 },
+    partialVisibilityGutter: 10,
+    items: 3,
+  },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 850, min: 720 },
+    partialVisibilityGutter: 50,
     items: 2,
   },
+  tablet2: {
+    breakpoint: { max: 720, min: 592 },
+    partialVisibilityGutter: 10,
+    items: 2,
+  },
+  tablet1: {
+    breakpoint: { max: 592, min: 470 },
+    partialVisibilityGutter: 150,
+    items: 1,
+  },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 470, min: 395 },
+    partialVisibilityGutter: 80,
+    items: 1,
+  },
+  mobile2: {
+    breakpoint: { max: 395, min: 0 },
     items: 1,
   },
 };
@@ -55,7 +87,6 @@ export default function ComponentDepositionsCarousel({
       <Carousel
         ssr
         responsive={responsive}
-        className="flex w-full"
         partialVisible
         // @ts-expect-error
         customDot={<ButtonDotCarousel />}
@@ -74,11 +105,11 @@ export default function ComponentDepositionsCarousel({
         dotListClass="flex items-center justify-center gap-x-2"
       >
         {LanguageSectionDepositions[lng].items.map((item) => (
-          <div className="p-5 pb-10 first:pl-0" key={item.id}>
-            <article className="flex flex-col items-end w-full p-5 text-lg text-white shadow-lg gap-y-3 shadow-black/30 bg-primary">
+          <div className="pb-10 m-1.5" key={item.id}>
+            <article className="flex flex-col items-end w-full h-full p-5 text-lg text-white shadow-lg gap-y-3 shadow-black/30 bg-primary">
               <p className="line-clamp-6">{item.text}</p>
               <div className="flex flex-col items-end">
-                <h3 className="font-semibold leading-tight tracking-widest">
+                <h3 className="text-base font-semibold leading-tight tracking-widest lg:text-lg">
                   {item.name}
                 </h3>
               </div>

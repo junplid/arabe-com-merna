@@ -9,71 +9,45 @@ export default function ComponentCountryIemen(
   props: PropsComponentCountryIemen_I
 ): JSX.Element {
   return (
-    <div
+    <g
       onClick={() => !props.active && props.onSelect("iemen")}
-      className="pointer-events-none group country iemen"
-      title="Iemen"
+      className={`${!props.active ? "cursor-pointer" : ""} group`}
     >
-      <Image
-        src={"/images/section-10/paises/icons/iemen.png"}
-        height={28}
-        width={28}
-        alt="Iemen"
-        className={`country icon-iemen duration-200 ${
-          props.active ? "opacity-0" : "opacity-100 cursor-pointer"
+      <title>Iemen</title>
+      <path
+        d="M678.369 248.602L709.684 220.736C710.577 219.942 710.888 218.702 710.69 217.524C710.121 214.14 710.982 211.194 712.716 208.664C713.483 207.544 713.654 206.074 712.941 204.918L700.72 185.11C699.963 183.882 698.432 183.358 697.085 183.875C668.646 194.8 662.253 207.014 662.603 213.264C662.665 214.375 662.445 215.539 661.682 216.347L659.928 218.206C658.666 219.543 656.493 219.378 655.447 217.866C654.913 217.095 654.03 216.629 653.092 216.627C643.799 216.615 637.457 217.499 633.242 218.7C630.41 219.506 621.257 222.934 620.88 225.854C620.786 226.589 620.723 227.339 620.688 228.045C620.663 228.548 620.529 229.039 620.279 229.476L617.848 233.732C617.322 234.654 617.315 235.784 617.827 236.714C624.336 248.541 630.518 260.936 635.157 270.789C635.927 272.425 637.943 273.043 639.492 272.109L677.919 248.934C678.079 248.838 678.23 248.726 678.369 248.602Z"
+        fill={props.active ? "#e9d74e" : "#0C6746"}
+        fillOpacity={props.active ? "0.8" : "0.7"}
+        className={`duration-200 ${
+          props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
         }`}
         style={{ pointerEvents: "all" }}
       />
-      <svg
-        width="99"
-        height="91"
-        viewBox="0 0 99 91"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g filter="url(#filter0_b_225_38)">
-          <path
-            d="M62.3694 65.6022L93.6841 37.7364C94.5767 36.9421 94.8878 35.7023 94.6897 34.5239C94.121 31.1402 94.982 28.1937 96.7158 25.6638C97.4834 24.5436 97.6542 23.0737 96.9412 21.918L84.7204 2.10973C83.9628 0.881767 82.4315 0.357967 81.0846 0.875362C52.6461 11.7996 46.2531 24.0145 46.6025 30.2642C46.6646 31.3746 46.4454 32.5386 45.6821 33.3473L43.9279 35.2059C42.6659 36.5429 40.4929 36.3783 39.4468 34.8663C38.9133 34.0953 38.0296 33.6287 37.092 33.6274C27.7991 33.615 21.457 34.4993 17.2421 35.6996C14.41 36.5062 5.25666 39.934 4.88019 42.8545C4.78548 43.5893 4.72326 44.3387 4.68788 45.0452C4.66271 45.5478 4.52863 46.0393 4.27902 46.4763L1.8482 50.7324C1.3216 51.6544 1.31525 52.784 1.82722 53.7142C8.33631 65.5408 14.518 77.9356 19.157 87.7893C19.9272 89.4253 21.9431 90.0429 23.4916 89.109L61.9188 65.9342C62.0789 65.8376 62.2297 65.7265 62.3694 65.6022Z"
-            fill={props.active ? "#e9d74e" : "#0C6746"}
-            fillOpacity={props.active ? "0.8" : "0.5"}
-            className={`duration-200 ${
-              props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
-            }`}
-            style={{ pointerEvents: "all" }}
-          />
-          <path
-            d="M62.3694 65.6022L93.6841 37.7364C94.5767 36.9421 94.8878 35.7023 94.6897 34.5239C94.121 31.1402 94.982 28.1937 96.7158 25.6638C97.4834 24.5436 97.6542 23.0737 96.9412 21.918L84.7204 2.10973C83.9628 0.881767 82.4315 0.357967 81.0846 0.875362C52.6461 11.7996 46.2531 24.0145 46.6025 30.2642C46.6646 31.3746 46.4454 32.5386 45.6821 33.3473L43.9279 35.2059C42.6659 36.5429 40.4929 36.3783 39.4468 34.8663C38.9133 34.0953 38.0296 33.6287 37.092 33.6274C27.7991 33.615 21.457 34.4993 17.2421 35.6996C14.41 36.5062 5.25666 39.934 4.88019 42.8545C4.78548 43.5893 4.72326 44.3387 4.68788 45.0452C4.66271 45.5478 4.52863 46.0393 4.27902 46.4763L1.8482 50.7324C1.3216 51.6544 1.31525 52.784 1.82722 53.7142C8.33631 65.5408 14.518 77.9356 19.157 87.7893C19.9272 89.4253 21.9431 90.0429 23.4916 89.109L61.9188 65.9342C62.0789 65.8376 62.2297 65.7265 62.3694 65.6022Z"
-            stroke="#F3F9F7"
-            strokeOpacity="0.25"
-            strokeWidth="1.19199"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_b_225_38"
-            x="-5.22279"
-            y="-5.99379"
-            width="109.287"
-            height="102.211"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feGaussianBlur in="BackgroundImageFix" stdDeviation="3.03742" />
-            <feComposite
-              in2="SourceAlpha"
-              operator="in"
-              result="effect1_backgroundBlur_225_38"
+      <path
+        d="M678.369 248.602L709.684 220.736C710.577 219.942 710.888 218.702 710.69 217.524C710.121 214.14 710.982 211.194 712.716 208.664C713.483 207.544 713.654 206.074 712.941 204.918L700.72 185.11C699.963 183.882 698.432 183.358 697.085 183.875C668.646 194.8 662.253 207.014 662.603 213.264C662.665 214.375 662.445 215.539 661.682 216.347L659.928 218.206C658.666 219.543 656.493 219.378 655.447 217.866C654.913 217.095 654.03 216.629 653.092 216.627C643.799 216.615 637.457 217.499 633.242 218.7C630.41 219.506 621.257 222.934 620.88 225.854C620.786 226.589 620.723 227.339 620.688 228.045C620.663 228.548 620.529 229.039 620.279 229.476L617.848 233.732C617.322 234.654 617.315 235.784 617.827 236.714C624.336 248.541 630.518 260.936 635.157 270.789C635.927 272.425 637.943 273.043 639.492 272.109L677.919 248.934C678.079 248.838 678.23 248.726 678.369 248.602Z"
+        stroke="#F3F9F7"
+      />
+      {!props.active && (
+        <>
+          <rect x="651" y="213" width="29" height="29" fill="url(#pattern6)" />
+          <defs>
+            <pattern
+              id="pattern6"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use xlinkHref="#image6_317_273" transform="scale(0.0344828)" />
+            </pattern>
+            <image
+              id="image6_317_273"
+              width="29"
+              height="29"
+              xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALGSURBVHgBvZdLaxNRFMfP3JlkBgM1YgtxN61Q8LGoRZCWoNaN0oXUleAqKIW6shWXQpu67MLHF6hV3NSFu2IR2iCCFozjq0IraARLgobOKHnNI3M9dyRp82we7fwg3Ln33Nz/PWfunDnDQYMkZmZ8icXFE+bm5kkiSUfBND2OYZ/029DUt8Z+n3Lm5crXRtbidprwPRQKqOvrt2zDuIZdf7U5hp4F27aA83gVMHIPBlfX5ziOo02LKiMjfntjY5Ly/BhYlgT1oBR0PY1NUSfGS+LUQPTjXMOir/v6ZFGSlmzL6oYGsUwd92aUjBFRujv47sPN8rmkmqDH41luRpAhCN6KMVvPTbw61jv7eX6+xMhVE8Q4ydAChp7Be5uvZroXXF2bKHRKPJX8/qetCjqLEaGWafzN6YGrhU7R02h/f4gSMgttYOctMIxsLbNmevTuofcxregpntJJaBOO8PXMfsHwjrMLJx5fRkcvcV6vDG1CLQu8eaOmneOFG3R1LeyEV9O0J/iMXYHdwLad57b2zugQ+d/S8+AWhJwjqqqy1HYQ3ILS4wTpBXc5QDAxi+AyBO9nHFyGdHR0/AIXQSf/sPD+xesYuATP8y8KGekZuASm2hUnOXR2dp5Fj5dhF8hkMjVt+Ab7honosONpMpmMYBOBNrFZNqqDaZp3WLuV8CkNw96KxtLp9MMSUeYt/uk+7JFoT0/PxcJ1yUt8enr6NsZdgRbJ56tWDezEhj8hhX5FYTY8PBxQFGXJsqwj0ATMy1wuVzGOBzScSqWmto9VFGYLCwuJYDA4gLubgybATZYPaV1dXdfLBZ2NQB0CgUAIQ8YqCrnePFbvZrNbZYoois/xNxaPx39Um79jhV8Qx0Uu48IXaNkLmvVZWAVBUNHbR5IkPcZDGa23XkOi25Fl+RQmgEMo5nxi+Hw+FceikUjkZ6Nr/AP94SnxSRsEsQAAAABJRU5ErkJggg=="
             />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_backgroundBlur_225_38"
-              result="shape"
-            />
-          </filter>
-        </defs>
-      </svg>
-    </div>
+          </defs>
+        </>
+      )}
+    </g>
   );
 }

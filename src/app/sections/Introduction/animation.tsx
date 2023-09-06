@@ -10,7 +10,7 @@ export default function AnimationMainSection1Component(
   return (
     <Lottie
       style={{
-        minWidth: 333,
+        minWidth: 200,
       }}
       loop={false}
       animationData={Main}

@@ -46,94 +46,129 @@ export default function ComponentMapExplore({
 
   return (
     <div className="flex flex-col items-center gap-y-2">
-      <div
-        style={{ height: 400 }}
-        className="relative flex flex-wrap w-full max-w-3xl m-auto"
-      >
-        <ComponentCountryMauritania
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "mauritania"}
-        />
-        <ComponentCountrySaaraOcidental
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "saaraOcidental"}
-        />
-        <ComponentCountryMorocco
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "marrocos"}
-        />
-        <ComponentCountryArgelia
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "argelia"}
-        />
-        <ComponentCountryTunisia
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "tunisia"}
-        />
-        <ComponentCountryLibia
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "libia"}
-        />
-        <ComponentCountryEgito
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "egito"}
-        />
-        <ComponentCountrySudao
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "sudao"}
-        />
-        <ComponentCountrySomalia
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "somalia"}
-        />
-        <ComponentCountryIemen
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "iemen"}
-        />
-        <ComponentCountryArabiaSaldita
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "arabiaSaudita"}
-        />
-        <ComponentCountryJordania
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "jordania"}
-        />
-        <ComponentCountryPalestina
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "palestina"}
-        />
-        <ComponentCountrySiria
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "siria"}
-        />
-        <ComponentCountryLibano
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "libano"}
-        />
-        <ComponentCountryIraque
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "iraque"}
-        />
-        <ComponentCountryKuwait
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "kuwait"}
-        />
-        <ComponentCountryEmiradosArabesUnidos
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "emiradosArabesUnidos"}
-        />
-        <ComponentCountryOma
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "oma"}
-        />
-        <ComponentCountryCatar
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "catar"}
-        />
-        <ComponentCountryBahrein
-          onSelect={(country) => setCountrySelected(country)}
-          active={countrySelected === "bahrein"}
-        />
+      <div className="relative flex flex-wrap w-full max-w-3xl m-auto">
+        <svg
+          viewBox="0 0 760 414"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        >
+          <g clip-path="url(#clip0_317_273)">
+            <ComponentCountryArabiaSaldita
+              active={countrySelected === "arabiaSaudita"}
+              onSelect={setCountrySelected}
+            />
+
+            <ComponentCountryArgelia
+              active={countrySelected === "argelia"}
+              onSelect={setCountrySelected}
+            />
+
+            <ComponentCountryBahrein
+              active={countrySelected === "bahrein"}
+              onSelect={setCountrySelected}
+            />
+
+            <ComponentCountryCatar
+              active={countrySelected === "catar"}
+              onSelect={setCountrySelected}
+            />
+
+            <ComponentCountryEgito
+              active={countrySelected === "egito"}
+              onSelect={setCountrySelected}
+            />
+
+            <ComponentCountryEmiradosArabesUnidos
+              active={countrySelected === "emiradosArabesUnidos"}
+              onSelect={setCountrySelected}
+            />
+
+            <ComponentCountryIemen
+              active={countrySelected === "iemen"}
+              onSelect={setCountrySelected}
+            />
+
+            <ComponentCountryIraque
+              active={countrySelected === "iraque"}
+              onSelect={setCountrySelected}
+            />
+
+            <ComponentCountryJordania
+              active={countrySelected === "jordania"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountryLibano
+              active={countrySelected === "libano"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountryLibia
+              active={countrySelected === "libia"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountryMorocco
+              active={countrySelected === "marrocos"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountryMauritania
+              active={countrySelected === "mauritania"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountryOma
+              active={countrySelected === "oma"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountrySaaraOcidental
+              active={countrySelected === "saaraOcidental"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountrySiria
+              active={countrySelected === "siria"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountrySomalia
+              active={countrySelected === "somalia"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountrySudao
+              active={countrySelected === "sudao"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountryTunisia
+              active={countrySelected === "tunisia"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountryKuwait
+              active={countrySelected === "kuwait"}
+              onSelect={setCountrySelected}
+            />
+            <ComponentCountryPalestina
+              active={countrySelected === "palestina"}
+              onSelect={setCountrySelected}
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_317_273">
+              <rect width="760" height="414" fill="white" />
+            </clipPath>
+            <clipPath id="clip2_317_273">
+              <rect
+                width="121"
+                height="86"
+                fill="white"
+                transform="translate(57 19)"
+              />
+            </clipPath>
+            <clipPath id="clip3_317_273">
+              <rect
+                width="98"
+                height="148"
+                fill="white"
+                transform="translate(610 266)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
       </div>
       <div className="flex items-center justify-center w-3/4 pb-5 my-5 border-b gap-x-3 border-gray/30">
         <div className="flex items-center justify-center p-3 bg-yellow-200 rounded-full">

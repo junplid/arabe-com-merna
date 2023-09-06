@@ -15,7 +15,7 @@ export default function SectionDoubtsHomePage({
         <div className="w-full m-auto max-w-default">
           <div className="flex flex-col gap-y-10">
             <div className="flex justify-center w-full">
-              <h2 className="text-3xl text-primary">
+              <h2 className="text-3xl text-center text-primary">
                 <strong className="font-semibold">
                   {LanguageSectionDoubts[lng].title["part-1-semibold"]}
                 </strong>{" "}

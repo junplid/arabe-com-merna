@@ -9,81 +9,54 @@ export default function ComponentCountryPalestina(
   props: PropsComponentCountryPalestina_I
 ): JSX.Element {
   return (
-    <div
+    <g
       onClick={() => !props.active && props.onSelect("palestina")}
-      className="pointer-events-none group country palestina"
-      title="Palestina"
+      className={`${!props.active ? "cursor-pointer" : ""} group`}
     >
-      <Image
-        src={"/images/section-10/paises/icons/palestina.png"}
-        height={28}
-        width={28}
-        alt="Palestina"
-        className={`country icon-palestina duration-200 ${
-          props.active ? "opacity-0" : "opacity-100 cursor-pointer"
+      <title>Palestina</title>
+      <path
+        d="M517.341 59.2706L517.656 61.9959L518.456 67.7623L518.844 69.7635C519.046 70.8089 518.162 71.7441 517.107 71.6002C516.625 71.5345 516.141 71.6978 515.797 72.0415L515.105 72.734C514.252 73.5863 512.87 73.5863 512.018 72.734C511.295 72.0107 511.171 70.8819 511.72 70.0189L512.181 69.2941C512.978 68.0423 512.753 66.3982 511.65 65.4057L510.593 64.4543C509.953 63.8783 509.588 63.0577 509.588 62.1966L509.588 59.864C509.588 58.7135 510.238 57.6617 511.267 57.1472L512.31 56.6258C513.104 56.2287 514.032 56.1991 514.85 56.5447L515.505 56.8215C516.514 57.2475 517.215 58.1832 517.341 59.2706Z"
+        fill={props.active ? "#e9d74e" : "#0C6746"}
+        fillOpacity={props.active ? "0.8" : "0.7"}
+        className={`duration-200 ${
+          props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
         }`}
         style={{ pointerEvents: "all" }}
       />
-      <svg
-        width="19"
-        height="29"
-        viewBox="0 0 19 29"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g filter="url(#filter0_b_225_47)">
-          <path
-            d="M16.3406 4.27057L16.6556 6.9958L17.456 12.7622L17.8437 14.7634C18.0463 15.8088 17.162 16.744 16.1069 16.6001C15.6253 16.5344 15.1407 16.6977 14.797 17.0414L14.1046 17.7339C13.2522 18.5862 11.8703 18.5862 11.0179 17.7339C10.2946 17.0106 10.1707 15.8818 10.7199 15.0188L11.1811 14.294C11.9777 13.0422 11.7533 11.3981 10.6505 10.4056L9.59342 9.45421C8.9534 8.8782 8.58793 8.0576 8.58792 7.19654L8.5879 4.86391C8.58789 3.71341 9.23792 2.66164 10.267 2.14713L11.3097 1.62577C12.1039 1.22865 13.0322 1.19899 13.8502 1.54459L14.5054 1.82143C15.5138 2.24747 16.2149 3.18314 16.3406 4.27057Z"
-            fill={props.active ? "#e9d74e" : "#0C6746"}
-            fillOpacity={props.active ? "0.8" : "0.5"}
-            className={`duration-200 ${
-              props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
-            }`}
-            style={{ pointerEvents: "all" }}
-          />
-          <path
-            d="M6.23692 17.2628L3.36262 13.9095C3.03383 13.5259 2.41663 13.8753 2.57639 14.3546C2.60974 14.4547 2.60773 14.5631 2.57071 14.6618L1.6294 17.1722C1.50153 17.5132 1.43603 17.8744 1.43603 18.2386L1.43599 24.6489L6.56872 26.8253C7.73673 27.3206 8.97222 26.2785 8.68101 25.0437C8.61996 24.7848 8.49327 24.546 8.31315 24.3503L7.11582 23.0494C6.53513 22.4184 6.24819 21.5714 6.32584 20.7174L6.55059 18.2455C6.583 17.889 6.46987 17.5346 6.23692 17.2628Z"
-            fill={props.active ? "#e9d74e" : "#0C6746"}
-            fillOpacity={props.active ? "0.8" : "0.5"}
-            onClick={() => props.onSelect("palestina")}
-            className={`duration-200 ${
-              props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
-            }`}
-            style={{ pointerEvents: "all" }}
-          />
-          <path
-            d="M1.43599 24.6489C3.67972 23.8955 -0.255887 26.703 1.43599 24.6489ZM1.43599 24.6489L6.56872 26.8253C7.73673 27.3206 8.97222 26.2785 8.68101 25.0437V25.0437C8.61996 24.7848 8.49327 24.546 8.31315 24.3503L7.11582 23.0494C6.53513 22.4184 6.24819 21.5714 6.32584 20.7174L6.55059 18.2455C6.583 17.889 6.46987 17.5346 6.23692 17.2628L3.36262 13.9095C3.03383 13.5259 2.41663 13.8753 2.57639 14.3546V14.3546C2.60974 14.4547 2.60773 14.5631 2.57071 14.6618L1.6294 17.1722C1.50153 17.5132 1.43603 17.8744 1.43603 18.2386L1.43599 24.6489ZM16.6556 6.9958L16.3406 4.27057C16.2149 3.18314 15.5138 2.24747 14.5054 1.82143L13.8502 1.54459C13.0322 1.19899 12.1039 1.22865 11.3097 1.62577L10.267 2.14713C9.23792 2.66164 8.58789 3.71341 8.5879 4.86391L8.58792 7.19654C8.58793 8.0576 8.9534 8.8782 9.59342 9.45421L10.6505 10.4056C11.7533 11.3981 11.9777 13.0422 11.1811 14.294L10.7199 15.0188C10.1707 15.8818 10.2946 17.0106 11.0179 17.7339V17.7339C11.8703 18.5862 13.2522 18.5862 14.1046 17.7339L14.797 17.0414C15.1407 16.6977 15.6253 16.5344 16.1069 16.6001V16.6001C17.162 16.744 18.0463 15.8088 17.8437 14.7634L17.456 12.7622L16.6556 6.9958Z"
-            stroke="#F3F9F7"
-            strokeOpacity="0.25"
-            strokeWidth="1.19199"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_b_225_47"
-            x="-5.235"
-            y="-5.36586"
-            width="29.7791"
-            height="38.989"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feGaussianBlur in="BackgroundImageFix" stdDeviation="3.03742" />
-            <feComposite
-              in2="SourceAlpha"
-              operator="in"
-              result="effect1_backgroundBlur_225_47"
+      <path
+        d="M507.237 72.2628L504.363 68.9095C504.034 68.5259 503.417 68.8753 503.576 69.3546C503.61 69.4547 503.608 69.5631 503.571 69.6618L502.629 72.1722C502.502 72.5132 502.436 72.8744 502.436 73.2386L502.436 79.6489L507.569 81.8253C508.737 82.3206 509.972 81.2785 509.681 80.0437C509.62 79.7848 509.493 79.546 509.313 79.3503L508.116 78.0494C507.535 77.4184 507.248 76.5714 507.326 75.7174L507.551 73.2455C507.583 72.889 507.47 72.5346 507.237 72.2628Z"
+        fill={props.active ? "#e9d74e" : "#0C6746"}
+        fillOpacity={props.active ? "0.8" : "0.7"}
+        className={`duration-200 ${
+          props.active ? "" : "group-hover:fill-yellow-200 cursor-pointer"
+        }`}
+        style={{ pointerEvents: "all" }}
+      />
+      <path
+        d="M502.436 79.649C500.744 81.7031 504.68 78.8956 502.436 79.649ZM502.436 79.649L507.569 81.8254C508.737 82.3207 509.972 81.2786 509.681 80.0438C509.62 79.7849 509.493 79.5461 509.313 79.3504L508.116 78.0495C507.535 77.4185 507.248 76.5715 507.326 75.7175L507.551 73.2456C507.583 72.8891 507.47 72.5347 507.237 72.2629L504.363 68.9096C504.034 68.526 503.417 68.8754 503.576 69.3547C503.61 69.4548 503.608 69.5632 503.571 69.6619L502.629 72.1723C502.502 72.5133 502.436 72.8745 502.436 73.2387L502.436 79.649ZM517.656 61.9959L517.341 59.2706C517.215 58.1832 516.514 57.2475 515.505 56.8215L514.85 56.5447C514.032 56.1991 513.104 56.2287 512.31 56.6258L511.267 57.1472C510.238 57.6617 509.588 58.7135 509.588 59.864L509.588 62.1966C509.588 63.0577 509.953 63.8783 510.593 64.4543L511.65 65.4057C512.753 66.3982 512.978 68.0423 512.181 69.2941L511.72 70.0189C511.171 70.8819 511.295 72.0107 512.018 72.734C512.87 73.5863 514.252 73.5863 515.105 72.734L515.797 72.0415C516.141 71.6978 516.625 71.5345 517.107 71.6002C518.162 71.7441 519.046 70.8089 518.844 69.7635L518.456 67.7623L517.656 61.9959Z"
+        stroke="#F3F9F7"
+      />
+      {!props.active && (
+        <>
+          <rect x="472" y="48" width="28" height="28" fill="url(#pattern20)" />
+          <defs>
+            <pattern
+              id="pattern20"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use xlinkHref="#image20_317_273" transform="scale(0.0357143)" />
+            </pattern>
+            <image
+              id="image20_317_273"
+              width="28"
+              height="28"
+              xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKBSURBVHgBtZbPaxNBFMffzGw2NG7TpNUakISILemhXgx48hBFvXho1BJbK1hFPa3iseJBPIii4A/iQc9SxYOg0IuKqNhDbaBFejDRQvIHaBJSJMkad3yzJaG0abLJpF94Oy+TN/uZnbz3NgBNxDknOEQopQ8dDsdXQkhOTAvDuT+MsS/oP1AUJQKy8nq91/BG2SrAhqVxA+ehVbnd7gGn0/mtBdAGMFrQFkxV1SgOOWgfZhkefQE3PtYQltL2ndKhTwq03nw+X6wu7DsMBZNkqJCEEO8wNIdPOljl0KpDgH/ElOwWvg7b0fqgQ/IUi8Xp6gcmLkkWOod7Obs2aj+4rHEeiiAr0zR3YcaXS6XSLLGAEErDJln1GH6h/QZZYQ2nDcPYQ/C3i1jH2UDZ00dBm7oIsvL7/QcVhEWbBfY+fwdaICANxa4VZTrrv45eoFmwMbtgjeqBMEjIZDrpjyNQtRMtC8VmoDGd995qZZEktItCWyLQriihNN/KApE42tQFaFMrlDP6w260JExokfK/lTk7kR2AibJI2Cr8ypUR2CYJE/J07YgQ8Rci5RjOQqXiqReUOOmG+RM9IC+eiU982E2xNjjpdt3dWpgFvCmutfxOOvcuQdkY3goYpWz50fhb651Yq0MFHMeRnu80jBBaKEP5SA1edQbKC8tUVSc7e4z4IIp66cn4p8wGoNCgsfRmcXTnGAW6ArLiPK8pPcfux2Zerp2u26OuvogE/5kMS4UEoQ0xyhL4wp24Nzrzc/13DZvi5elDkxhywy4YQZkupj29HXt1Z7MYW11Yf3Y4whgdMQHCYPIwEO5aXUzzWFYpzitzpklex8+8/yzKrNG9/gNJpxVVpRdhGgAAAABJRU5ErkJggg=="
             />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_backgroundBlur_225_47"
-              result="shape"
-            />
-          </filter>
-        </defs>
-      </svg>
-    </div>
+          </defs>
+        </>
+      )}
+    </g>
   );
 }

@@ -47,12 +47,12 @@ export default function RootLayout({
               </span>
             </div>
           </div>
-          {/* <div
+          <div
             style={{
               background: "#fff",
               boxShadow: "0px 5px 15px 0px rgba(0, 0, 0, 0.13)",
             }}
-            className="sticky top-0 z-10 px-4"
+            className="sticky top-0 z-50 px-4"
           >
             <header className="flex flex-col py-2 m-auto max-w-default">
               <div className="flex items-center justify-between">
@@ -69,21 +69,21 @@ export default function RootLayout({
               </div>
               <NavTabletComponent lng={lng} />
             </header>
+            <div className="block mobile:hidden">
+              <MenuMobileComponent lng={lng} />
+            </div>
           </div>
-          <div className="block mobile:hidden">
-            <MenuMobileComponent lng={lng} />
-          </div> */}
           <main>{children}</main>
-          {/* <div style={{ background: "#F5FAFA" }}>
+          <div style={{ background: "#F5FAFA" }}>
             <footer className="flex flex-col w-full gap-y-16">
               <div className="px-4 ">
                 <div className="w-full pt-16 m-auto max-w-default">
-                  <div className="flex justify-between w-full">
-                    <div className="flex flex-col items-baseline gap-y-3">
+                  <div className="flex flex-col items-center justify-between w-full md:items-start gap-y-10 md:flex-row">
+                    <div className="flex flex-col items-center md:items-baseline gap-y-3">
                       <LogoComponent />
-                      <div className="border-l-2 pl-7 border-primary">
+                      <div className="md:border-l-2 md:pl-7 md:border-primary">
                         <h1
-                          className="text-lg text-primary"
+                          className="text-lg text-center text-primary md:text-left"
                           style={{ maxWidth: 310 }}
                         >
                           {
@@ -113,7 +113,7 @@ export default function RootLayout({
 
               <div className="border-t-2 border-gray/20">
                 <div className="px-4">
-                  <div className="flex items-center w-full py-4 m-auto text-gray max-w-default gap-x-8">
+                  <div className="flex flex-col items-center w-full py-4 m-auto gap-y-2 md:flex-row text-gray max-w-default gap-x-8">
                     <span>© 2023 Árabe com Merna</span>
                     <span>
                       {'"'}All rights reserved{'"'}
@@ -124,7 +124,7 @@ export default function RootLayout({
                 </div>
               </div>
             </footer>
-          </div> */}
+          </div>
         </div>
       </body>
     </html>

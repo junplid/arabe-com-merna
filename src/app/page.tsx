@@ -22,21 +22,21 @@ export default function Home(props: PropsPage) {
 
   return (
     <div>
-      {/* <SectionIntroductionHomePage lng={lng} />
+      <SectionIntroductionHomePage lng={lng} />
       <SectionAssessmentsHomePage lng={lng} />
       <SectionHowItWorksHomePage lng={lng} />
-      <SectionWhyLearnHomePage lng={lng} /> */}
-      {/* <SectionResultsHomePage lng={lng} />
-      <SectionDepositionsHomePage lng={lng} /> */}
-      {/* <SectionLearnHomePage lng={lng} />
+      <SectionWhyLearnHomePage lng={lng} />
+      <SectionResultsHomePage lng={lng} />
+      <SectionDepositionsHomePage lng={lng} />
+      <SectionLearnHomePage lng={lng} />
       <SectionBonusHomePage lng={lng} />
-      <SectionTeacherHomePage lng={lng} /> */}
+      <SectionTeacherHomePage lng={lng} />
       <ProviderContextExploreMap>
         <div style={{ background: "#021B11" }}>
           <SectionExploreHomePage lng={lng} />
         </div>
       </ProviderContextExploreMap>
-      {/* <SectionDoubtsHomePage lng={lng} /> */}
+      <SectionDoubtsHomePage lng={lng} />
     </div>
   );
 }
