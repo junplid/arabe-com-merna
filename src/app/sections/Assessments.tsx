@@ -11,7 +11,7 @@ export default function SectionAssessmentsHomePage({
 }: PropsSection2PageHome_I): JSX.Element {
   return (
     <section className="flex items-center px-4 py-6 bg-primary">
-      <div className="flex flex-col items-center justify-center w-full gap-3 m-auto animate__fadeIn animate__animated sm:flex-row sm:gap-8 max-w-default">
+      <div className="flex flex-col items-center justify-center w-full gap-3 m-auto sm:flex-row sm:gap-8 max-w-default">
         <div className="flex flex-col items-center gap-2 md:flex-row">
           <div className="flex items-center gap-1">
             <ImStarFull className="text-secondary" size={28} />

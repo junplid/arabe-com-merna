@@ -11,12 +11,7 @@ export default function AnimationSessionHowItWorksComponent(
   props: PropsAnimationSessionHowItWorksComponent_I
 ): JSX.Element {
   return (
-    <AnimationOnScroll
-      animateOnce
-      animateIn="animate__fadeInUp"
-      delay={props.i * 100}
-      offset={0}
-    >
+    <AnimationOnScroll animateOnce animateIn="animate__fadeInUp">
       {props.children}
     </AnimationOnScroll>
   );

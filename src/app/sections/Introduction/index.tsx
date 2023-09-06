@@ -13,7 +13,7 @@ export default function SectionIntroductionHomePage({
       <div className="flex flex-col items-center gap-4 m-auto md:gap-2 md:flex-row lg:gap-5 max-w-default">
         <div
           style={{ maxWidth: 563 }}
-          className="flex flex-col items-baseline py-4 animate__fadeInUp animate__animated lg:py-0 gap-y-4"
+          className="flex flex-col items-baseline py-4 lg:py-0 gap-y-4"
         >
           <h1 className="text-3xl font-medium leading-tight lg:text-4xl text-primary">
             {LanguageSectionIntroduction[lng].title["part-1-normal"]}{" "}

@@ -12,6 +12,8 @@ export default function AnimationMainSection1Component(
       style={{
         minWidth: 200,
       }}
+      defer
+      aria-label="Árabe com Merna"
       loop={false}
       animationData={Main}
     />
