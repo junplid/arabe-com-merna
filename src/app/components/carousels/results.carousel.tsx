@@ -174,7 +174,7 @@ export const ComponentResultsCarousel: React.FC<
   return (
     <div className="grid w-full">
       {selected && (
-        <div className="fixed top-0 left-0 z-50 flex items-center w-screen h-screen bg-primary/60 backdrop-blur-md">
+        <div className="fixed top-0 left-0 z-50 flex items-center w-screen h-screen px-2 bg-primary/60 backdrop-blur-md">
           <div className="w-full max-w-2xl p-5 pt-0 m-auto shadow-lg bg-slate-50">
             <div className="flex items-center justify-between gap-1 py-5">
               <p className="text-lg font-light leading-tight line-clamp-2 text-primary">
