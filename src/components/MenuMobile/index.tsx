@@ -1,10 +1,12 @@
 "use client";
 
 import { LanguageHeader } from "@/language/home/header";
-import { FC, useContext, useState } from "react";
+import { FC, useState } from "react";
+import { useCookies } from "react-cookie";
 import useOnclickOutside from "react-cool-onclickoutside";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp, IoLanguage } from "react-icons/io5";
+import { animateScroll as scroll } from "react-scroll";
 
 type OptionsLanguage_T = "pt-br" | "en";
 const optionsLanguage: OptionsLanguage_T[] = ["pt-br", "en"];
@@ -21,6 +23,7 @@ export const MenuMobileComponent: FC<PropsMenuMobileComponent_I> = ({
   lng = "pt-br",
 }: PropsMenuMobileComponent_I): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false as boolean);
+  const [_cookies, setCookies] = useCookies(["lng"]);
 
   const [openLanguage, setOpenLanguage] = useState<boolean>(false as boolean);
 
@@ -74,8 +77,8 @@ export const MenuMobileComponent: FC<PropsMenuMobileComponent_I> = ({
                     className="flex items-center justify-between p-1 px-2 cursor-pointer select-none group hover:text-green-500 gap-x-1"
                     key={op}
                     onClick={() => {
-                      // setar cookie
-                      // recarregar a página
+                      setCookies("lng", op);
+                      window.location.reload();
                     }}
                   >
                     <span
@@ -109,7 +112,12 @@ export const MenuMobileComponent: FC<PropsMenuMobileComponent_I> = ({
               <li key={item.id}>
                 <a
                   {...(item.link && { href: item.link })}
-                  // onClick={() => item.scrollTop && scroll.scrollTo(0)}
+                  onClick={() => {
+                    if (item.scrollTop) {
+                      scroll.scrollTo(0);
+                      setOpen(false);
+                    }
+                  }}
                   className="block px-2 py-3 text-lg font-medium text-secondary"
                 >
                   {item.label}
