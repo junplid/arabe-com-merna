@@ -26,11 +26,11 @@ export default function SectionIntroductionHomePage({
           <p className="text-xl md:text-lg text-primary lg:text-xl">
             {LanguageSectionIntroduction[lng].paragraph}
           </p>
-          <a className="py-2 text-sm font-medium text-white duration-200 rounded-md cursor-pointer hover:bg-primary-hover bg-primary px-7">
+          <a className="py-2 text-base font-medium text-white duration-200 rounded-md cursor-pointer hover:bg-primary-hover bg-primary px-7">
             {LanguageSectionIntroduction[lng].button}
           </a>
         </div>
-        <div className="flex items-end h-full px-5 md:max-w-md lg:max-w-2xl lg:px-0">
+        <div className="flex items-end h-full px-0 sm:px-5 md:max-w-md lg:max-w-2xl lg:px-0">
           <AnimationMainSection1Component />
         </div>
       </div>

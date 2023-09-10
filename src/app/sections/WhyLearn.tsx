@@ -53,7 +53,7 @@ export default function SectionWhyLearnHomePage({
     <ComponentElementScroll name="section4">
       <section className="flex items-center px-4 py-24 bg-primary">
         <div className="w-full m-auto max-w-default">
-          <div className="grid items-start grid-cols-[repeat(auto-fit,minmax(415px,1fr))] gap-8">
+          <div className="grid items-start flex-col sm:grid-cols-[repeat(auto-fit,minmax(315px,1fr))] gap-8">
             <article className="flex flex-col gap-y-5">
               <div className="flex flex-col gap-y-4">
                 <h2 className="text-3xl text-white">
@@ -121,7 +121,7 @@ export default function SectionWhyLearnHomePage({
               </div>
             </article>
             <article
-              className="flex flex-col items-center p-8 shadow-lg rounded-3xl gap-y-5"
+              className="flex flex-col items-center px-4 py-8 shadow-lg sm:p-8 rounded-3xl gap-y-5"
               style={{ background: "#fff" }}
             >
               <h3 className="text-2xl font-semibold text-primary">

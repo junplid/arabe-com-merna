@@ -19,7 +19,7 @@ export default function SectionResultsHomePage({
         className="flex items-center py-24 overflow-x-hidden"
       >
         <div className="flex flex-col gap-y-12">
-          <div className="flex justify-center w-screen">
+          <div className="flex justify-center w-screen px-4">
             <h2 className="text-3xl font-medium text-center text-primary">
               {LanguageSectionResults[lng].title["part-1-normal"]}{" "}
               <span className="font-semibold text-secondary">

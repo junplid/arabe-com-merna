@@ -85,7 +85,7 @@ export default function RootLayout({
                           <LogoComponent />
                           <div className="md:border-l-2 md:pl-7 md:border-primary">
                             <h1
-                              className="text-lg text-center text-primary md:text-left"
+                              className="text-xl text-center sm:text-lg text-primary md:text-left"
                               style={{ maxWidth: 310 }}
                             >
                               {

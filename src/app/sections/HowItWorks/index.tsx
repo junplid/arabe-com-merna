@@ -44,7 +44,7 @@ export default function SectionHowItWorksHomePage({
                   </strong>
                 </h2>
               </div>
-              <a className="flex gap-5 px-5 py-2 text-sm font-medium text-white duration-200 rounded-md cursor-pointer hover:bg-primary-hover bg-primary">
+              <a className="flex gap-5 px-5 py-2 text-base font-medium text-white duration-200 rounded-md cursor-pointer hover:bg-primary-hover bg-primary">
                 {LanguageSectionHowItWorks[lng].button}
                 <HiArrowNarrowRight size={20} className="text-white" />
               </a>

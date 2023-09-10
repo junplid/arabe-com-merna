@@ -17,7 +17,7 @@ export default function SectionDepositionsHomePage({
         }}
         className="flex items-center px-4 py-24"
       >
-        <div className="flex flex-col w-11/12 m-auto">
+        <div className="flex flex-col w-full md:m-auto md:w-11/12">
           <div className="flex flex-col items-center gap-y-12">
             <h2 className="max-w-3xl text-3xl font-medium text-center text-primary">
               <span className="font-semibold text-secondary">

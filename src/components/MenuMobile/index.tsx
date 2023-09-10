@@ -38,7 +38,7 @@ export const MenuMobileComponent: FC<PropsMenuMobileComponent_I> = ({
     <div ref={ref}>
       <button
         onClick={() => setOpen(!open)}
-        className="absolute right-0 z-40 p-2 -translate-x-4 border -translate-y-14"
+        className="absolute right-0 z-40 p-2 -translate-x-4 border border-black/25 -translate-y-14"
       >
         {open ? (
           <IoCloseSharp className="text-primary" size={30} />
